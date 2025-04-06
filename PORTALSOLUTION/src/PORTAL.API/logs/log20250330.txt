@@ -1,0 +1,38 @@
+2025-03-30 00:01:26.849 +05:45 [INF] Now listening on: http://localhost:5182
+2025-03-30 00:01:28.990 +05:45 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-03-30 00:01:29.175 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/ - null null
+2025-03-30 00:01:29.463 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-30 00:01:29.718 +05:45 [INF] Hosting environment: Development
+2025-03-30 00:01:29.786 +05:45 [INF] Content root path: E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API
+2025-03-30 00:01:30.714 +05:45 [INF] HTTP GET / responded 404 in 18.2201 ms
+2025-03-30 00:01:30.820 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/ - 404 0 null 1668.6519ms
+2025-03-30 00:01:30.868 +05:45 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5182/, Response status code: 404
+2025-03-30 00:01:32.071 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/index.html - null null
+2025-03-30 00:01:32.235 +05:45 [INF] HTTP GET /swagger/index.html responded 200 in 149.4610 ms
+2025-03-30 00:01:32.244 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/index.html - 200 null text/html;charset=utf-8 174.0731ms
+2025-03-30 00:01:32.317 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/index.js - null null
+2025-03-30 00:01:32.325 +05:45 [INF] HTTP GET /swagger/index.js responded 200 in 1.6176 ms
+2025-03-30 00:01:32.329 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/index.js - 200 null application/javascript;charset=utf-8 11.8991ms
+2025-03-30 00:01:32.352 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-30 00:01:32.355 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/_vs/browserLink - null null
+2025-03-30 00:01:32.361 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 9.3007ms
+2025-03-30 00:01:32.423 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/_vs/browserLink - 200 null text/javascript; charset=UTF-8 68.2284ms
+2025-03-30 00:01:32.929 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/v1/swagger.json - null null
+2025-03-30 00:01:32.956 +05:45 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 18.4167 ms
+2025-03-30 00:01:32.961 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 31.2055ms
+2025-03-30 00:01:41.595 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/registration - application/json 171
+2025-03-30 00:01:41.605 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/registration => Registration'
+2025-03-30 00:01:49.570 +05:45 [INF] Executed DbCommand (93ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Username" = @__username_0
+LIMIT 1
+2025-03-30 00:01:51.831 +05:45 [INF] Executed DbCommand (859ms) [Parameters=[@p0='?', @p1='?' (DbType = DateTime), @p2='?', @p3='?', @p4='?', @p5='?' (DbType = Int32), @p6='?', @p7='?' (DbType = Boolean), @p8='?' (DbType = Boolean), @p9='?' (DbType = DateTime), @p10='?', @p11='?' (DbType = DateTime), @p12='?' (DbType = DateTime), @p13='?', @p14='?', @p15='?' (DbType = DateTime), @p16='?', @p17='?', @p18='?', @p19='?' (DbType = Boolean), @p20='?', @p21='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("AvatarUrl", "CreatedAt", "CreatedBy", "Culture", "Email", "FailedLoginAttempts", "FirstName", "IsActive", "IsLockedOut", "LastLoginDate", "LastName", "LockoutEndDate", "ModifiedAt", "ModifiedBy", "Password", "PasswordExpirationDate", "PhoneNumber", "SecurityStamp", "TimeZone", "TwoFactorEnabled", "TwoFactorSecret", "Username")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21)
+RETURNING "UserId";
+2025-03-30 00:02:13.895 +05:45 [INF] Setting HTTP status code 200.
+2025-03-30 00:02:13.905 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-03-30 00:02:13.943 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/registration => Registration'
+2025-03-30 00:02:13.948 +05:45 [INF] HTTP POST /auth/registration responded 200 in 32345.5101 ms
+2025-03-30 00:02:13.964 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/registration - 200 null application/json; charset=utf-8 32368.6252ms

@@ -1,0 +1,194 @@
+2025-03-28 08:16:45.266 +05:45 [INF] Now listening on: http://localhost:5182
+2025-03-28 08:16:45.394 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-28 08:16:45.397 +05:45 [INF] Hosting environment: Development
+2025-03-28 08:16:45.400 +05:45 [INF] Content root path: E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API
+2025-03-28 08:16:47.471 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/ - null null
+2025-03-28 08:16:48.146 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/ - 404 0 null 680.4738ms
+2025-03-28 08:16:48.215 +05:45 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5182/, Response status code: 404
+2025-03-28 08:17:03.581 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/index.html - null null
+2025-03-28 08:17:03.912 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/index.html - 200 null text/html;charset=utf-8 333.2366ms
+2025-03-28 08:17:04.010 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/index.js - null null
+2025-03-28 08:17:04.030 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/index.js - 200 null application/javascript;charset=utf-8 19.9426ms
+2025-03-28 08:17:04.413 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/v1/swagger.json - null null
+2025-03-28 08:17:04.470 +05:45 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-03-28 08:17:04.641 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/favicon-32x32.png - null null
+2025-03-28 08:17:04.674 +05:45 [INF] The file /favicon-32x32.png was not modified
+2025-03-28 08:17:04.689 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/favicon-32x32.png - 304 null image/png 48.0603ms
+2025-03-28 08:17:04.889 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 476.9761ms
+2025-03-28 08:18:02.364 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/registration - application/json 167
+2025-03-28 08:18:02.381 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/registration => Registration'
+2025-03-28 08:18:09.081 +05:45 [INF] Executed DbCommand (204ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Username" = @__username_0
+LIMIT 1
+2025-03-28 08:18:10.477 +05:45 [INF] Executed DbCommand (143ms) [Parameters=[@p0='?', @p1='?' (DbType = DateTime), @p2='?', @p3='?', @p4='?', @p5='?' (DbType = Int32), @p6='?', @p7='?' (DbType = Boolean), @p8='?' (DbType = Boolean), @p9='?' (DbType = DateTime), @p10='?', @p11='?' (DbType = DateTime), @p12='?' (DbType = DateTime), @p13='?', @p14='?', @p15='?' (DbType = DateTime), @p16='?', @p17='?', @p18='?', @p19='?' (DbType = Boolean), @p20='?', @p21='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("AvatarUrl", "CreatedAt", "CreatedBy", "Culture", "Email", "FailedLoginAttempts", "FirstName", "IsActive", "IsLockedOut", "LastLoginDate", "LastName", "LockoutEndDate", "ModifiedAt", "ModifiedBy", "Password", "PasswordExpirationDate", "PhoneNumber", "SecurityStamp", "TimeZone", "TwoFactorEnabled", "TwoFactorSecret", "Username")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21)
+RETURNING "UserId";
+2025-03-28 08:18:10.723 +05:45 [INF] Setting HTTP status code 200.
+2025-03-28 08:18:10.986 +05:45 [INF] Writing value of type 'AsyncStateMachineBox`1' as Json.
+2025-03-28 08:18:11.033 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/registration => Registration'
+2025-03-28 08:18:11.046 +05:45 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The type 'System.Threading.ExecutionContext&' of property 'Context' on type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[PORTAL.DOMAIN.Entities.User,PORTAL.INFRASTRUCTURE.Repositories.AuthRepo+<Register>d__5]' is invalid for serialization or deserialization because it is a pointer type, is a ref struct, or contains generic parameters that have not been replaced by specific types.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_CannotSerializeInvalidType(Type typeToConvert, Type declaringType, MemberInfo memberInfo)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreatePropertyInfo(JsonTypeInfo typeInfo, Type typeToConvert, MemberInfo memberInfo, NullabilityInfoContext nullabilityCtx, JsonSerializerOptions options, Boolean shouldCheckForRequiredKeyword, Boolean hasJsonIncludeAttribute)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.AddMember(JsonTypeInfo typeInfo, Type typeToConvert, MemberInfo memberInfo, NullabilityInfoContext nullabilityCtx, Boolean shouldCheckForRequiredKeyword, Boolean hasJsonIncludeAttribute, PropertyHierarchyResolutionState& state)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.AddMembersDeclaredBySuperType(JsonTypeInfo typeInfo, Type currentType, NullabilityInfoContext nullabilityCtx, Boolean constructorHasSetsRequiredMembersAttribute, PropertyHierarchyResolutionState& state)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.PopulateProperties(JsonTypeInfo typeInfo, NullabilityInfoContext nullabilityCtx)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreateTypeInfoCore(Type type, JsonConverter converter, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreateJsonTypeInfo(Type type, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.GetTypeInfo(Type type, JsonSerializerOptions options)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoNoCaching(Type type)
+   at System.Text.Json.JsonSerializerOptions.CachingContext.CreateCacheEntry(Type type, CachingContext context)
+--- End of stack trace from previous location ---
+   at System.Text.Json.JsonSerializerOptions.CachingContext.CacheEntry.GetResult()
+   at System.Text.Json.JsonSerializerOptions.CachingContext.GetOrAddTypeInfo(Type type, Boolean fallBackToNearestAncestorType)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoInternal(Type type, Boolean ensureConfigured, Nullable`1 ensureNotNull, Boolean resolveIfMutable, Boolean fallBackToNearestAncestorType)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoForRootType(Type type, Boolean fallBackToNearestAncestorType)
+   at System.Text.Json.JsonSerializerOptions.TryGetPolymorphicTypeInfoForRootType(Object rootValue, JsonTypeInfo& polymorphicTypeInfo)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Http.HttpResponseJsonExtensions.WriteAsJsonAsyncSlow[TValue](PipeWriter body, TValue value, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-28 08:18:11.162 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/registration - 500 null text/plain; charset=utf-8 8797.6618ms
+2025-03-28 08:18:53.338 +05:45 [INF] Application is shutting down...
+2025-03-28 08:20:07.490 +05:45 [INF] Now listening on: http://localhost:5182
+2025-03-28 08:20:07.618 +05:45 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-03-28 08:20:07.892 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-28 08:20:07.917 +05:45 [INF] Hosting environment: Development
+2025-03-28 08:20:07.924 +05:45 [INF] Content root path: E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API
+2025-03-28 08:20:09.956 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/ - null null
+2025-03-28 08:20:10.672 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/ - 404 0 null 739.8664ms
+2025-03-28 08:20:10.707 +05:45 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5182/, Response status code: 404
+2025-03-28 08:20:15.113 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/index.html - null null
+2025-03-28 08:20:15.297 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/index.html - 200 null text/html;charset=utf-8 186.1994ms
+2025-03-28 08:20:15.324 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/index.js - null null
+2025-03-28 08:20:15.347 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/index.js - 200 null application/javascript;charset=utf-8 22.264ms
+2025-03-28 08:20:15.380 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-28 08:20:15.381 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/_vs/browserLink - null null
+2025-03-28 08:20:15.394 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 14.847ms
+2025-03-28 08:20:15.481 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/_vs/browserLink - 200 null text/javascript; charset=UTF-8 100.4424ms
+2025-03-28 08:20:15.723 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/v1/swagger.json - null null
+2025-03-28 08:20:15.892 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 168.2486ms
+2025-03-28 08:21:03.528 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/registration - application/json 167
+2025-03-28 08:21:03.545 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/registration => Registration'
+2025-03-28 08:21:26.052 +05:45 [INF] Executed DbCommand (132ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Username" = @__username_0
+LIMIT 1
+2025-03-28 08:21:52.537 +05:45 [ERR] Error registering user string
+System.InvalidOperationException: Username already exists
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Register(Register register) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+2025-03-28 08:21:53.520 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/registration => Registration'
+2025-03-28 08:21:53.525 +05:45 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Username already exists
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Register(Register register) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Registration(Register register, IAuthService authService) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 25
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-28 08:21:53.589 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/registration - 500 null text/plain; charset=utf-8 50061.6254ms
+2025-03-28 23:38:04.421 +05:45 [INF] Now listening on: http://localhost:5182
+2025-03-28 23:38:04.544 +05:45 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-03-28 23:38:04.851 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-28 23:38:04.854 +05:45 [INF] Hosting environment: Development
+2025-03-28 23:38:04.870 +05:45 [INF] Content root path: E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API
+2025-03-28 23:38:06.245 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/ - null null
+2025-03-28 23:38:06.673 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/ - 404 0 null 453.331ms
+2025-03-28 23:38:06.696 +05:45 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5182/, Response status code: 404
+2025-03-28 23:38:11.635 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/index.html - null null
+2025-03-28 23:38:11.841 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/index.html - 200 null text/html;charset=utf-8 208.4936ms
+2025-03-28 23:38:11.868 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/swagger-ui.css - null null
+2025-03-28 23:38:11.872 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-28 23:38:11.876 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/index.css - null null
+2025-03-28 23:38:11.878 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/swagger-ui-bundle.js - null null
+2025-03-28 23:38:11.898 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 26.1338ms
+2025-03-28 23:38:11.906 +05:45 [INF] The file /index.css was not modified
+2025-03-28 23:38:11.906 +05:45 [INF] The file /swagger-ui-bundle.js was not modified
+2025-03-28 23:38:11.906 +05:45 [INF] The file /swagger-ui.css was not modified
+2025-03-28 23:38:11.909 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/swagger-ui-standalone-preset.js - null null
+2025-03-28 23:38:11.912 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/index.css - 304 null text/css 35.9751ms
+2025-03-28 23:38:11.912 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/swagger-ui-bundle.js - 304 null text/javascript 34.184ms
+2025-03-28 23:38:11.914 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/swagger-ui.css - 304 null text/css 45.884ms
+2025-03-28 23:38:11.925 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/index.js - null null
+2025-03-28 23:38:11.932 +05:45 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2025-03-28 23:38:11.944 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/swagger-ui-standalone-preset.js - 304 null text/javascript 35.4139ms
+2025-03-28 23:38:11.952 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/index.js - 200 null application/javascript;charset=utf-8 27.5947ms
+2025-03-28 23:38:11.979 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/_vs/browserLink - null null
+2025-03-28 23:38:12.330 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/_vs/browserLink - 200 null text/javascript; charset=UTF-8 351.0289ms
+2025-03-28 23:38:12.632 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/v1/swagger.json - null null
+2025-03-28 23:38:12.661 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 29.8291ms
+2025-03-28 23:38:58.440 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/registration - application/json 167
+2025-03-28 23:38:58.461 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/registration => Registration'
+2025-03-28 23:39:07.125 +05:45 [INF] Executed DbCommand (104ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Username" = @__username_0
+LIMIT 1
+2025-03-28 23:39:07.443 +05:45 [ERR] Error registering user string
+System.InvalidOperationException: Username already exists
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Register(Register register) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+2025-03-28 23:39:07.840 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/registration => Registration'
+2025-03-28 23:39:07.846 +05:45 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Username already exists
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Register(Register register) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Registration(Register register, IAuthService authService) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 25
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-28 23:39:07.897 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/registration - 500 null text/plain; charset=utf-8 9456.8026ms
+2025-03-28 23:40:01.154 +05:45 [INF] Now listening on: http://localhost:5182
+2025-03-28 23:40:01.268 +05:45 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-03-28 23:40:02.344 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-28 23:40:02.448 +05:45 [INF] Hosting environment: Development
+2025-03-28 23:40:02.469 +05:45 [INF] Content root path: E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API
+2025-03-28 23:40:02.470 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/ - null null
+2025-03-28 23:40:02.911 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/ - 404 0 null 461.5123ms
+2025-03-28 23:40:02.929 +05:45 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5182/, Response status code: 404
+2025-03-28 23:41:13.371 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/index.html - null null
+2025-03-28 23:41:13.542 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/index.html - 200 null text/html;charset=utf-8 171.3337ms
+2025-03-28 23:41:13.564 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/index.js - null null
+2025-03-28 23:41:13.578 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/index.js - 200 null application/javascript;charset=utf-8 13.4443ms
+2025-03-28 23:41:13.583 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-28 23:41:13.593 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 9.243ms
+2025-03-28 23:41:13.652 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/_vs/browserLink - null null
+2025-03-28 23:41:13.708 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/_vs/browserLink - 200 null text/javascript; charset=UTF-8 114.3608ms
+2025-03-28 23:41:13.918 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/v1/swagger.json - null null
+2025-03-28 23:41:13.933 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 15.977ms
+2025-03-28 23:41:34.369 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/registration - application/json 167
+2025-03-28 23:41:34.392 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/registration => Registration'
+2025-03-28 23:41:42.309 +05:45 [INF] Executed DbCommand (91ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Username" = @__username_0
+LIMIT 1
+2025-03-28 23:41:42.606 +05:45 [ERR] Error registering user string
+System.InvalidOperationException: Username already exists
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Register(Register register) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+2025-03-28 23:41:43.037 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/registration => Registration'
+2025-03-28 23:41:43.043 +05:45 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Username already exists
+   at PORTAL.API.Routes.AuthRoutes.Registration(Register register, IAuthService authService) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 30
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-28 23:41:43.240 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/registration - 500 null text/plain; charset=utf-8 8870.9373ms

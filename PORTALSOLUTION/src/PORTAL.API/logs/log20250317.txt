@@ -1,0 +1,74 @@
+2025-03-17 08:06:23.227 +05:45 [INF] Now listening on: http://localhost:5182
+2025-03-17 08:06:25.168 +05:45 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-03-17 08:06:25.933 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/ - null null
+2025-03-17 08:06:29.264 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-17 08:06:30.631 +05:45 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Swashbuckle.AspNetCore.Swagger.ISwaggerProvider' while attempting to Invoke middleware 'Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware'.
+   at lambda_method1(Closure, Object, HttpContext, IServiceProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-17 08:06:30.751 +05:45 [INF] Hosting environment: Development
+2025-03-17 08:06:32.123 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/ - 500 null text/html; charset=utf-8 6221.3763ms
+2025-03-17 08:06:32.721 +05:45 [INF] Content root path: E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API
+2025-03-17 08:06:35.457 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/_vs/browserLink - null null
+2025-03-17 08:06:35.457 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-17 08:06:35.491 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 34.5272ms
+2025-03-17 08:06:35.899 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/_vs/browserLink - 200 null text/javascript; charset=UTF-8 442.7428ms
+2025-03-17 08:10:46.072 +05:45 [INF] Now listening on: http://localhost:5182
+2025-03-17 08:10:46.263 +05:45 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-03-17 08:10:47.727 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-17 08:10:47.724 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/ - null null
+2025-03-17 08:10:47.743 +05:45 [INF] Hosting environment: Development
+2025-03-17 08:10:47.760 +05:45 [INF] Content root path: E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API
+2025-03-17 08:10:49.474 +05:45 [INF] Executing endpoint 'HTTP: GET /'
+2025-03-17 08:10:49.623 +05:45 [INF] Executed endpoint 'HTTP: GET /'
+2025-03-17 08:10:49.631 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/ - 200 null text/plain; charset=utf-8 1923.1874ms
+2025-03-17 08:18:51.596 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/index.html - null null
+2025-03-17 08:18:52.056 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/index.html - 200 null text/html;charset=utf-8 461.3209ms
+2025-03-17 08:18:52.085 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/index.css - null null
+2025-03-17 08:18:52.122 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/swagger-ui-bundle.js - null null
+2025-03-17 08:18:52.123 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/swagger-ui-standalone-preset.js - null null
+2025-03-17 08:18:52.126 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/swagger-ui.css - null null
+2025-03-17 08:18:52.172 +05:45 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-03-17 08:18:52.175 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/index.css - 200 202 text/css 90.7768ms
+2025-03-17 08:18:52.180 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-17 08:18:52.180 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/index.js - null null
+2025-03-17 08:18:52.186 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/_vs/browserLink - null null
+2025-03-17 08:18:52.244 +05:45 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-03-17 08:18:52.239 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/index.js - 200 null application/javascript;charset=utf-8 59.3119ms
+2025-03-17 08:18:52.236 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 56.0935ms
+2025-03-17 08:18:52.251 +05:45 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-03-17 08:18:52.252 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/swagger-ui.css - 200 154948 text/css 125.3492ms
+2025-03-17 08:18:52.279 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/swagger-ui-standalone-preset.js - 200 229223 text/javascript 156.0455ms
+2025-03-17 08:18:52.331 +05:45 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-03-17 08:18:52.336 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/swagger-ui-bundle.js - 200 1466324 text/javascript 213.2309ms
+2025-03-17 08:18:52.390 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/_vs/browserLink - 200 null text/javascript; charset=UTF-8 204.2733ms
+2025-03-17 08:18:52.772 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/v1/swagger.json - null null
+2025-03-17 08:18:52.848 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/favicon-32x32.png - null null
+2025-03-17 08:18:52.867 +05:45 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-03-17 08:18:52.904 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/favicon-32x32.png - 200 628 image/png 55.7863ms
+2025-03-17 08:18:52.973 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 201.7611ms
+2025-03-17 08:19:08.552 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/ip-address - application/json 5899
+2025-03-17 08:19:08.568 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/ip-address => IPAddress'
+2025-03-17 08:19:08.710 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/ip-address => IPAddress'
+2025-03-17 08:19:08.717 +05:45 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: Serialization and deserialization of 'System.Func`1[[System.Threading.Tasks.Task, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' instances is not supported. The unsupported member type is located on type 'System.Func`1[System.Threading.Tasks.Task]'. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+ ---> System.NotSupportedException: Serialization and deserialization of 'System.Func`1[[System.Threading.Tasks.Task, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' instances is not supported.
+   at System.Text.Json.Serialization.Converters.UnsupportedTypeConverter`1.Read(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ThrowNotSupportedException(ReadStack& state, Utf8JsonReader& reader, Exception innerException)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, T& value)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsObjectAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|101_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-17 08:19:08.940 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/ip-address - 500 null text/plain; charset=utf-8 388.0887ms

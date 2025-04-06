@@ -1,0 +1,63 @@
+2025-03-26 00:04:43.149 +05:45 [INF] Now listening on: http://localhost:5182
+2025-03-26 00:04:43.275 +05:45 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-03-26 00:04:43.775 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-26 00:04:43.785 +05:45 [INF] Hosting environment: Development
+2025-03-26 00:04:43.790 +05:45 [INF] Content root path: E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API
+2025-03-26 00:04:46.145 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/ - null null
+2025-03-26 00:04:46.592 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/ - 404 0 null 477.903ms
+2025-03-26 00:04:46.618 +05:45 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5182/, Response status code: 404
+2025-03-26 00:04:50.565 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/index.html - null null
+2025-03-26 00:04:50.765 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/index.html - 200 null text/html;charset=utf-8 201.2067ms
+2025-03-26 00:04:50.773 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/swagger-ui.css - null null
+2025-03-26 00:04:50.773 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/swagger-ui-bundle.js - null null
+2025-03-26 00:04:50.773 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/index.css - null null
+2025-03-26 00:04:50.793 +05:45 [INF] The file /swagger-ui.css was not modified
+2025-03-26 00:04:50.793 +05:45 [INF] The file /swagger-ui-bundle.js was not modified
+2025-03-26 00:04:50.793 +05:45 [INF] The file /index.css was not modified
+2025-03-26 00:04:50.797 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/swagger-ui.css - 304 null text/css 24.0846ms
+2025-03-26 00:04:50.797 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/swagger-ui-bundle.js - 304 null text/javascript 24.3217ms
+2025-03-26 00:04:50.799 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/index.css - 304 null text/css 25.7919ms
+2025-03-26 00:04:50.814 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/index.js - null null
+2025-03-26 00:04:50.815 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/swagger-ui-standalone-preset.js - null null
+2025-03-26 00:04:50.825 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/index.js - 200 null application/javascript;charset=utf-8 10.7341ms
+2025-03-26 00:04:50.828 +05:45 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2025-03-26 00:04:50.831 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-26 00:04:50.832 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/swagger-ui-standalone-preset.js - 304 null text/javascript 16.9375ms
+2025-03-26 00:04:50.841 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 10.6259ms
+2025-03-26 00:04:50.864 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/_vs/browserLink - null null
+2025-03-26 00:04:51.070 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/_vs/browserLink - 200 null text/javascript; charset=UTF-8 205.5594ms
+2025-03-26 00:04:51.301 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/v1/swagger.json - null null
+2025-03-26 00:04:51.329 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 27.8788ms
+2025-03-26 00:05:04.830 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/registration - application/json 167
+2025-03-26 00:05:04.866 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/registration => Registration'
+2025-03-26 00:05:18.246 +05:45 [INF] Executed DbCommand (119ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Username" = @__username_0
+LIMIT 1
+2025-03-26 00:05:18.559 +05:45 [ERR] Error registering user string
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Register -> User
+PORTAL.SHARED.Register -> PORTAL.DOMAIN.Entities.User
+   at lambda_method20(Closure, Object, User, ResolutionContext)
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Register(Register register) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 33
+2025-03-26 00:05:19.020 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/registration => Registration'
+2025-03-26 00:05:19.027 +05:45 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Register -> User
+PORTAL.SHARED.Register -> PORTAL.DOMAIN.Entities.User
+   at lambda_method20(Closure, Object, User, ResolutionContext)
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Register(Register register) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 33
+   at PORTAL.API.Routes.AuthRoutes.Registration(Register register, IAuthService authService) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 25
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-26 00:05:19.093 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/registration - 500 null text/plain; charset=utf-8 14262.6364ms
