@@ -20,11 +20,7 @@ public class AuthServices(IAuthRepository authRepository, IMapper mapper,IPasswo
 
     public async Task<string> Authenticate(Login request)
     {
-        var existUser = await _authRepository.GetUserByUserName(request.Username);
-        if(existUser is null)
-        {
-            throw new AuthenticationFailedException();
-        }
+        var existUser = await _authRepository.GetUSerByEmail(request.Username) ?? throw new AuthenticationFailedException();
         var checkPassword = _passwordHasher.VerifyPassword(existUser.Password, request.Password);
         if (!checkPassword)
         {

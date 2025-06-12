@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PORTAL.PERSISTENCE")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d45e14632b6757e113262b256c3429a455e1bc3f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2bb635b65c2bb47a2e8a7b75de35e9da24669d1a")]
 [assembly: System.Reflection.AssemblyProductAttribute("PORTAL.PERSISTENCE")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PORTAL.PERSISTENCE")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

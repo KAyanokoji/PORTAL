@@ -1,0 +1,332 @@
+2025-05-25 23:08:36.814 +05:45 [INF] Now listening on: https://localhost:7010
+2025-05-25 23:08:36.940 +05:45 [INF] Now listening on: http://localhost:5182
+2025-05-25 23:08:36.945 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-25 23:08:36.945 +05:45 [INF] Hosting environment: Development
+2025-05-25 23:08:36.945 +05:45 [INF] Content root path: E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API
+2025-05-25 23:08:40.781 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/ - null null
+2025-05-25 23:08:41.107 +05:45 [INF] HTTP GET / responded 404 in 99.5482 ms
+2025-05-25 23:08:41.148 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/ - 404 0 null 391.8306ms
+2025-05-25 23:08:41.171 +05:45 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7010/, Response status code: 404
+2025-05-25 23:08:52.969 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger - null null
+2025-05-25 23:08:52.975 +05:45 [INF] HTTP GET /swagger responded 301 in 5.9893 ms
+2025-05-25 23:08:52.976 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger - 301 0 null 7.7865ms
+2025-05-25 23:08:52.987 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.html - null null
+2025-05-25 23:08:53.140 +05:45 [INF] HTTP GET /swagger/index.html responded 200 in 149.3090 ms
+2025-05-25 23:08:53.141 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.html - 200 null text/html;charset=utf-8 153.6765ms
+2025-05-25 23:08:53.201 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/swagger-ui.css - null null
+2025-05-25 23:08:53.203 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.css - null null
+2025-05-25 23:08:53.213 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/swagger-ui-bundle.js - null null
+2025-05-25 23:08:53.214 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/swagger-ui-standalone-preset.js - null null
+2025-05-25 23:08:53.248 +05:45 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-05-25 23:08:53.249 +05:45 [INF] HTTP GET /swagger/index.css responded 200 in 44.3762 ms
+2025-05-25 23:08:53.249 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.css - 200 202 text/css 45.9611ms
+2025-05-25 23:08:53.249 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.js - null null
+2025-05-25 23:08:53.251 +05:45 [INF] HTTP GET /swagger/index.js responded 200 in 1.5092 ms
+2025-05-25 23:08:53.251 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.js - 200 null application/javascript;charset=utf-8 2.211ms
+2025-05-25 23:08:53.299 +05:45 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-05-25 23:08:53.301 +05:45 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-05-25 23:08:53.301 +05:45 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 85.5291 ms
+2025-05-25 23:08:53.302 +05:45 [INF] HTTP GET /swagger/swagger-ui.css responded 200 in 100.3560 ms
+2025-05-25 23:08:53.309 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/swagger-ui.css - 200 154948 text/css 107.3538ms
+2025-05-25 23:08:53.309 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/swagger-ui-standalone-preset.js - 200 229223 text/javascript 94.8734ms
+2025-05-25 23:08:53.406 +05:45 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-05-25 23:08:53.406 +05:45 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 192.4961 ms
+2025-05-25 23:08:53.408 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/swagger-ui-bundle.js - 200 1466324 text/javascript 194.4723ms
+2025-05-25 23:08:53.716 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/favicon-16x16.png - null null
+2025-05-25 23:08:53.717 +05:45 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2025-05-25 23:08:53.717 +05:45 [INF] HTTP GET /swagger/favicon-16x16.png responded 200 in 0.8889 ms
+2025-05-25 23:08:53.719 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/favicon-16x16.png - 200 665 image/png 2.7651ms
+2025-05-25 23:08:53.829 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/v1/swagger.json - null null
+2025-05-25 23:08:53.937 +05:45 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-05-25 23:08:54.299 +05:45 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 467.2403 ms
+2025-05-25 23:08:54.299 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 469.726ms
+2025-05-25 23:09:27.913 +05:45 [INF] Request starting HTTP/2 POST https://localhost:7010/auth/login - application/json 71
+2025-05-25 23:09:27.919 +05:45 [INF] CORS policy execution successful.
+2025-05-25 23:09:27.925 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-05-25 23:10:01.898 +05:45 [INF] Executed DbCommand (367ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-05-25 23:10:27.959 +05:45 [ERR] Error occurred while registering user guragainsaroj40@gmail.com
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 26
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+2025-05-25 23:10:28.115 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-05-25 23:10:28.309 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 26
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-05-25 23:10:28.311 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 26
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-05-25 23:10:28.329 +05:45 [INF] HTTP POST /auth/login responded 401 in 60411.4862 ms
+2025-05-25 23:10:28.354 +05:45 [INF] Request finished HTTP/2 POST https://localhost:7010/auth/login - 401 null application/json 60440.5454ms
+2025-05-25 23:11:29.875 +05:45 [INF] Request starting HTTP/2 POST https://localhost:7010/auth/login - application/json 72
+2025-05-25 23:11:29.877 +05:45 [INF] CORS policy execution successful.
+2025-05-25 23:11:29.878 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-05-25 23:11:36.721 +05:45 [INF] Executed DbCommand (9ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-05-25 23:11:44.758 +05:45 [ERR] Error occurred while registering user guragainsaroj40@gmail.com
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 26
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+2025-05-25 23:11:44.860 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-05-25 23:11:45.061 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 26
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-05-25 23:11:45.063 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 26
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-05-25 23:11:45.069 +05:45 [INF] HTTP POST /auth/login responded 401 in 15191.6612 ms
+2025-05-25 23:11:45.069 +05:45 [INF] Request finished HTTP/2 POST https://localhost:7010/auth/login - 401 null application/json 15194.0814ms
+2025-05-25 23:12:18.534 +05:45 [INF] Request starting HTTP/2 POST https://localhost:7010/auth/registration - application/json 177
+2025-05-25 23:12:18.534 +05:45 [INF] CORS policy execution successful.
+2025-05-25 23:12:18.534 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/registration => Registration'
+2025-05-25 23:12:18.700 +05:45 [INF] Executed DbCommand (2ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-05-25 23:12:20.402 +05:45 [INF] Executed DbCommand (65ms) [Parameters=[@p0='?', @p1='?' (DbType = DateTime), @p2='?', @p3='?', @p4='?', @p5='?' (DbType = Int32), @p6='?', @p7='?' (DbType = Boolean), @p8='?' (DbType = Boolean), @p9='?' (DbType = DateTime), @p10='?', @p11='?' (DbType = DateTime), @p12='?' (DbType = DateTime), @p13='?', @p14='?', @p15='?' (DbType = DateTime), @p16='?', @p17='?', @p18='?', @p19='?' (DbType = Boolean), @p20='?', @p21='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("AvatarUrl", "CreatedAt", "CreatedBy", "Culture", "Email", "FailedLoginAttempts", "FirstName", "IsActive", "IsLockedOut", "LastLoginDate", "LastName", "LockoutEndDate", "ModifiedAt", "ModifiedBy", "Password", "PasswordExpirationDate", "PhoneNumber", "SecurityStamp", "TimeZone", "TwoFactorEnabled", "TwoFactorSecret", "Username")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21)
+RETURNING "UserId";
+2025-05-25 23:12:20.669 +05:45 [INF] Setting HTTP status code 200.
+2025-05-25 23:12:20.673 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-05-25 23:12:20.725 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/registration => Registration'
+2025-05-25 23:12:20.725 +05:45 [INF] HTTP POST /auth/registration responded 200 in 2191.2095 ms
+2025-05-25 23:12:20.726 +05:45 [INF] Request finished HTTP/2 POST https://localhost:7010/auth/registration - 200 null application/json; charset=utf-8 2191.8499ms
+2025-05-25 23:13:21.212 +05:45 [INF] Request starting HTTP/2 POST https://localhost:7010/auth/login - application/json 62
+2025-05-25 23:13:21.212 +05:45 [INF] CORS policy execution successful.
+2025-05-25 23:13:21.212 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-05-25 23:13:27.836 +05:45 [INF] Executed DbCommand (1ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-05-25 23:13:30.174 +05:45 [INF] Setting HTTP status code 200.
+2025-05-25 23:13:30.174 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-05-25 23:13:30.175 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-05-25 23:13:30.175 +05:45 [INF] HTTP POST /auth/login responded 200 in 8962.7322 ms
+2025-05-25 23:13:30.177 +05:45 [INF] Request finished HTTP/2 POST https://localhost:7010/auth/login - 200 null application/json; charset=utf-8 8963.61ms
+2025-05-25 23:16:51.688 +05:45 [INF] Request starting HTTP/2 POST https://localhost:7010/auth/registration - application/json 185
+2025-05-25 23:16:51.689 +05:45 [INF] CORS policy execution successful.
+2025-05-25 23:16:51.689 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/registration => Registration'
+2025-05-25 23:16:51.848 +05:45 [INF] Executed DbCommand (5ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-05-25 23:16:52.349 +05:45 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?', @p1='?' (DbType = DateTime), @p2='?', @p3='?', @p4='?', @p5='?' (DbType = Int32), @p6='?', @p7='?' (DbType = Boolean), @p8='?' (DbType = Boolean), @p9='?' (DbType = DateTime), @p10='?', @p11='?' (DbType = DateTime), @p12='?' (DbType = DateTime), @p13='?', @p14='?', @p15='?' (DbType = DateTime), @p16='?', @p17='?', @p18='?', @p19='?' (DbType = Boolean), @p20='?', @p21='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("AvatarUrl", "CreatedAt", "CreatedBy", "Culture", "Email", "FailedLoginAttempts", "FirstName", "IsActive", "IsLockedOut", "LastLoginDate", "LastName", "LockoutEndDate", "ModifiedAt", "ModifiedBy", "Password", "PasswordExpirationDate", "PhoneNumber", "SecurityStamp", "TimeZone", "TwoFactorEnabled", "TwoFactorSecret", "Username")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21)
+RETURNING "UserId";
+2025-05-25 23:16:52.354 +05:45 [INF] Setting HTTP status code 200.
+2025-05-25 23:16:52.355 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-05-25 23:16:52.355 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/registration => Registration'
+2025-05-25 23:16:52.355 +05:45 [INF] HTTP POST /auth/registration responded 200 in 666.5861 ms
+2025-05-25 23:16:52.356 +05:45 [INF] Request finished HTTP/2 POST https://localhost:7010/auth/registration - 200 null application/json; charset=utf-8 667.4233ms
+2025-05-25 23:17:28.788 +05:45 [INF] Now listening on: https://localhost:7010
+2025-05-25 23:17:28.863 +05:45 [INF] Now listening on: http://localhost:5182
+2025-05-25 23:17:28.871 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-25 23:17:28.873 +05:45 [INF] Hosting environment: Development
+2025-05-25 23:17:28.873 +05:45 [INF] Content root path: E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API
+2025-05-25 23:17:30.005 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/ - null null
+2025-05-25 23:17:30.144 +05:45 [INF] HTTP GET / responded 404 in 31.9269 ms
+2025-05-25 23:17:30.169 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/ - 404 0 null 169.6452ms
+2025-05-25 23:17:30.189 +05:45 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7010/, Response status code: 404
+2025-05-25 23:17:38.006 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/ - null null
+2025-05-25 23:17:38.008 +05:45 [INF] HTTP GET /swagger/ responded 301 in 1.9285 ms
+2025-05-25 23:17:38.009 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/ - 301 0 null 3.3314ms
+2025-05-25 23:17:38.036 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.html - null null
+2025-05-25 23:17:38.200 +05:45 [INF] HTTP GET /swagger/index.html responded 200 in 161.3535 ms
+2025-05-25 23:17:38.201 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.html - 200 null text/html;charset=utf-8 164.2109ms
+2025-05-25 23:17:38.252 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.js - null null
+2025-05-25 23:17:38.255 +05:45 [INF] HTTP GET /swagger/index.js responded 200 in 2.2024 ms
+2025-05-25 23:17:38.256 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.js - 200 null application/javascript;charset=utf-8 3.1616ms
+2025-05-25 23:17:38.594 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/v1/swagger.json - null null
+2025-05-25 23:17:38.627 +05:45 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-05-25 23:17:38.844 +05:45 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 249.5663 ms
+2025-05-25 23:17:38.844 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 250.0959ms
+2025-05-25 23:18:39.398 +05:45 [INF] Request starting HTTP/2 POST https://localhost:7010/auth/registration - application/json 170
+2025-05-25 23:18:39.406 +05:45 [INF] CORS policy execution successful.
+2025-05-25 23:18:39.409 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/registration => Registration'
+2025-05-25 23:18:41.899 +05:45 [INF] Executed DbCommand (95ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-05-25 23:18:43.335 +05:45 [INF] Executed DbCommand (19ms) [Parameters=[@p0='?', @p1='?' (DbType = DateTime), @p2='?', @p3='?', @p4='?', @p5='?' (DbType = Int32), @p6='?', @p7='?' (DbType = Boolean), @p8='?' (DbType = Boolean), @p9='?' (DbType = DateTime), @p10='?', @p11='?' (DbType = DateTime), @p12='?' (DbType = DateTime), @p13='?', @p14='?', @p15='?' (DbType = DateTime), @p16='?', @p17='?', @p18='?', @p19='?' (DbType = Boolean), @p20='?', @p21='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("AvatarUrl", "CreatedAt", "CreatedBy", "Culture", "Email", "FailedLoginAttempts", "FirstName", "IsActive", "IsLockedOut", "LastLoginDate", "LastName", "LockoutEndDate", "ModifiedAt", "ModifiedBy", "Password", "PasswordExpirationDate", "PhoneNumber", "SecurityStamp", "TimeZone", "TwoFactorEnabled", "TwoFactorSecret", "Username")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21)
+RETURNING "UserId";
+2025-05-25 23:18:43.605 +05:45 [ERR] Error occurred while registering user test@gmail.com
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'PORTAL.SHARED.Utils.JsonResponse' to 'Microsoft.AspNetCore.Http.IResult'. An explicit conversion exists (are you missing a cast?)
+   at CallSite.Target(Closure, CallSite, Object)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at PORTAL.API.Routes.AuthRoutes.Registration(Register register, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 28
+2025-05-25 23:18:43.722 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/registration => Registration'
+2025-05-25 23:18:43.930 +05:45 [ERR] An unhandled exception occurred.
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'PORTAL.SHARED.Utils.JsonResponse' to 'Microsoft.AspNetCore.Http.IResult'. An explicit conversion exists (are you missing a cast?)
+   at CallSite.Target(Closure, CallSite, Object)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at PORTAL.API.Routes.AuthRoutes.Registration(Register register, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 28
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-05-25 23:18:43.932 +05:45 [ERR] An unhandled exception occurred.
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'PORTAL.SHARED.Utils.JsonResponse' to 'Microsoft.AspNetCore.Http.IResult'. An explicit conversion exists (are you missing a cast?)
+   at CallSite.Target(Closure, CallSite, Object)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at PORTAL.API.Routes.AuthRoutes.Registration(Register register, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 28
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-05-25 23:18:43.952 +05:45 [ERR] HTTP POST /auth/registration responded 500 in 4547.7102 ms
+2025-05-25 23:18:43.972 +05:45 [INF] Request finished HTTP/2 POST https://localhost:7010/auth/registration - 500 null application/json 4574.1612ms
+2025-05-25 23:19:10.222 +05:45 [INF] Request starting HTTP/2 POST https://localhost:7010/auth/registration - application/json 170
+2025-05-25 23:19:10.224 +05:45 [INF] CORS policy execution successful.
+2025-05-25 23:19:10.225 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/registration => Registration'
+2025-05-25 23:19:17.590 +05:45 [INF] Executed DbCommand (2ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-05-25 23:19:44.094 +05:45 [INF] Executed DbCommand (71ms) [Parameters=[@p0='?', @p1='?' (DbType = DateTime), @p2='?', @p3='?', @p4='?', @p5='?' (DbType = Int32), @p6='?', @p7='?' (DbType = Boolean), @p8='?' (DbType = Boolean), @p9='?' (DbType = DateTime), @p10='?', @p11='?' (DbType = DateTime), @p12='?' (DbType = DateTime), @p13='?', @p14='?', @p15='?' (DbType = DateTime), @p16='?', @p17='?', @p18='?', @p19='?' (DbType = Boolean), @p20='?', @p21='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("AvatarUrl", "CreatedAt", "CreatedBy", "Culture", "Email", "FailedLoginAttempts", "FirstName", "IsActive", "IsLockedOut", "LastLoginDate", "LastName", "LockoutEndDate", "ModifiedAt", "ModifiedBy", "Password", "PasswordExpirationDate", "PhoneNumber", "SecurityStamp", "TimeZone", "TwoFactorEnabled", "TwoFactorSecret", "Username")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21)
+RETURNING "UserId";
+2025-05-25 23:20:48.366 +05:45 [ERR] Error occurred while registering user test@gmail.com
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'PORTAL.SHARED.Utils.JsonResponse' to 'Microsoft.AspNetCore.Http.IResult'. An explicit conversion exists (are you missing a cast?)
+   at CallSite.Target(Closure, CallSite, Object)
+   at PORTAL.API.Routes.AuthRoutes.Registration(Register register, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 28
+2025-05-25 23:20:48.563 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/registration => Registration'
+2025-05-25 23:20:48.747 +05:45 [ERR] An unhandled exception occurred.
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'PORTAL.SHARED.Utils.JsonResponse' to 'Microsoft.AspNetCore.Http.IResult'. An explicit conversion exists (are you missing a cast?)
+   at CallSite.Target(Closure, CallSite, Object)
+   at PORTAL.API.Routes.AuthRoutes.Registration(Register register, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 28
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-05-25 23:20:48.748 +05:45 [ERR] An unhandled exception occurred.
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'PORTAL.SHARED.Utils.JsonResponse' to 'Microsoft.AspNetCore.Http.IResult'. An explicit conversion exists (are you missing a cast?)
+   at CallSite.Target(Closure, CallSite, Object)
+   at PORTAL.API.Routes.AuthRoutes.Registration(Register register, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 28
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-05-25 23:20:48.750 +05:45 [ERR] HTTP POST /auth/registration responded 500 in 98525.8876 ms
+2025-05-25 23:20:48.751 +05:45 [INF] Request finished HTTP/2 POST https://localhost:7010/auth/registration - 500 null application/json 98528.8121ms
+2025-05-25 23:23:49.309 +05:45 [INF] Now listening on: http://localhost:5182
+2025-05-25 23:23:49.446 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-25 23:23:49.446 +05:45 [INF] Hosting environment: Development
+2025-05-25 23:23:49.446 +05:45 [INF] Content root path: E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API
+2025-05-25 23:23:50.194 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/ - null null
+2025-05-25 23:23:50.322 +05:45 [INF] HTTP GET / responded 404 in 28.7496 ms
+2025-05-25 23:23:50.415 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/ - 404 0 null 223.8865ms
+2025-05-25 23:23:50.429 +05:45 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5182/, Response status code: 404
+2025-05-25 23:24:01.164 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/index.html - null null
+2025-05-25 23:24:01.308 +05:45 [INF] HTTP GET /swagger/index.html responded 200 in 139.9992 ms
+2025-05-25 23:24:01.314 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/index.html - 200 null text/html;charset=utf-8 146.3614ms
+2025-05-25 23:24:01.376 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/swagger-ui.css - null null
+2025-05-25 23:24:01.383 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/index.css - null null
+2025-05-25 23:24:01.395 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/swagger-ui-standalone-preset.js - null null
+2025-05-25 23:24:01.395 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/swagger-ui-bundle.js - null null
+2025-05-25 23:24:01.412 +05:45 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2025-05-25 23:24:01.412 +05:45 [INF] The file /index.css was not modified
+2025-05-25 23:24:01.412 +05:45 [INF] The file /swagger-ui-bundle.js was not modified
+2025-05-25 23:24:01.412 +05:45 [INF] The file /swagger-ui.css was not modified
+2025-05-25 23:24:01.414 +05:45 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 17.1702 ms
+2025-05-25 23:24:01.416 +05:45 [INF] HTTP GET /swagger/index.css responded 304 in 24.6905 ms
+2025-05-25 23:24:01.416 +05:45 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 10.5915 ms
+2025-05-25 23:24:01.416 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/index.css - 304 null text/css 33.0739ms
+2025-05-25 23:24:01.414 +05:45 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 31.7375 ms
+2025-05-25 23:24:01.417 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/swagger-ui-standalone-preset.js - 304 null text/javascript 21.6936ms
+2025-05-25 23:24:01.416 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/swagger-ui-bundle.js - 304 null text/javascript 21.0222ms
+2025-05-25 23:24:01.419 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/index.js - null null
+2025-05-25 23:24:01.417 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/swagger-ui.css - 304 null text/css 41.3535ms
+2025-05-25 23:24:01.423 +05:45 [INF] HTTP GET /swagger/index.js responded 200 in 3.4083 ms
+2025-05-25 23:24:01.424 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/index.js - 200 null application/javascript;charset=utf-8 4.3692ms
+2025-05-25 23:24:01.757 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/favicon-16x16.png - null null
+2025-05-25 23:24:01.767 +05:45 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2025-05-25 23:24:01.767 +05:45 [INF] HTTP GET /swagger/favicon-16x16.png responded 200 in 9.5855 ms
+2025-05-25 23:24:01.767 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/favicon-16x16.png - 499 665 image/png 10.3343ms
+2025-05-25 23:24:01.811 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/v1/swagger.json - null null
+2025-05-25 23:24:01.909 +05:45 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-05-25 23:24:02.284 +05:45 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 472.0117 ms
+2025-05-25 23:24:02.287 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 475.9512ms
+2025-05-25 23:24:12.508 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/registration - application/json 171
+2025-05-25 23:24:12.516 +05:45 [INF] CORS policy execution successful.
+2025-05-25 23:24:12.520 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/registration => Registration'
+2025-05-25 23:24:15.381 +05:45 [INF] Executed DbCommand (76ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-05-25 23:24:16.896 +05:45 [INF] Executed DbCommand (35ms) [Parameters=[@p0='?', @p1='?' (DbType = DateTime), @p2='?', @p3='?', @p4='?', @p5='?' (DbType = Int32), @p6='?', @p7='?' (DbType = Boolean), @p8='?' (DbType = Boolean), @p9='?' (DbType = DateTime), @p10='?', @p11='?' (DbType = DateTime), @p12='?' (DbType = DateTime), @p13='?', @p14='?', @p15='?' (DbType = DateTime), @p16='?', @p17='?', @p18='?', @p19='?' (DbType = Boolean), @p20='?', @p21='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("AvatarUrl", "CreatedAt", "CreatedBy", "Culture", "Email", "FailedLoginAttempts", "FirstName", "IsActive", "IsLockedOut", "LastLoginDate", "LastName", "LockoutEndDate", "ModifiedAt", "ModifiedBy", "Password", "PasswordExpirationDate", "PhoneNumber", "SecurityStamp", "TimeZone", "TwoFactorEnabled", "TwoFactorSecret", "Username")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21)
+RETURNING "UserId";
+2025-05-25 23:24:16.999 +05:45 [ERR] Error occurred while registering user test@gmail.com
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: The best overloaded method match for 'Microsoft.AspNetCore.Http.Results.CreatedAtRoute(string, object, object)' has some invalid arguments
+   at CallSite.Target(Closure, CallSite, Type, Object)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute2[T0,T1,TRet](CallSite site, T0 arg0, T1 arg1)
+   at PORTAL.API.Routes.AuthRoutes.Registration(Register register, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 29
+2025-05-25 23:24:17.043 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/registration => Registration'
+2025-05-25 23:24:17.044 +05:45 [ERR] An unhandled exception occurred.
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: The best overloaded method match for 'Microsoft.AspNetCore.Http.Results.CreatedAtRoute(string, object, object)' has some invalid arguments
+   at CallSite.Target(Closure, CallSite, Type, Object)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute2[T0,T1,TRet](CallSite site, T0 arg0, T1 arg1)
+   at PORTAL.API.Routes.AuthRoutes.Registration(Register register, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 29
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-05-25 23:24:17.051 +05:45 [ERR] An unhandled exception occurred.
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: The best overloaded method match for 'Microsoft.AspNetCore.Http.Results.CreatedAtRoute(string, object, object)' has some invalid arguments
+   at CallSite.Target(Closure, CallSite, Type, Object)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute2[T0,T1,TRet](CallSite site, T0 arg0, T1 arg1)
+   at PORTAL.API.Routes.AuthRoutes.Registration(Register register, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 29
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-05-25 23:24:17.070 +05:45 [ERR] HTTP POST /auth/registration responded 500 in 4555.7155 ms
+2025-05-25 23:24:17.087 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/registration - 500 null application/json 4578.9699ms

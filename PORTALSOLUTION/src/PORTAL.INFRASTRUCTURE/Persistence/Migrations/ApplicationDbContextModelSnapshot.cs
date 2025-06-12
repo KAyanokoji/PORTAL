@@ -24,11 +24,11 @@ namespace PORTAL.INFRASTRUCTURE.Persistence.Migrations
 
             modelBuilder.Entity("PORTAL.DOMAIN.Entities.Permission", b =>
                 {
-                    b.Property<int>("PermissionId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("PermissionId"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("timestamp with time zone");
@@ -38,10 +38,12 @@ namespace PORTAL.INFRASTRUCTURE.Persistence.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<bool>("IsActive")
+                        .HasColumnType("boolean");
+
+                    b.Property<bool>("IsDeleted")
                         .HasColumnType("boolean");
 
                     b.Property<DateTime?>("ModifiedAt")
@@ -50,22 +52,25 @@ namespace PORTAL.INFRASTRUCTURE.Persistence.Migrations
                     b.Property<string>("ModifiedBy")
                         .HasColumnType("text");
 
+                    b.Property<int>("PermissionId")
+                        .HasColumnType("integer");
+
                     b.Property<string>("PermissionName")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.HasKey("PermissionId");
+                    b.HasKey("Id");
 
                     b.ToTable("Permissions");
                 });
 
             modelBuilder.Entity("PORTAL.DOMAIN.Entities.Role", b =>
                 {
-                    b.Property<int>("RoleId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("RoleId"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("timestamp with time zone");
@@ -75,10 +80,12 @@ namespace PORTAL.INFRASTRUCTURE.Persistence.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<bool>("IsActive")
+                        .HasColumnType("boolean");
+
+                    b.Property<bool>("IsDeleted")
                         .HasColumnType("boolean");
 
                     b.Property<DateTime?>("ModifiedAt")
@@ -87,11 +94,14 @@ namespace PORTAL.INFRASTRUCTURE.Persistence.Migrations
                     b.Property<string>("ModifiedBy")
                         .HasColumnType("text");
 
+                    b.Property<int>("RoleId")
+                        .HasColumnType("integer");
+
                     b.Property<string>("RoleName")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.HasKey("RoleId");
+                    b.HasKey("Id");
 
                     b.ToTable("Roles");
                 });
@@ -113,11 +123,11 @@ namespace PORTAL.INFRASTRUCTURE.Persistence.Migrations
 
             modelBuilder.Entity("PORTAL.DOMAIN.Entities.User", b =>
                 {
-                    b.Property<int>("UserId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("UserId"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<string>("AvatarUrl")
                         .HasColumnType("text");
@@ -143,6 +153,9 @@ namespace PORTAL.INFRASTRUCTURE.Persistence.Migrations
                         .HasColumnType("text");
 
                     b.Property<bool>("IsActive")
+                        .HasColumnType("boolean");
+
+                    b.Property<bool>("IsDeleted")
                         .HasColumnType("boolean");
 
                     b.Property<bool>("IsLockedOut")
@@ -185,11 +198,14 @@ namespace PORTAL.INFRASTRUCTURE.Persistence.Migrations
                     b.Property<string>("TwoFactorSecret")
                         .HasColumnType("text");
 
+                    b.Property<int>("UserId")
+                        .HasColumnType("integer");
+
                     b.Property<string>("Username")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.HasKey("UserId");
+                    b.HasKey("Id");
 
                     b.ToTable("Users");
                 });

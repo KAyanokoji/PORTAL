@@ -27,14 +27,15 @@ public class AuthRepo(ApplicationDbContext context, ILogger<User> logger) : IAut
                 { nameof(username), value }
             });
 
-        try { 
-         var user = await _context.Users
-            .AsNoTracking()
-            .FirstOrDefaultAsync(x => x.Email == username);
+        try
+        {
+            var user = await _context.Users
+               .AsNoTracking()
+               .FirstOrDefaultAsync(x => x.Username == username);
 
             return user;
         }
-        catch(Exception ex)
+        catch (Exception ex)
         {
             _logger.LogError(ex, "Error retrieving user {Username}", username);
             throw;
@@ -56,4 +57,19 @@ public class AuthRepo(ApplicationDbContext context, ILogger<User> logger) : IAut
         }
     }
 
+    public async Task<User> GetUSerByEmail(string email)
+    {
+        try
+        {
+            var user = await _context.Users
+                            .AsNoTracking()
+                            .FirstOrDefaultAsync(x => x.Email == email);
+            return user;
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error retrieving user {Email}", email);
+            throw;
+        }
+    }
 }

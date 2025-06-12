@@ -1,0 +1,196 @@
+2025-04-19 00:19:25.552 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-19 00:19:25.854 +05:45 [INF] CORS policy execution successful.
+2025-04-19 00:19:25.859 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 8.9978 ms
+2025-04-19 00:19:25.864 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 341.5511ms
+2025-04-19 00:19:25.874 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-19 00:19:25.890 +05:45 [INF] CORS policy execution successful.
+2025-04-19 00:19:25.900 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-19 00:19:26.055 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-19 00:19:26.066 +05:45 [INF] CORS policy execution successful.
+2025-04-19 00:19:26.069 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-19 00:19:26.954 +05:45 [INF] Executed DbCommand (224ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-19 00:19:26.954 +05:45 [INF] Executed DbCommand (224ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-19 00:19:27.574 +05:45 [INF] Setting HTTP status code 200.
+2025-04-19 00:19:27.577 +05:45 [INF] Setting HTTP status code 200.
+2025-04-19 00:19:27.582 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-04-19 00:19:27.582 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-04-19 00:19:27.603 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-19 00:19:27.605 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-19 00:19:27.607 +05:45 [INF] HTTP POST /auth/login responded 200 in 1543.4520 ms
+2025-04-19 00:19:27.611 +05:45 [INF] HTTP POST /auth/login responded 200 in 1721.5696 ms
+2025-04-19 00:19:27.618 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 200 null application/json; charset=utf-8 1592.5691ms
+2025-04-19 00:19:27.621 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 200 null application/json; charset=utf-8 1746.8947ms
+2025-04-19 01:20:01.982 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-19 01:20:02.025 +05:45 [INF] CORS policy execution successful.
+2025-04-19 01:20:02.031 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 7.7558 ms
+2025-04-19 01:20:02.038 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 64.2279ms
+2025-04-19 01:20:02.047 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-19 01:20:02.058 +05:45 [INF] CORS policy execution successful.
+2025-04-19 01:20:02.063 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-19 01:20:02.403 +05:45 [INF] Executed DbCommand (131ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-19 01:20:02.859 +05:45 [INF] Setting HTTP status code 200.
+2025-04-19 01:20:02.863 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-04-19 01:20:02.866 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-19 01:20:02.871 +05:45 [INF] HTTP POST /auth/login responded 200 in 812.9512 ms
+2025-04-19 01:20:02.880 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 200 null application/json; charset=utf-8 833.2272ms
+2025-04-19 11:36:07.690 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-19 11:36:09.217 +05:45 [INF] CORS policy execution successful.
+2025-04-19 11:36:09.223 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 6.8553 ms
+2025-04-19 11:36:09.232 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 1553.3602ms
+2025-04-19 11:36:09.244 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-19 11:36:09.257 +05:45 [INF] CORS policy execution successful.
+2025-04-19 11:36:09.270 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-19 11:36:09.649 +05:45 [INF] Executed DbCommand (108ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-19 11:36:10.122 +05:45 [INF] Setting HTTP status code 200.
+2025-04-19 11:36:10.127 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-04-19 11:36:10.131 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-19 11:36:10.135 +05:45 [INF] HTTP POST /auth/login responded 200 in 877.5871 ms
+2025-04-19 11:36:10.141 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 200 null application/json; charset=utf-8 897.4046ms
+2025-04-19 16:55:39.971 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-19 16:55:40.116 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-19 16:55:40.128 +05:45 [INF] CORS policy execution successful.
+2025-04-19 16:55:40.129 +05:45 [INF] CORS policy execution successful.
+2025-04-19 16:55:40.160 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 56.2952 ms
+2025-04-19 16:55:40.160 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 23.7373 ms
+2025-04-19 16:55:40.193 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 75.0844ms
+2025-04-19 16:55:40.213 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-19 16:55:40.244 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 245.6935ms
+2025-04-19 16:55:40.259 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-19 16:55:40.267 +05:45 [INF] CORS policy execution successful.
+2025-04-19 16:55:40.268 +05:45 [INF] CORS policy execution successful.
+2025-04-19 16:55:40.291 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-19 16:55:40.291 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-19 16:55:41.245 +05:45 [INF] Executed DbCommand (127ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-19 16:55:41.245 +05:45 [INF] Executed DbCommand (129ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-19 16:55:41.851 +05:45 [INF] Setting HTTP status code 200.
+2025-04-19 16:55:41.851 +05:45 [INF] Setting HTTP status code 200.
+2025-04-19 16:55:41.859 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-04-19 16:55:41.858 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-04-19 16:55:41.876 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-19 16:55:41.877 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-19 16:55:41.879 +05:45 [INF] HTTP POST /auth/login responded 200 in 1611.8398 ms
+2025-04-19 16:55:41.881 +05:45 [INF] HTTP POST /auth/login responded 200 in 1613.7119 ms
+2025-04-19 16:55:41.888 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 200 null application/json; charset=utf-8 1626.7945ms
+2025-04-19 16:55:41.889 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 200 null application/json; charset=utf-8 1679.7257ms
+2025-04-19 18:18:30.014 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-19 18:18:30.125 +05:45 [INF] CORS policy execution successful.
+2025-04-19 18:18:30.139 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 14.1066 ms
+2025-04-19 18:18:30.155 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 156.3206ms
+2025-04-19 18:18:30.175 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-19 18:18:30.193 +05:45 [INF] CORS policy execution successful.
+2025-04-19 18:18:30.205 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-19 18:18:30.907 +05:45 [INF] Executed DbCommand (132ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-19 18:18:31.396 +05:45 [INF] Setting HTTP status code 200.
+2025-04-19 18:18:31.403 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-04-19 18:18:31.414 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-19 18:18:31.416 +05:45 [INF] HTTP POST /auth/login responded 200 in 1223.1811 ms
+2025-04-19 18:18:31.424 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 200 null application/json; charset=utf-8 1248.7933ms
+2025-04-19 21:44:25.305 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-19 21:44:25.305 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-19 21:44:25.444 +05:45 [INF] CORS policy execution successful.
+2025-04-19 21:44:25.444 +05:45 [INF] CORS policy execution successful.
+2025-04-19 21:44:25.513 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 77.1966 ms
+2025-04-19 21:44:25.513 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 78.7898 ms
+2025-04-19 21:44:25.696 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 470.5678ms
+2025-04-19 21:44:25.697 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 470.6145ms
+2025-04-19 21:44:25.732 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-19 21:44:25.732 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-19 21:44:25.760 +05:45 [INF] CORS policy execution successful.
+2025-04-19 21:44:25.762 +05:45 [INF] CORS policy execution successful.
+2025-04-19 21:44:25.784 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-19 21:44:25.784 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-19 21:44:26.818 +05:45 [INF] Executed DbCommand (123ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-19 21:44:26.818 +05:45 [INF] Executed DbCommand (124ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-19 21:44:27.328 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-19 21:44:27.397 +05:45 [INF] CORS policy execution successful.
+2025-04-19 21:44:27.402 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-19 21:44:27.423 +05:45 [INF] Executed DbCommand (8ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-19 21:44:27.425 +05:45 [INF] Setting HTTP status code 200.
+2025-04-19 21:44:27.425 +05:45 [INF] Setting HTTP status code 200.
+2025-04-19 21:44:27.467 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-04-19 21:44:27.467 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-04-19 21:44:27.481 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-19 21:44:27.482 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-19 21:44:27.484 +05:45 [INF] HTTP POST /auth/login responded 200 in 1722.2503 ms
+2025-04-19 21:44:27.487 +05:45 [INF] HTTP POST /auth/login responded 200 in 1726.4285 ms
+2025-04-19 21:44:27.496 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 200 null application/json; charset=utf-8 1764.1163ms
+2025-04-19 21:44:27.496 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 200 null application/json; charset=utf-8 1764.1418ms
+2025-04-19 21:44:27.875 +05:45 [INF] Setting HTTP status code 200.
+2025-04-19 21:44:27.877 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-04-19 21:44:27.881 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-19 21:44:27.883 +05:45 [INF] HTTP POST /auth/login responded 200 in 486.6960 ms
+2025-04-19 21:44:27.887 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 200 null application/json; charset=utf-8 559.3014ms
+2025-04-19 22:58:57.499 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-19 22:58:57.499 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-19 22:58:57.642 +05:45 [INF] CORS policy execution successful.
+2025-04-19 22:58:57.642 +05:45 [INF] CORS policy execution successful.
+2025-04-19 22:58:57.710 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 75.4886 ms
+2025-04-19 22:58:57.710 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 74.5391 ms
+2025-04-19 22:58:57.719 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 233.6263ms
+2025-04-19 22:58:57.722 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 236.3022ms
+2025-04-19 22:58:57.758 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-19 22:58:57.759 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-19 22:58:57.776 +05:45 [INF] CORS policy execution successful.
+2025-04-19 22:58:57.777 +05:45 [INF] CORS policy execution successful.
+2025-04-19 22:58:57.796 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-19 22:58:57.796 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-19 22:58:58.439 +05:45 [INF] Executed DbCommand (120ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-19 22:58:58.439 +05:45 [INF] Executed DbCommand (120ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-19 22:58:59.091 +05:45 [INF] Setting HTTP status code 200.
+2025-04-19 22:58:59.091 +05:45 [INF] Setting HTTP status code 200.
+2025-04-19 22:58:59.097 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-04-19 22:58:59.100 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-04-19 22:58:59.110 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-19 22:58:59.114 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-19 22:58:59.117 +05:45 [INF] HTTP POST /auth/login responded 200 in 1340.8114 ms
+2025-04-19 22:58:59.121 +05:45 [INF] HTTP POST /auth/login responded 200 in 1343.8258 ms
+2025-04-19 22:58:59.130 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 200 null application/json; charset=utf-8 1370.5792ms
+2025-04-19 22:58:59.134 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 200 null application/json; charset=utf-8 1392.6289ms

@@ -36,4 +36,6 @@ app.UseMiddleware<ExceptionMiddleware>();
 
 //app.MapGet("/", () => "Hello World!");
 app.RegisterAuthRoutes();
+app.RegisterPermissionRoutes();
+app.RegisterRoleRoutes();
 app.Run();

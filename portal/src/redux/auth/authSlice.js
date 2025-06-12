@@ -27,9 +27,13 @@ const initialState = {
         state.error = null;
       },
       loginSuccess: (state, action) => {
+        console.log("SUCCESs",action.payload)
+        if (action.payload.IsToken) {
+          localStorage.setItem('authToken', action.payload.Token);
+        }
         state.isLoading = false;
-        state.isLoggedIn = true;
-        state.user = action.payload;
+        state.isLoggedIn = action.payload.isSuccess;
+        state.message = action.payload.Message;
         state.error = null;
       },
       loginFailure: (state, action) => {
@@ -43,6 +47,18 @@ const initialState = {
         state.user = null;
         state.email = '';
         state.password = '';
+      },
+      // For Remove user
+      setRemoveUser: (state) => {
+        state.isLoggedIn = false;
+        state.user = null;
+        state.email = '';
+        state.password = '';
+      },
+      //setUser:
+      setUser: (state, action) => {
+        state.isLoggedIn = true;
+        state.user = action.payload;
       }
     }
   });
@@ -54,7 +70,9 @@ const initialState = {
     loginUser, 
     loginSuccess, 
     loginFailure, 
-    logout 
+    logout,
+    setUser,
+    setRemoveUser,
   } = authSlice.actions;
 
 

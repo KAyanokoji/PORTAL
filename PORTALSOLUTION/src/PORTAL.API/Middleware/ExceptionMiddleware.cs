@@ -23,7 +23,6 @@ namespace PORTAL.API.Middleware
             catch (Exception ex)
             {
                 _logger.LogError(ex, "An unhandled exception occurred.");
-                _logger.LogError(ex, "An unhandled exception occurred.");
                 await HandleExceptionAsync(context, ex);
             }
         }

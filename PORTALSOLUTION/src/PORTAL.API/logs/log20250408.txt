@@ -1,0 +1,953 @@
+2025-04-08 19:12:59.860 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-08 19:13:00.573 +05:45 [INF] CORS policy execution successful.
+2025-04-08 19:13:00.591 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 26.2167 ms
+2025-04-08 19:13:00.605 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 758.1917ms
+2025-04-08 19:13:00.623 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-08 19:13:00.665 +05:45 [INF] CORS policy execution successful.
+2025-04-08 19:13:00.680 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 19:13:01.492 +05:45 [INF] Executed DbCommand (158ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-08 19:13:02.949 +05:45 [ERR] Error occurred while registering user guragainsaroj38@gmail.com
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+2025-04-08 19:13:03.232 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 19:13:03.412 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 19:13:03.436 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 19:13:03.457 +05:45 [INF] HTTP POST /auth/login responded 401 in 2793.0942 ms
+2025-04-08 19:13:03.460 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 401 null application/json 2838.3758ms
+2025-04-08 19:13:16.762 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-08 19:13:16.768 +05:45 [INF] CORS policy execution successful.
+2025-04-08 19:13:16.770 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 1.9044 ms
+2025-04-08 19:13:16.773 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 10.9391ms
+2025-04-08 19:13:16.781 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-08 19:13:16.786 +05:45 [INF] CORS policy execution successful.
+2025-04-08 19:13:16.788 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 19:13:16.801 +05:45 [INF] Executed DbCommand (4ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-08 19:13:17.375 +05:45 [ERR] Error occurred while registering user guragainsaroj38@gmail.com
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+2025-04-08 19:13:17.450 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 19:13:17.602 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 19:13:17.618 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 19:13:17.636 +05:45 [INF] HTTP POST /auth/login responded 401 in 850.0463 ms
+2025-04-08 19:13:17.640 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 401 null application/json 858.7448ms
+2025-04-08 20:19:08.767 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-08 20:19:09.000 +05:45 [INF] CORS policy execution successful.
+2025-04-08 20:19:09.050 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 63.4227 ms
+2025-04-08 20:19:09.085 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 347.9186ms
+2025-04-08 20:19:09.106 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-08 20:19:09.137 +05:45 [INF] CORS policy execution successful.
+2025-04-08 20:19:09.186 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 20:19:10.249 +05:45 [INF] Executed DbCommand (112ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-08 20:19:11.268 +05:45 [ERR] Error occurred while registering user guragainsaroj38@gmail.com
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+2025-04-08 20:19:11.487 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 20:19:11.819 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 20:19:11.884 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 20:19:11.938 +05:45 [INF] HTTP POST /auth/login responded 401 in 2800.7739 ms
+2025-04-08 20:19:11.947 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 401 null application/json 2841.8409ms
+2025-04-08 20:22:00.434 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-08 20:22:00.442 +05:45 [INF] CORS policy execution successful.
+2025-04-08 20:22:00.446 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 2.2249 ms
+2025-04-08 20:22:00.450 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 16.7955ms
+2025-04-08 20:22:00.456 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-08 20:22:00.461 +05:45 [INF] CORS policy execution successful.
+2025-04-08 20:22:00.463 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 20:22:00.475 +05:45 [INF] Executed DbCommand (6ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-08 20:22:01.042 +05:45 [ERR] Error occurred while registering user guragainsaroj38@gmail.com
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+2025-04-08 20:22:01.118 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 20:22:01.251 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 20:22:01.260 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 20:22:01.269 +05:45 [INF] HTTP POST /auth/login responded 401 in 807.7559 ms
+2025-04-08 20:22:01.272 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 401 null application/json 815.5056ms
+2025-04-08 20:22:21.622 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-08 20:22:21.636 +05:45 [INF] CORS policy execution successful.
+2025-04-08 20:22:21.640 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 3.9856 ms
+2025-04-08 20:22:21.644 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 22.1035ms
+2025-04-08 20:22:21.652 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-08 20:22:21.657 +05:45 [INF] CORS policy execution successful.
+2025-04-08 20:22:21.659 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 20:22:21.665 +05:45 [INF] Executed DbCommand (3ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-08 20:22:22.211 +05:45 [ERR] Error occurred while registering user guragainsaroj38@gmail.com
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+2025-04-08 20:22:22.278 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 20:22:22.429 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 20:22:22.438 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 20:22:22.445 +05:45 [INF] HTTP POST /auth/login responded 401 in 787.7820 ms
+2025-04-08 20:22:22.449 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 401 null application/json 796.8145ms
+2025-04-08 20:22:44.270 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-08 20:22:44.287 +05:45 [INF] CORS policy execution successful.
+2025-04-08 20:22:44.289 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 1.6000 ms
+2025-04-08 20:22:44.292 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 21.6186ms
+2025-04-08 20:22:44.298 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-08 20:22:44.303 +05:45 [INF] CORS policy execution successful.
+2025-04-08 20:22:44.304 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 20:22:44.318 +05:45 [INF] Executed DbCommand (9ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-08 20:22:44.865 +05:45 [ERR] Error occurred while registering user guragainsaroj38@gmail.com
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+2025-04-08 20:22:44.935 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 20:22:45.066 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 20:22:45.074 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 20:22:45.083 +05:45 [INF] HTTP POST /auth/login responded 401 in 780.1343 ms
+2025-04-08 20:22:45.086 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 401 null application/json 788.4103ms
+2025-04-08 20:23:07.768 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-08 20:23:07.774 +05:45 [INF] CORS policy execution successful.
+2025-04-08 20:23:07.776 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 1.7208 ms
+2025-04-08 20:23:07.780 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 37.503ms
+2025-04-08 20:23:07.788 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-08 20:23:07.793 +05:45 [INF] CORS policy execution successful.
+2025-04-08 20:23:07.795 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 20:23:07.806 +05:45 [INF] Executed DbCommand (1ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-08 20:23:08.393 +05:45 [ERR] Error occurred while registering user guragainsaroj38@gmail.com
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+2025-04-08 20:23:08.460 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 20:23:08.603 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 20:23:08.612 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 20:23:08.619 +05:45 [INF] HTTP POST /auth/login responded 401 in 826.3775 ms
+2025-04-08 20:23:08.623 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 401 null application/json 835.4228ms
+2025-04-08 20:29:57.831 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-08 20:29:57.842 +05:45 [INF] CORS policy execution successful.
+2025-04-08 20:29:57.844 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 3.9277 ms
+2025-04-08 20:29:57.848 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 17.4888ms
+2025-04-08 20:29:57.852 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-08 20:29:57.856 +05:45 [INF] CORS policy execution successful.
+2025-04-08 20:29:57.858 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 20:29:58.068 +05:45 [INF] Executed DbCommand (78ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-08 20:29:58.654 +05:45 [ERR] Error occurred while registering user guragainsaroj38@gmail.com
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+2025-04-08 20:29:58.763 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 20:29:58.940 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 20:29:58.949 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 20:29:58.959 +05:45 [INF] HTTP POST /auth/login responded 401 in 1102.4320 ms
+2025-04-08 20:29:58.962 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 401 null application/json 1110.0294ms
+2025-04-08 20:30:04.035 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-08 20:30:04.053 +05:45 [INF] CORS policy execution successful.
+2025-04-08 20:30:04.056 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 2.5725 ms
+2025-04-08 20:30:04.062 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 26.2852ms
+2025-04-08 20:30:04.067 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-08 20:30:04.072 +05:45 [INF] CORS policy execution successful.
+2025-04-08 20:30:04.073 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 20:30:04.083 +05:45 [INF] Executed DbCommand (5ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-08 20:30:04.626 +05:45 [ERR] Error occurred while registering user guragainsaroj38@gmail.com
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+2025-04-08 20:30:04.697 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 20:30:04.844 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 20:30:04.852 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 20:30:04.862 +05:45 [INF] HTTP POST /auth/login responded 401 in 790.2698 ms
+2025-04-08 20:30:04.865 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 401 null application/json 798.2744ms
+2025-04-08 20:30:43.651 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-08 20:30:43.656 +05:45 [INF] CORS policy execution successful.
+2025-04-08 20:30:43.658 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 2.0269 ms
+2025-04-08 20:30:43.661 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 12.0444ms
+2025-04-08 20:30:43.666 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-08 20:30:43.671 +05:45 [INF] CORS policy execution successful.
+2025-04-08 20:30:43.673 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 20:30:43.678 +05:45 [INF] Executed DbCommand (1ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-08 20:30:44.221 +05:45 [ERR] Error occurred while registering user guragainsaroj38@gmail.com
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+2025-04-08 20:30:44.285 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 20:30:44.442 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 20:30:44.455 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 20:30:44.466 +05:45 [INF] HTTP POST /auth/login responded 401 in 795.0642 ms
+2025-04-08 20:30:44.469 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 401 null application/json 803.6977ms
+2025-04-08 20:31:21.945 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-08 20:31:21.951 +05:45 [INF] CORS policy execution successful.
+2025-04-08 20:31:21.952 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 1.3183 ms
+2025-04-08 20:31:21.956 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 11.251ms
+2025-04-08 20:31:21.962 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-08 20:31:21.966 +05:45 [INF] CORS policy execution successful.
+2025-04-08 20:31:21.968 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 20:31:22.007 +05:45 [INF] Executed DbCommand (31ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-08 20:31:22.638 +05:45 [ERR] Error occurred while registering user guragainsaroj38@gmail.com
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+2025-04-08 20:31:22.699 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 20:31:22.821 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 20:31:22.830 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 20:31:22.837 +05:45 [INF] HTTP POST /auth/login responded 401 in 870.4935 ms
+2025-04-08 20:31:22.840 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 401 null application/json 877.5963ms
+2025-04-08 20:34:08.590 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-08 20:34:08.599 +05:45 [INF] CORS policy execution successful.
+2025-04-08 20:34:08.604 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 4.7426 ms
+2025-04-08 20:34:08.608 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 18.6361ms
+2025-04-08 20:34:08.617 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-08 20:34:08.620 +05:45 [INF] CORS policy execution successful.
+2025-04-08 20:34:08.621 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 20:34:08.628 +05:45 [INF] Executed DbCommand (1ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-08 20:34:09.181 +05:45 [ERR] Error occurred while registering user guragainsaroj38@gmail.com
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+2025-04-08 20:34:09.252 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 20:34:09.371 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 20:34:09.379 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 20:34:09.387 +05:45 [INF] HTTP POST /auth/login responded 401 in 766.6163 ms
+2025-04-08 20:34:09.390 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 401 null application/json 773.0956ms
+2025-04-08 20:35:15.542 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-08 20:35:15.554 +05:45 [INF] CORS policy execution successful.
+2025-04-08 20:35:15.555 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 1.4621 ms
+2025-04-08 20:35:15.559 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 16.5761ms
+2025-04-08 20:35:15.565 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-08 20:35:15.570 +05:45 [INF] CORS policy execution successful.
+2025-04-08 20:35:15.574 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 20:35:15.777 +05:45 [INF] Executed DbCommand (5ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-08 20:35:16.318 +05:45 [ERR] Error occurred while registering user guragainsaroj38@gmail.com
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+2025-04-08 20:35:16.382 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 20:35:16.502 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 20:35:16.509 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 20:35:16.516 +05:45 [INF] HTTP POST /auth/login responded 401 in 946.1759 ms
+2025-04-08 20:35:16.519 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 401 null application/json 953.9273ms
+2025-04-08 20:39:11.692 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-08 20:39:11.698 +05:45 [INF] CORS policy execution successful.
+2025-04-08 20:39:11.699 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 1.3575 ms
+2025-04-08 20:39:11.702 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 12.9364ms
+2025-04-08 20:39:11.707 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-08 20:39:11.713 +05:45 [INF] CORS policy execution successful.
+2025-04-08 20:39:11.714 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 20:39:11.729 +05:45 [INF] Executed DbCommand (10ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-08 20:39:12.299 +05:45 [ERR] Error occurred while registering user guragainsaroj38@gmail.com
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+2025-04-08 20:39:12.368 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 20:39:12.507 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 20:39:12.515 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 20:39:12.523 +05:45 [INF] HTTP POST /auth/login responded 401 in 810.6936 ms
+2025-04-08 20:39:12.527 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 401 null application/json 819.5014ms
+2025-04-08 20:45:16.198 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-08 20:45:16.203 +05:45 [INF] CORS policy execution successful.
+2025-04-08 20:45:16.204 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 1.5906 ms
+2025-04-08 20:45:16.214 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 16.2261ms
+2025-04-08 20:45:16.221 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-08 20:45:16.225 +05:45 [INF] CORS policy execution successful.
+2025-04-08 20:45:16.227 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 20:45:16.470 +05:45 [INF] Executed DbCommand (117ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-08 20:45:17.024 +05:45 [ERR] Error occurred while registering user guragainsaroj38@gmail.com
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+2025-04-08 20:45:17.103 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 20:45:17.228 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 20:45:17.238 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 20:45:17.247 +05:45 [INF] HTTP POST /auth/login responded 401 in 1022.7745 ms
+2025-04-08 20:45:17.253 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 401 null application/json 1032.1387ms
+2025-04-08 20:46:16.533 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-08 20:46:16.537 +05:45 [INF] CORS policy execution successful.
+2025-04-08 20:46:16.538 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 1.6984 ms
+2025-04-08 20:46:16.541 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 38.5537ms
+2025-04-08 20:46:16.547 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-08 20:46:16.552 +05:45 [INF] CORS policy execution successful.
+2025-04-08 20:46:16.553 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 20:46:16.566 +05:45 [INF] Executed DbCommand (10ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-08 20:46:17.112 +05:45 [ERR] Error occurred while registering user guragainsaroj38@gmail.com
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+2025-04-08 20:46:17.178 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 20:46:17.320 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 20:46:17.330 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 20:46:17.338 +05:45 [INF] HTTP POST /auth/login responded 401 in 786.9383 ms
+2025-04-08 20:46:17.349 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 401 null application/json 801.8641ms
+2025-04-08 20:47:19.912 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-08 20:47:19.920 +05:45 [INF] CORS policy execution successful.
+2025-04-08 20:47:19.921 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 1.7569 ms
+2025-04-08 20:47:19.925 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 17.0298ms
+2025-04-08 20:47:19.931 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-08 20:47:19.936 +05:45 [INF] CORS policy execution successful.
+2025-04-08 20:47:19.937 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 20:47:19.944 +05:45 [INF] Executed DbCommand (3ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-08 20:47:20.489 +05:45 [ERR] Error occurred while registering user guragainsaroj38@gmail.com
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+2025-04-08 20:47:20.557 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 20:47:20.679 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 20:47:20.687 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 20:47:20.695 +05:45 [INF] HTTP POST /auth/login responded 401 in 758.8492 ms
+2025-04-08 20:47:20.698 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 401 null application/json 767.7192ms
+2025-04-08 20:48:14.788 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-08 20:48:14.799 +05:45 [INF] CORS policy execution successful.
+2025-04-08 20:48:14.800 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 1.2043 ms
+2025-04-08 20:48:14.802 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 39.6357ms
+2025-04-08 20:48:14.809 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-08 20:48:14.812 +05:45 [INF] CORS policy execution successful.
+2025-04-08 20:48:14.814 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 20:48:14.834 +05:45 [INF] Executed DbCommand (1ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-08 20:48:15.425 +05:45 [ERR] Error occurred while registering user guragainsaroj38@gmail.com
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+2025-04-08 20:48:15.496 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 20:48:15.623 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 20:48:15.631 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 20:48:15.642 +05:45 [INF] HTTP POST /auth/login responded 401 in 829.3263 ms
+2025-04-08 20:48:15.645 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 401 null application/json 836.1436ms
+2025-04-08 20:51:09.297 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-08 20:51:09.304 +05:45 [INF] CORS policy execution successful.
+2025-04-08 20:51:09.307 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 1.6560 ms
+2025-04-08 20:51:09.309 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 11.9888ms
+2025-04-08 20:51:09.316 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-08 20:51:09.320 +05:45 [INF] CORS policy execution successful.
+2025-04-08 20:51:09.322 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 20:51:09.443 +05:45 [INF] Executed DbCommand (6ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-08 20:51:10.031 +05:45 [ERR] Error occurred while registering user guragainsaroj38@gmail.com
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+2025-04-08 20:51:10.119 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 20:51:10.264 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 20:51:10.273 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 20:51:10.286 +05:45 [INF] HTTP POST /auth/login responded 401 in 966.2158 ms
+2025-04-08 20:51:10.290 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 401 null application/json 973.8009ms
+2025-04-08 21:30:06.906 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-08 21:30:07.000 +05:45 [INF] CORS policy execution successful.
+2025-04-08 21:30:07.008 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 15.5899 ms
+2025-04-08 21:30:07.018 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 121.2911ms
+2025-04-08 21:30:07.026 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-08 21:30:07.033 +05:45 [INF] CORS policy execution successful.
+2025-04-08 21:30:07.047 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 21:30:07.742 +05:45 [INF] Executed DbCommand (101ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-08 21:30:09.068 +05:45 [ERR] Error occurred while registering user guragainsaroj38@gmail.com
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+2025-04-08 21:30:09.216 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 21:30:09.368 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 21:30:09.394 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 21:30:09.418 +05:45 [INF] HTTP POST /auth/login responded 401 in 2385.9420 ms
+2025-04-08 21:30:09.424 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 401 null application/json 2397.9334ms
+2025-04-08 21:30:43.872 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-08 21:30:43.884 +05:45 [INF] CORS policy execution successful.
+2025-04-08 21:30:43.885 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 1.1449 ms
+2025-04-08 21:30:43.891 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 18.6922ms
+2025-04-08 21:30:43.896 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-08 21:30:43.905 +05:45 [INF] CORS policy execution successful.
+2025-04-08 21:30:43.907 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 21:30:43.934 +05:45 [INF] Executed DbCommand (22ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-08 21:30:44.487 +05:45 [INF] Setting HTTP status code 200.
+2025-04-08 21:30:44.498 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-04-08 21:30:44.509 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 21:30:44.511 +05:45 [INF] HTTP POST /auth/login responded 200 in 606.0099 ms
+2025-04-08 21:30:44.515 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 200 null application/json; charset=utf-8 619.3147ms
+2025-04-08 21:35:02.895 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-08 21:35:02.910 +05:45 [INF] CORS policy execution successful.
+2025-04-08 21:35:02.913 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 4.5475 ms
+2025-04-08 21:35:02.920 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 24.9153ms
+2025-04-08 21:35:02.932 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-08 21:35:02.937 +05:45 [INF] CORS policy execution successful.
+2025-04-08 21:35:02.941 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 21:35:03.001 +05:45 [INF] Executed DbCommand (6ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-08 21:35:03.487 +05:45 [INF] Setting HTTP status code 200.
+2025-04-08 21:35:03.489 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-04-08 21:35:03.492 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 21:35:03.497 +05:45 [INF] HTTP POST /auth/login responded 200 in 559.9234 ms
+2025-04-08 21:35:03.501 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 200 null application/json; charset=utf-8 569.6421ms
+2025-04-08 21:35:46.507 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-08 21:35:46.521 +05:45 [INF] CORS policy execution successful.
+2025-04-08 21:35:46.522 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 1.4396 ms
+2025-04-08 21:35:46.526 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 19.2343ms
+2025-04-08 21:35:46.532 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-08 21:35:46.537 +05:45 [INF] CORS policy execution successful.
+2025-04-08 21:35:46.538 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 21:35:46.764 +05:45 [INF] Executed DbCommand (4ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-08 21:35:47.217 +05:45 [INF] Setting HTTP status code 200.
+2025-04-08 21:35:47.220 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-04-08 21:35:47.226 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 21:35:47.228 +05:45 [INF] HTTP POST /auth/login responded 200 in 691.4565 ms
+2025-04-08 21:35:47.231 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 200 null application/json; charset=utf-8 699.1417ms
+2025-04-08 21:38:30.215 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-08 21:38:30.223 +05:45 [INF] CORS policy execution successful.
+2025-04-08 21:38:30.225 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 1.9789 ms
+2025-04-08 21:38:30.229 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 13.9841ms
+2025-04-08 21:38:30.235 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-08 21:38:30.239 +05:45 [INF] CORS policy execution successful.
+2025-04-08 21:38:30.242 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 21:38:30.247 +05:45 [INF] Executed DbCommand (1ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-08 21:38:30.962 +05:45 [ERR] Error occurred while registering user guragainsaroj38@gmail.com
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+2025-04-08 21:38:31.036 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 21:38:31.195 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 21:38:31.204 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 21:38:31.213 +05:45 [INF] HTTP POST /auth/login responded 401 in 974.2763 ms
+2025-04-08 21:38:31.228 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 401 null application/json 993.2669ms
+2025-04-08 21:38:37.368 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-08 21:38:37.373 +05:45 [INF] CORS policy execution successful.
+2025-04-08 21:38:37.376 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 2.5158 ms
+2025-04-08 21:38:37.380 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 12.0501ms
+2025-04-08 21:38:37.395 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-08 21:38:37.401 +05:45 [INF] CORS policy execution successful.
+2025-04-08 21:38:37.404 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 21:38:37.417 +05:45 [INF] Executed DbCommand (1ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-08 21:38:37.989 +05:45 [ERR] Error occurred while registering user guragainsaroj38@gmail.com
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+2025-04-08 21:38:38.063 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 21:38:38.196 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 21:38:38.204 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 21:38:38.211 +05:45 [INF] HTTP POST /auth/login responded 401 in 810.3282 ms
+2025-04-08 21:38:38.215 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 401 null application/json 820.515ms
+2025-04-08 21:39:01.144 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-08 21:39:01.153 +05:45 [INF] CORS policy execution successful.
+2025-04-08 21:39:01.155 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 1.4448 ms
+2025-04-08 21:39:01.158 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 48.5479ms
+2025-04-08 21:39:01.164 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-08 21:39:01.168 +05:45 [INF] CORS policy execution successful.
+2025-04-08 21:39:01.170 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 21:39:01.174 +05:45 [INF] Executed DbCommand (1ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-08 21:39:01.623 +05:45 [INF] Setting HTTP status code 200.
+2025-04-08 21:39:01.625 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-04-08 21:39:01.627 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 21:39:01.629 +05:45 [INF] HTTP POST /auth/login responded 200 in 461.5140 ms
+2025-04-08 21:39:01.634 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 200 null application/json; charset=utf-8 469.8768ms
+2025-04-08 22:14:14.220 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-08 22:14:14.231 +05:45 [INF] CORS policy execution successful.
+2025-04-08 22:14:14.237 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 6.1606 ms
+2025-04-08 22:14:14.241 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 22.6102ms
+2025-04-08 22:14:14.246 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-08 22:14:14.252 +05:45 [INF] CORS policy execution successful.
+2025-04-08 22:14:14.257 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 22:14:14.540 +05:45 [INF] Executed DbCommand (78ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-08 22:14:15.204 +05:45 [ERR] Error occurred while registering user guragainsaroj38@gmail.com
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+2025-04-08 22:14:15.287 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 22:14:15.422 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 22:14:15.432 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-08 22:14:15.445 +05:45 [INF] HTTP POST /auth/login responded 401 in 1192.3099 ms
+2025-04-08 22:14:15.449 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 401 null application/json 1202.7663ms
+2025-04-08 22:14:26.722 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-08 22:14:26.731 +05:45 [INF] CORS policy execution successful.
+2025-04-08 22:14:26.736 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 5.4581 ms
+2025-04-08 22:14:26.740 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 18.6278ms
+2025-04-08 22:14:26.749 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-08 22:14:26.755 +05:45 [INF] CORS policy execution successful.
+2025-04-08 22:14:26.757 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 22:14:26.763 +05:45 [INF] Executed DbCommand (3ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-08 22:14:27.271 +05:45 [INF] Setting HTTP status code 200.
+2025-04-08 22:14:27.272 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-04-08 22:14:27.274 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 22:14:27.276 +05:45 [INF] HTTP POST /auth/login responded 200 in 521.5979 ms
+2025-04-08 22:14:27.279 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 200 null application/json; charset=utf-8 530.1911ms
+2025-04-08 23:31:52.980 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-08 23:31:53.096 +05:45 [INF] CORS policy execution successful.
+2025-04-08 23:31:53.103 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 10.3351 ms
+2025-04-08 23:31:53.112 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 147.9985ms
+2025-04-08 23:31:53.119 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-08 23:31:53.124 +05:45 [INF] CORS policy execution successful.
+2025-04-08 23:31:53.133 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 23:31:53.994 +05:45 [INF] Executed DbCommand (134ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-08 23:31:54.728 +05:45 [INF] Setting HTTP status code 200.
+2025-04-08 23:31:54.733 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-04-08 23:31:54.743 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-08 23:31:54.745 +05:45 [INF] HTTP POST /auth/login responded 200 in 1621.2981 ms
+2025-04-08 23:31:54.748 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 200 null application/json; charset=utf-8 1629.6396ms

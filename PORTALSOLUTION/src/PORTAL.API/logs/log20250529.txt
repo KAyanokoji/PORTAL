@@ -1,0 +1,264 @@
+2025-05-29 00:12:30.701 +05:45 [INF] Now listening on: https://localhost:7010
+2025-05-29 00:12:30.812 +05:45 [INF] Now listening on: http://localhost:5182
+2025-05-29 00:12:30.825 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-29 00:12:30.827 +05:45 [INF] Hosting environment: Development
+2025-05-29 00:12:30.828 +05:45 [INF] Content root path: E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API
+2025-05-29 00:12:32.242 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/ - null null
+2025-05-29 00:12:32.589 +05:45 [INF] HTTP GET / responded 404 in 70.5576 ms
+2025-05-29 00:12:32.623 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/ - 404 0 null 384.5111ms
+2025-05-29 00:12:32.673 +05:45 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7010/, Response status code: 404
+2025-05-29 00:13:01.486 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/ - null null
+2025-05-29 00:13:01.543 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.html - null null
+2025-05-29 00:13:01.549 +05:45 [INF] HTTP GET /swagger/ responded 301 in 38.8425 ms
+2025-05-29 00:13:01.575 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/ - 499 null null 89.1382ms
+2025-05-29 00:13:01.686 +05:45 [INF] HTTP GET /swagger/index.html responded 200 in 141.8598 ms
+2025-05-29 00:13:01.686 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.html - 200 null text/html;charset=utf-8 142.7559ms
+2025-05-29 00:13:01.740 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.js - null null
+2025-05-29 00:13:01.790 +05:45 [INF] HTTP GET /swagger/index.js responded 200 in 30.0815 ms
+2025-05-29 00:13:01.791 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.js - 200 null application/javascript;charset=utf-8 50.8372ms
+2025-05-29 00:13:01.983 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/v1/swagger.json - null null
+2025-05-29 00:13:02.011 +05:45 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-05-29 00:13:02.259 +05:45 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 275.6754 ms
+2025-05-29 00:13:02.259 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 276.3244ms
+2025-05-29 00:13:08.712 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/Permission - null null
+2025-05-29 00:13:08.716 +05:45 [INF] Executing endpoint 'HTTP: GET /Permission => GetAllPermissions'
+2025-05-29 00:13:13.818 +05:45 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PermissionId", p."CreatedAt", p."CreatedBy", p."Description", p."IsActive", p."ModifiedAt", p."ModifiedBy", p."PermissionName"
+FROM "Permissions" AS p
+2025-05-29 00:13:14.125 +05:45 [ERR] Error while fetching all permissions
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+List`1 -> PermissionResponseDto
+System.Collections.Generic.List`1[[PORTAL.DOMAIN.Entities.Permission, PORTAL.DOMAIN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> PORTAL.APPLICATION.DTOs.Responses.PermissionResponseDto
+   at lambda_method27(Closure, Object, PermissionResponseDto, ResolutionContext)
+   at PORTAL.APPLICATION.Services.PermissionService.GetAll() in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 34
+2025-05-29 00:13:14.179 +05:45 [INF] Setting HTTP status code 200.
+2025-05-29 00:13:14.185 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-05-29 00:13:14.190 +05:45 [INF] Executed endpoint 'HTTP: GET /Permission => GetAllPermissions'
+2025-05-29 00:13:14.194 +05:45 [INF] HTTP GET /Permission responded 200 in 5479.6533 ms
+2025-05-29 00:13:14.210 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/Permission - 200 null application/json; charset=utf-8 5497.3766ms
+2025-05-29 00:13:25.382 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/Permission - null null
+2025-05-29 00:13:25.382 +05:45 [INF] Executing endpoint 'HTTP: GET /Permission => GetAllPermissions'
+2025-05-29 00:13:36.598 +05:45 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PermissionId", p."CreatedAt", p."CreatedBy", p."Description", p."IsActive", p."ModifiedAt", p."ModifiedBy", p."PermissionName"
+FROM "Permissions" AS p
+2025-05-29 00:14:07.183 +05:45 [ERR] Error while fetching all permissions
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+List`1 -> PermissionResponseDto
+System.Collections.Generic.List`1[[PORTAL.DOMAIN.Entities.Permission, PORTAL.DOMAIN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> PORTAL.APPLICATION.DTOs.Responses.PermissionResponseDto
+   at lambda_method27(Closure, Object, PermissionResponseDto, ResolutionContext)
+   at PORTAL.APPLICATION.Services.PermissionService.GetAll() in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 34
+2025-05-29 00:14:07.184 +05:45 [INF] Setting HTTP status code 200.
+2025-05-29 00:14:07.184 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-05-29 00:14:07.185 +05:45 [INF] Executed endpoint 'HTTP: GET /Permission => GetAllPermissions'
+2025-05-29 00:14:07.186 +05:45 [INF] HTTP GET /Permission responded 200 in 41803.3919 ms
+2025-05-29 00:14:07.186 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/Permission - 200 null application/json; charset=utf-8 41804.7004ms
+2025-05-29 00:14:55.612 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/Permission - null null
+2025-05-29 00:14:55.613 +05:45 [INF] Executing endpoint 'HTTP: GET /Permission => GetAllPermissions'
+2025-05-29 00:14:58.709 +05:45 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PermissionId", p."CreatedAt", p."CreatedBy", p."Description", p."IsActive", p."ModifiedAt", p."ModifiedBy", p."PermissionName"
+FROM "Permissions" AS p
+2025-05-29 00:14:58.806 +05:45 [ERR] Error while fetching all permissions
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+List`1 -> PermissionResponseDto
+System.Collections.Generic.List`1[[PORTAL.DOMAIN.Entities.Permission, PORTAL.DOMAIN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> PORTAL.APPLICATION.DTOs.Responses.PermissionResponseDto
+   at lambda_method27(Closure, Object, PermissionResponseDto, ResolutionContext)
+   at PORTAL.APPLICATION.Services.PermissionService.GetAll() in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 34
+2025-05-29 00:14:58.807 +05:45 [INF] Setting HTTP status code 200.
+2025-05-29 00:14:58.807 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-05-29 00:14:58.808 +05:45 [INF] Executed endpoint 'HTTP: GET /Permission => GetAllPermissions'
+2025-05-29 00:14:58.808 +05:45 [INF] HTTP GET /Permission responded 200 in 3195.3154 ms
+2025-05-29 00:14:58.808 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/Permission - 200 null application/json; charset=utf-8 3196.2669ms
+2025-05-29 00:15:12.108 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/Permission - null null
+2025-05-29 00:15:12.109 +05:45 [INF] Executing endpoint 'HTTP: GET /Permission => GetAllPermissions'
+2025-05-29 00:15:19.335 +05:45 [INF] Executed DbCommand (48ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PermissionId", p."CreatedAt", p."CreatedBy", p."Description", p."IsActive", p."ModifiedAt", p."ModifiedBy", p."PermissionName"
+FROM "Permissions" AS p
+2025-05-29 00:15:45.886 +05:45 [ERR] Error while fetching all permissions
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+List`1 -> PermissionResponseDto
+System.Collections.Generic.List`1[[PORTAL.DOMAIN.Entities.Permission, PORTAL.DOMAIN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> PORTAL.APPLICATION.DTOs.Responses.PermissionResponseDto
+   at lambda_method27(Closure, Object, PermissionResponseDto, ResolutionContext)
+   at PORTAL.APPLICATION.Services.PermissionService.GetAll() in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 34
+2025-05-29 00:15:45.887 +05:45 [INF] Setting HTTP status code 200.
+2025-05-29 00:15:45.887 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-05-29 00:15:45.888 +05:45 [INF] Executed endpoint 'HTTP: GET /Permission => GetAllPermissions'
+2025-05-29 00:15:45.889 +05:45 [INF] HTTP GET /Permission responded 200 in 33780.5848 ms
+2025-05-29 00:15:45.890 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/Permission - 200 null application/json; charset=utf-8 33781.6306ms
+2025-05-29 00:18:46.471 +05:45 [INF] Now listening on: https://localhost:7010
+2025-05-29 00:18:46.577 +05:45 [INF] Now listening on: http://localhost:5182
+2025-05-29 00:18:46.591 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-29 00:18:46.593 +05:45 [INF] Hosting environment: Development
+2025-05-29 00:18:46.593 +05:45 [INF] Content root path: E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API
+2025-05-29 00:18:47.625 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/ - null null
+2025-05-29 00:18:47.787 +05:45 [INF] HTTP GET / responded 404 in 38.3233 ms
+2025-05-29 00:18:47.843 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/ - 404 0 null 192.4677ms
+2025-05-29 00:18:47.864 +05:45 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7010/, Response status code: 404
+2025-05-29 00:18:53.246 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/Permission - null null
+2025-05-29 00:18:53.254 +05:45 [INF] Executing endpoint 'HTTP: GET /Permission => GetAllPermissions'
+2025-05-29 00:18:59.423 +05:45 [INF] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PermissionId", p."CreatedAt", p."CreatedBy", p."Description", p."IsActive", p."ModifiedAt", p."ModifiedBy", p."PermissionName"
+FROM "Permissions" AS p
+2025-05-29 00:19:02.982 +05:45 [INF] Setting HTTP status code 200.
+2025-05-29 00:19:03.076 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-05-29 00:19:10.735 +05:45 [INF] Executed endpoint 'HTTP: GET /Permission => GetAllPermissions'
+2025-05-29 00:19:10.737 +05:45 [INF] HTTP GET /Permission responded 200 in 17486.2539 ms
+2025-05-29 00:19:10.775 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/Permission - 200 null application/json; charset=utf-8 17528.1784ms
+2025-05-29 14:28:10.514 +05:45 [INF] Now listening on: https://localhost:7010
+2025-05-29 14:28:10.569 +05:45 [INF] Now listening on: http://localhost:5182
+2025-05-29 14:28:10.575 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-29 14:28:10.576 +05:45 [INF] Hosting environment: Development
+2025-05-29 14:28:10.577 +05:45 [INF] Content root path: E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API
+2025-05-29 14:28:11.567 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/ - null null
+2025-05-29 14:28:11.567 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.html - null null
+2025-05-29 14:28:11.716 +05:45 [INF] HTTP GET / responded 404 in 41.9502 ms
+2025-05-29 14:28:11.734 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/ - 404 0 null 171.2641ms
+2025-05-29 14:28:11.754 +05:45 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7010/, Response status code: 404
+2025-05-29 14:28:11.853 +05:45 [INF] HTTP GET /swagger/index.html responded 200 in 181.0509 ms
+2025-05-29 14:28:11.858 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.html - 200 null text/html;charset=utf-8 296.6148ms
+2025-05-29 14:28:11.923 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.js - null null
+2025-05-29 14:28:11.935 +05:45 [INF] HTTP GET /swagger/index.js responded 200 in 8.2156 ms
+2025-05-29 14:28:11.939 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.js - 200 null application/javascript;charset=utf-8 15.6396ms
+2025-05-29 14:28:12.233 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/v1/swagger.json - null null
+2025-05-29 14:28:12.258 +05:45 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-05-29 14:28:12.577 +05:45 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 343.4058 ms
+2025-05-29 14:28:12.577 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 344.0762ms
+2025-05-29 14:28:21.070 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/Permission - null null
+2025-05-29 14:28:21.074 +05:45 [INF] Executing endpoint 'HTTP: GET /Permission => GetAllPermissions'
+2025-05-29 14:28:28.409 +05:45 [INF] Executed DbCommand (40ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PermissionId", p."CreatedAt", p."CreatedBy", p."Description", p."IsActive", p."ModifiedAt", p."ModifiedBy", p."PermissionName"
+FROM "Permissions" AS p
+2025-05-29 14:28:36.721 +05:45 [INF] Setting HTTP status code 200.
+2025-05-29 14:28:36.738 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-05-29 14:28:45.119 +05:45 [INF] Executed endpoint 'HTTP: GET /Permission => GetAllPermissions'
+2025-05-29 14:28:45.122 +05:45 [INF] HTTP GET /Permission responded 200 in 24050.6310 ms
+2025-05-29 14:28:45.169 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/Permission - 200 null application/json; charset=utf-8 24099.496ms
+2025-05-29 18:02:14.122 +05:45 [INF] Now listening on: https://localhost:7010
+2025-05-29 18:02:14.261 +05:45 [INF] Now listening on: http://localhost:5182
+2025-05-29 18:02:14.272 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-29 18:02:14.273 +05:45 [INF] Hosting environment: Development
+2025-05-29 18:02:14.273 +05:45 [INF] Content root path: E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API
+2025-05-29 18:02:15.144 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/ - null null
+2025-05-29 18:02:15.387 +05:45 [INF] HTTP GET / responded 404 in 44.8937 ms
+2025-05-29 18:02:15.424 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/ - 404 0 null 281.8834ms
+2025-05-29 18:02:15.455 +05:45 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7010/, Response status code: 404
+2025-05-29 18:02:20.570 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.html - null null
+2025-05-29 18:02:20.704 +05:45 [INF] HTTP GET /swagger/index.html responded 200 in 131.2992 ms
+2025-05-29 18:02:20.716 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.html - 200 null text/html;charset=utf-8 143.4453ms
+2025-05-29 18:02:20.824 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.js - null null
+2025-05-29 18:02:20.836 +05:45 [INF] HTTP GET /swagger/index.js responded 200 in 7.8011 ms
+2025-05-29 18:02:20.837 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.js - 200 null application/javascript;charset=utf-8 12.3056ms
+2025-05-29 18:02:21.072 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/v1/swagger.json - null null
+2025-05-29 18:02:21.110 +05:45 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-05-29 18:02:21.455 +05:45 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 382.3429 ms
+2025-05-29 18:02:21.460 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 387.7428ms
+2025-05-29 18:02:55.772 +05:45 [INF] Request starting HTTP/2 PUT https://localhost:7010/Permission/1 - application/json 100
+2025-05-29 18:02:55.776 +05:45 [INF] CORS policy execution successful.
+2025-05-29 18:02:55.778 +05:45 [INF] Executing endpoint 'HTTP: PUT /Permission/{PermissionId} => UpdatePermission'
+2025-05-29 18:03:00.863 +05:45 [INF] Executed DbCommand (227ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PermissionId", p."CreatedAt", p."CreatedBy", p."Description", p."IsActive", p."ModifiedAt", p."ModifiedBy", p."PermissionName"
+FROM "Permissions" AS p
+WHERE p."PermissionId" = @__id_0
+LIMIT 1
+2025-05-29 18:03:08.320 +05:45 [INF] Executed DbCommand (86ms) [Parameters=[@p7='?' (DbType = Int32), @p0='?' (DbType = DateTime), @p1='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = DateTime), @p5='?', @p6='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Permissions" SET "CreatedAt" = @p0, "CreatedBy" = @p1, "Description" = @p2, "IsActive" = @p3, "ModifiedAt" = @p4, "ModifiedBy" = @p5, "PermissionName" = @p6
+WHERE "PermissionId" = @p7;
+2025-05-29 18:03:15.920 +05:45 [INF] Setting HTTP status code 200.
+2025-05-29 18:03:15.925 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-05-29 18:03:15.968 +05:45 [INF] Executed endpoint 'HTTP: PUT /Permission/{PermissionId} => UpdatePermission'
+2025-05-29 18:03:15.970 +05:45 [INF] HTTP PUT /Permission/1 responded 200 in 20195.7001 ms
+2025-05-29 18:03:15.985 +05:45 [INF] Request finished HTTP/2 PUT https://localhost:7010/Permission/1 - 200 null application/json; charset=utf-8 20213.2351ms
+2025-05-29 18:50:40.249 +05:45 [INF] Now listening on: https://localhost:7010
+2025-05-29 18:50:40.450 +05:45 [INF] Now listening on: http://localhost:5182
+2025-05-29 18:50:40.469 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-29 18:50:40.471 +05:45 [INF] Hosting environment: Development
+2025-05-29 18:50:40.471 +05:45 [INF] Content root path: E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API
+2025-05-29 18:50:41.219 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/ - null null
+2025-05-29 18:50:41.465 +05:45 [INF] HTTP GET / responded 404 in 67.6129 ms
+2025-05-29 18:50:41.488 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/ - 404 0 null 271.4987ms
+2025-05-29 18:50:41.585 +05:45 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7010/, Response status code: 404
+2025-05-29 18:54:49.860 +05:45 [INF] Request starting HTTP/2 PUT https://localhost:7010/Permission/1 - application/json 100
+2025-05-29 18:54:49.911 +05:45 [INF] CORS policy execution successful.
+2025-05-29 18:54:49.922 +05:45 [INF] Executing endpoint 'HTTP: PUT /Permission/{PermissionId} => UpdatePermission'
+2025-05-29 18:54:52.186 +05:45 [INF] Executed DbCommand (79ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PermissionId", p."CreatedAt", p."CreatedBy", p."Description", p."IsActive", p."ModifiedAt", p."ModifiedBy", p."PermissionName"
+FROM "Permissions" AS p
+WHERE p."PermissionId" = @__id_0
+LIMIT 1
+2025-05-29 18:54:58.530 +05:45 [INF] Executed DbCommand (9ms) [Parameters=[@p7='?' (DbType = Int32), @p0='?' (DbType = DateTime), @p1='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = DateTime), @p5='?', @p6='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Permissions" SET "CreatedAt" = @p0, "CreatedBy" = @p1, "Description" = @p2, "IsActive" = @p3, "ModifiedAt" = @p4, "ModifiedBy" = @p5, "PermissionName" = @p6
+WHERE "PermissionId" = @p7;
+2025-05-29 18:54:58.553 +05:45 [INF] Setting HTTP status code 200.
+2025-05-29 18:54:58.558 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-05-29 18:54:58.568 +05:45 [INF] Executed endpoint 'HTTP: PUT /Permission/{PermissionId} => UpdatePermission'
+2025-05-29 18:54:58.570 +05:45 [INF] HTTP PUT /Permission/1 responded 200 in 8702.1075 ms
+2025-05-29 18:54:58.585 +05:45 [INF] Request finished HTTP/2 PUT https://localhost:7010/Permission/1 - 200 null application/json; charset=utf-8 8725.6122ms
+2025-05-29 18:55:11.183 +05:45 [INF] Request starting HTTP/2 PUT https://localhost:7010/Permission/2 - application/json 100
+2025-05-29 18:55:11.188 +05:45 [INF] CORS policy execution successful.
+2025-05-29 18:55:11.191 +05:45 [INF] Executing endpoint 'HTTP: PUT /Permission/{PermissionId} => UpdatePermission'
+2025-05-29 18:55:11.339 +05:45 [ERR] Error while Updating permission with ID 2
+PORTAL.DOMAIN.Exceptions.EntityNotFoundException: Update Permission with ID 2 not found
+   at PORTAL.APPLICATION.Services.PermissionService.UpdatePermission(PermissionUpdateDto permission, Int32 PermissionId) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 93
+2025-05-29 18:55:11.477 +05:45 [ERR] error while update Permission
+PORTAL.DOMAIN.Exceptions.EntityNotFoundException: Update Permission with ID 2 not found
+   at PORTAL.APPLICATION.Services.PermissionService.UpdatePermission(PermissionUpdateDto permission, Int32 PermissionId) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 93
+   at PORTAL.API.Routes.PermissionRoute.UpdatePermission(IGlobalLogger logger, IPermissionService service, PermissionUpdateDto update, Int32 PermissionId) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\PermissionRoutes.cs:line 62
+2025-05-29 18:55:11.544 +05:45 [INF] Executed endpoint 'HTTP: PUT /Permission/{PermissionId} => UpdatePermission'
+2025-05-29 18:55:11.584 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.EntityNotFoundException: Update Permission with ID 2 not found
+   at PORTAL.APPLICATION.Services.PermissionService.UpdatePermission(PermissionUpdateDto permission, Int32 PermissionId) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 93
+   at PORTAL.API.Routes.PermissionRoute.UpdatePermission(IGlobalLogger logger, IPermissionService service, PermissionUpdateDto update, Int32 PermissionId) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\PermissionRoutes.cs:line 62
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-05-29 18:55:11.586 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.EntityNotFoundException: Update Permission with ID 2 not found
+   at PORTAL.APPLICATION.Services.PermissionService.UpdatePermission(PermissionUpdateDto permission, Int32 PermissionId) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 93
+   at PORTAL.API.Routes.PermissionRoute.UpdatePermission(IGlobalLogger logger, IPermissionService service, PermissionUpdateDto update, Int32 PermissionId) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\PermissionRoutes.cs:line 62
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-05-29 18:55:11.600 +05:45 [INF] HTTP PUT /Permission/2 responded 404 in 412.2565 ms
+2025-05-29 18:55:11.600 +05:45 [INF] Request finished HTTP/2 PUT https://localhost:7010/Permission/2 - 404 null application/json 417.106ms
+2025-05-29 18:55:39.337 +05:45 [INF] Request starting HTTP/2 PUT https://localhost:7010/Permission/2 - application/json 100
+2025-05-29 18:55:39.338 +05:45 [INF] CORS policy execution successful.
+2025-05-29 18:55:39.338 +05:45 [INF] Executing endpoint 'HTTP: PUT /Permission/{PermissionId} => UpdatePermission'
+2025-05-29 18:56:12.610 +05:45 [ERR] Error while Updating permission with ID 2
+PORTAL.DOMAIN.Exceptions.EntityNotFoundException: Update Permission with ID 2 not found
+   at PORTAL.APPLICATION.Services.PermissionService.UpdatePermission(PermissionUpdateDto permission, Int32 PermissionId) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 93
+2025-05-29 18:56:20.629 +05:45 [ERR] error while update Permission
+PORTAL.DOMAIN.Exceptions.EntityNotFoundException: Update Permission with ID 2 not found
+   at PORTAL.APPLICATION.Services.PermissionService.UpdatePermission(PermissionUpdateDto permission, Int32 PermissionId) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 93
+   at PORTAL.API.Routes.PermissionRoute.UpdatePermission(IGlobalLogger logger, IPermissionService service, PermissionUpdateDto update, Int32 PermissionId) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\PermissionRoutes.cs:line 62
+2025-05-29 18:56:20.676 +05:45 [INF] Executed endpoint 'HTTP: PUT /Permission/{PermissionId} => UpdatePermission'
+2025-05-29 18:56:20.711 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.EntityNotFoundException: Update Permission with ID 2 not found
+   at PORTAL.APPLICATION.Services.PermissionService.UpdatePermission(PermissionUpdateDto permission, Int32 PermissionId) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 93
+   at PORTAL.API.Routes.PermissionRoute.UpdatePermission(IGlobalLogger logger, IPermissionService service, PermissionUpdateDto update, Int32 PermissionId) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\PermissionRoutes.cs:line 62
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-05-29 18:56:20.712 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.EntityNotFoundException: Update Permission with ID 2 not found
+   at PORTAL.APPLICATION.Services.PermissionService.UpdatePermission(PermissionUpdateDto permission, Int32 PermissionId) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 93
+   at PORTAL.API.Routes.PermissionRoute.UpdatePermission(IGlobalLogger logger, IPermissionService service, PermissionUpdateDto update, Int32 PermissionId) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\PermissionRoutes.cs:line 62
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-05-29 18:56:20.714 +05:45 [INF] HTTP PUT /Permission/2 responded 404 in 41376.3104 ms
+2025-05-29 18:56:20.715 +05:45 [INF] Request finished HTTP/2 PUT https://localhost:7010/Permission/2 - 404 null application/json 41377.1687ms

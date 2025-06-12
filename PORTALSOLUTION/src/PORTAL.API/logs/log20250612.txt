@@ -1,0 +1,127 @@
+2025-06-12 23:04:23.838 +05:45 [INF] Now listening on: https://localhost:7010
+2025-06-12 23:04:23.961 +05:45 [INF] Now listening on: http://localhost:5182
+2025-06-12 23:04:23.966 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-12 23:04:23.967 +05:45 [INF] Hosting environment: Development
+2025-06-12 23:04:23.967 +05:45 [INF] Content root path: E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API
+2025-06-12 23:06:06.829 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/ - null null
+2025-06-12 23:06:07.717 +05:45 [INF] HTTP GET / responded 404 in 164.8219 ms
+2025-06-12 23:06:07.759 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/ - 404 0 null 932.9398ms
+2025-06-12 23:06:07.809 +05:45 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7010/, Response status code: 404
+2025-06-12 23:06:15.575 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.html - null null
+2025-06-12 23:06:15.865 +05:45 [INF] HTTP GET /swagger/index.html responded 200 in 286.7312 ms
+2025-06-12 23:06:15.866 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.html - 200 null text/html;charset=utf-8 290.8923ms
+2025-06-12 23:06:16.051 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.js - null null
+2025-06-12 23:06:16.148 +05:45 [INF] HTTP GET /swagger/index.js responded 200 in 94.3494 ms
+2025-06-12 23:06:16.149 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.js - 200 null application/javascript;charset=utf-8 97.6565ms
+2025-06-12 23:06:16.464 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/v1/swagger.json - null null
+2025-06-12 23:06:16.502 +05:45 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-06-12 23:06:16.745 +05:45 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 280.4517 ms
+2025-06-12 23:06:16.748 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 284.0644ms
+2025-06-12 23:11:09.561 +05:45 [INF] Now listening on: https://localhost:7010
+2025-06-12 23:11:09.696 +05:45 [INF] Now listening on: http://localhost:5182
+2025-06-12 23:11:09.735 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-12 23:11:09.738 +05:45 [INF] Hosting environment: Development
+2025-06-12 23:11:09.738 +05:45 [INF] Content root path: E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API
+2025-06-12 23:11:11.123 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/ - null null
+2025-06-12 23:11:11.361 +05:45 [INF] HTTP GET / responded 404 in 50.5855 ms
+2025-06-12 23:11:11.390 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/ - 404 0 null 269.2051ms
+2025-06-12 23:11:11.422 +05:45 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7010/, Response status code: 404
+2025-06-12 23:12:08.901 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.html - null null
+2025-06-12 23:12:09.433 +05:45 [INF] HTTP GET /swagger/index.html responded 200 in 522.0622 ms
+2025-06-12 23:12:09.434 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.html - 200 null text/html;charset=utf-8 533.2845ms
+2025-06-12 23:12:09.496 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.js - null null
+2025-06-12 23:12:09.520 +05:45 [INF] HTTP GET /swagger/index.js responded 200 in 20.2824 ms
+2025-06-12 23:12:09.520 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.js - 200 null application/javascript;charset=utf-8 24.5067ms
+2025-06-12 23:12:09.987 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/v1/swagger.json - null null
+2025-06-12 23:12:10.141 +05:45 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-06-12 23:12:10.437 +05:45 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 449.2373 ms
+2025-06-12 23:12:10.451 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 463.4319ms
+2025-06-12 23:12:36.775 +05:45 [INF] Request starting HTTP/2 POST https://localhost:7010/Permission - application/json 95
+2025-06-12 23:12:36.780 +05:45 [INF] CORS policy execution successful.
+2025-06-12 23:12:36.783 +05:45 [INF] Executing endpoint 'HTTP: POST /Permission => Create'
+2025-06-12 23:12:54.679 +05:45 [INF] Executed DbCommand (112ms) [Parameters=[@__request_PermissionName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."CreatedAt", p."CreatedBy", p."Description", p."IsActive", p."IsDeleted", p."ModifiedAt", p."ModifiedBy", p."PermissionId", p."PermissionName"
+FROM "Permissions" AS p
+WHERE p."PermissionName" = @__request_PermissionName_0
+2025-06-12 23:13:07.782 +05:45 [INF] Executed DbCommand (83ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT max(p."Id")
+FROM "Permissions" AS p
+2025-06-12 23:15:00.720 +05:45 [INF] Now listening on: https://localhost:7010
+2025-06-12 23:15:00.863 +05:45 [INF] Now listening on: http://localhost:5182
+2025-06-12 23:15:00.875 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-12 23:15:00.877 +05:45 [INF] Hosting environment: Development
+2025-06-12 23:15:00.877 +05:45 [INF] Content root path: E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API
+2025-06-12 23:15:02.430 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/ - null null
+2025-06-12 23:15:02.735 +05:45 [INF] HTTP GET / responded 404 in 93.2538 ms
+2025-06-12 23:15:02.775 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/ - 404 0 null 348.02ms
+2025-06-12 23:15:02.870 +05:45 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7010/, Response status code: 404
+2025-06-12 23:15:14.537 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.html - null null
+2025-06-12 23:15:14.708 +05:45 [INF] HTTP GET /swagger/index.html responded 200 in 151.1687 ms
+2025-06-12 23:15:14.709 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.html - 200 null text/html;charset=utf-8 171.5504ms
+2025-06-12 23:15:14.822 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.js - null null
+2025-06-12 23:15:14.828 +05:45 [INF] HTTP GET /swagger/index.js responded 200 in 2.1266 ms
+2025-06-12 23:15:14.829 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.js - 200 null application/javascript;charset=utf-8 6.4111ms
+2025-06-12 23:15:15.182 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/v1/swagger.json - null null
+2025-06-12 23:15:15.229 +05:45 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-06-12 23:15:16.015 +05:45 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 832.5345 ms
+2025-06-12 23:15:16.018 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 836.346ms
+2025-06-12 23:15:22.053 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/Permission - null null
+2025-06-12 23:15:22.057 +05:45 [INF] Executing endpoint 'HTTP: GET /Permission => GetAllPermissions'
+2025-06-12 23:15:31.308 +05:45 [INF] Executed DbCommand (61ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."CreatedAt", p."CreatedBy", p."Description", p."IsActive", p."IsDeleted", p."ModifiedAt", p."ModifiedBy", p."PermissionId", p."PermissionName"
+FROM "Permissions" AS p
+2025-06-12 23:15:31.674 +05:45 [INF] Setting HTTP status code 200.
+2025-06-12 23:15:31.678 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-06-12 23:15:31.710 +05:45 [INF] Executed endpoint 'HTTP: GET /Permission => GetAllPermissions'
+2025-06-12 23:15:31.711 +05:45 [INF] HTTP GET /Permission responded 200 in 9656.1385 ms
+2025-06-12 23:15:31.725 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/Permission - 200 null application/json; charset=utf-8 9672.0768ms
+2025-06-12 23:15:45.539 +05:45 [INF] Request starting HTTP/2 POST https://localhost:7010/Permission - application/json 95
+2025-06-12 23:15:45.542 +05:45 [INF] CORS policy execution successful.
+2025-06-12 23:15:45.544 +05:45 [INF] Executing endpoint 'HTTP: POST /Permission => Create'
+2025-06-12 23:15:53.754 +05:45 [INF] Executed DbCommand (31ms) [Parameters=[@__request_PermissionName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."CreatedAt", p."CreatedBy", p."Description", p."IsActive", p."IsDeleted", p."ModifiedAt", p."ModifiedBy", p."PermissionId", p."PermissionName"
+FROM "Permissions" AS p
+WHERE p."PermissionName" = @__request_PermissionName_0
+2025-06-12 23:15:58.083 +05:45 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT max(p."Id")
+FROM "Permissions" AS p
+2025-06-12 23:16:11.699 +05:45 [INF] Executed DbCommand (40ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime), @p2='?', @p3='?', @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTime), @p7='?', @p8='?' (DbType = Int32), @p9='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Permissions" ("Id", "CreatedAt", "CreatedBy", "Description", "IsActive", "IsDeleted", "ModifiedAt", "ModifiedBy", "PermissionId", "PermissionName")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9);
+2025-06-12 23:16:16.970 +05:45 [INF] Setting HTTP status code 201.
+2025-06-12 23:16:16.974 +05:45 [INF] Executed endpoint 'HTTP: POST /Permission => Create'
+2025-06-12 23:16:16.974 +05:45 [INF] HTTP POST /Permission responded 201 in 31434.5798 ms
+2025-06-12 23:16:16.980 +05:45 [INF] Request finished HTTP/2 POST https://localhost:7010/Permission - 201 0 null 31440.5241ms
+2025-06-12 23:18:46.329 +05:45 [INF] Request starting HTTP/2 POST https://localhost:7010/Permission - application/json 95
+2025-06-12 23:18:46.331 +05:45 [INF] CORS policy execution successful.
+2025-06-12 23:18:46.333 +05:45 [INF] Executing endpoint 'HTTP: POST /Permission => Create'
+2025-06-12 23:18:49.895 +05:45 [INF] Executed DbCommand (4ms) [Parameters=[@__request_PermissionName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."CreatedAt", p."CreatedBy", p."Description", p."IsActive", p."IsDeleted", p."ModifiedAt", p."ModifiedBy", p."PermissionId", p."PermissionName"
+FROM "Permissions" AS p
+WHERE p."PermissionName" = @__request_PermissionName_0
+2025-06-12 23:18:49.899 +05:45 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT max(p."Id")
+FROM "Permissions" AS p
+2025-06-12 23:18:49.911 +05:45 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime), @p2='?', @p3='?', @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTime), @p7='?', @p8='?' (DbType = Int32), @p9='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Permissions" ("Id", "CreatedAt", "CreatedBy", "Description", "IsActive", "IsDeleted", "ModifiedAt", "ModifiedBy", "PermissionId", "PermissionName")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9);
+2025-06-12 23:18:51.534 +05:45 [INF] Setting HTTP status code 201.
+2025-06-12 23:18:51.534 +05:45 [INF] Executed endpoint 'HTTP: POST /Permission => Create'
+2025-06-12 23:18:51.535 +05:45 [INF] HTTP POST /Permission responded 201 in 5204.7580 ms
+2025-06-12 23:18:51.538 +05:45 [INF] Request finished HTTP/2 POST https://localhost:7010/Permission - 201 0 null 5208.9447ms
+2025-06-12 23:27:04.600 +05:45 [INF] Request starting HTTP/2 POST https://localhost:7010/auth/registration - application/json 179
+2025-06-12 23:27:04.602 +05:45 [INF] CORS policy execution successful.
+2025-06-12 23:27:04.602 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/registration => Registration'
+2025-06-12 23:27:12.830 +05:45 [INF] Executed DbCommand (14ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsDeleted", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."UserId", u."Username"
+FROM "Users" AS u
+WHERE u."Username" = @__username_0
+LIMIT 1
+2025-06-12 23:27:13.872 +05:45 [INF] Executed DbCommand (11ms) [Parameters=[@p0='?', @p1='?' (DbType = DateTime), @p2='?', @p3='?', @p4='?', @p5='?' (DbType = Int32), @p6='?', @p7='?' (DbType = Boolean), @p8='?' (DbType = Boolean), @p9='?' (DbType = Boolean), @p10='?' (DbType = DateTime), @p11='?', @p12='?' (DbType = DateTime), @p13='?' (DbType = DateTime), @p14='?', @p15='?', @p16='?' (DbType = DateTime), @p17='?', @p18='?', @p19='?', @p20='?' (DbType = Boolean), @p21='?', @p22='?' (DbType = Int32), @p23='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("AvatarUrl", "CreatedAt", "CreatedBy", "Culture", "Email", "FailedLoginAttempts", "FirstName", "IsActive", "IsDeleted", "IsLockedOut", "LastLoginDate", "LastName", "LockoutEndDate", "ModifiedAt", "ModifiedBy", "Password", "PasswordExpirationDate", "PhoneNumber", "SecurityStamp", "TimeZone", "TwoFactorEnabled", "TwoFactorSecret", "UserId", "Username")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21, @p22, @p23)
+RETURNING "Id";
+2025-06-12 23:27:13.903 +05:45 [INF] Setting HTTP status code 201.
+2025-06-12 23:27:13.903 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/registration => Registration'
+2025-06-12 23:27:13.904 +05:45 [INF] HTTP POST /auth/registration responded 201 in 9302.3277 ms
+2025-06-12 23:27:13.911 +05:45 [INF] Request finished HTTP/2 POST https://localhost:7010/auth/registration - 201 0 null 9311.0596ms

@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using PORTAL.APPLICATION.Interfaces;
 using PORTAL.APPLICATION.Mappings;
 using PORTAL.APPLICATION.Services;
 using PORTAL.DOMAIN.Interfaces;
@@ -22,8 +23,19 @@ public static class ServiceCollectionExtensions
 
         services.AddDbContext<ApplicationDbContext>(options =>
             options.UseNpgsql(configuration.GetConnectionString("PostgresSQLConnection")));
+
+        services.AddTransient<IUnitOfWork, UnitOfWork>();
+        services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+
         services.AddTransient<IAuthService, AuthServices>();
         services.AddTransient<IAuthRepository,AuthRepo>();
+
+        services.AddTransient<IPermissionService, PermissionService>();
+        services.AddTransient<IPermissionRepository, PermissionRepository>();
+
+        services.AddTransient<IRoleService, RoleServices>();
+        services.AddTransient<IRoleRepository, RoleRepository>();
+
         services.AddTransient<IPasswordHasher, PasswordHasher>();
 
         services.AddScoped<IJwtTokenGenerator, JwtTokenGenerator>();

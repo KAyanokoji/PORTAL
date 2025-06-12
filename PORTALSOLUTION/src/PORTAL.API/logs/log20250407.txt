@@ -1,0 +1,243 @@
+2025-04-07 19:08:29.382 +05:45 [INF] Now listening on: http://localhost:5182
+2025-04-07 19:08:29.492 +05:45 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-04-07 19:08:29.664 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-07 19:08:29.681 +05:45 [INF] Hosting environment: Development
+2025-04-07 19:08:29.700 +05:45 [INF] Content root path: E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API
+2025-04-07 19:08:30.941 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/ - null null
+2025-04-07 19:08:31.492 +05:45 [INF] HTTP GET / responded 404 in 16.3858 ms
+2025-04-07 19:08:31.537 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/ - 404 0 null 607.5766ms
+2025-04-07 19:08:31.552 +05:45 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5182/, Response status code: 404
+2025-04-07 19:08:58.672 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/index.html - null null
+2025-04-07 19:08:58.783 +05:45 [INF] HTTP GET /swagger/index.html responded 200 in 98.2348 ms
+2025-04-07 19:08:58.788 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/index.html - 200 null text/html;charset=utf-8 117.2375ms
+2025-04-07 19:08:58.831 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-07 19:08:58.835 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/swagger-ui.css - null null
+2025-04-07 19:08:58.844 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/index.js - null null
+2025-04-07 19:08:58.844 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/swagger-ui-standalone-preset.js - null null
+2025-04-07 19:08:58.869 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 37.3563ms
+2025-04-07 19:08:58.872 +05:45 [INF] HTTP GET /swagger/index.js responded 200 in 1.0866 ms
+2025-04-07 19:08:58.886 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/_vs/browserLink - null null
+2025-04-07 19:08:58.888 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/index.js - 200 null application/javascript;charset=utf-8 43.2945ms
+2025-04-07 19:08:58.915 +05:45 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-04-07 19:08:58.915 +05:45 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-04-07 19:08:58.923 +05:45 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 42.6889 ms
+2025-04-07 19:08:58.928 +05:45 [INF] HTTP GET /swagger/swagger-ui.css responded 200 in 59.1459 ms
+2025-04-07 19:08:58.931 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/swagger-ui-standalone-preset.js - 499 229223 text/javascript 87.5834ms
+2025-04-07 19:08:58.933 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/swagger-ui.css - 499 154948 text/css 98.3902ms
+2025-04-07 19:08:58.999 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/_vs/browserLink - 200 null text/javascript; charset=UTF-8 113.5621ms
+2025-04-07 19:08:59.162 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/favicon-16x16.png - null null
+2025-04-07 19:08:59.180 +05:45 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2025-04-07 19:08:59.182 +05:45 [INF] HTTP GET /swagger/favicon-16x16.png responded 200 in 2.9647 ms
+2025-04-07 19:08:59.185 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/favicon-16x16.png - 499 665 image/png 23.6322ms
+2025-04-07 19:08:59.236 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/v1/swagger.json - null null
+2025-04-07 19:08:59.264 +05:45 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 19.1646 ms
+2025-04-07 19:08:59.270 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 33.3689ms
+2025-04-07 19:09:30.921 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-07 19:09:30.930 +05:45 [INF] CORS policy execution successful.
+2025-04-07 19:09:30.933 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 4.0452 ms
+2025-04-07 19:09:30.936 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 15.4668ms
+2025-04-07 19:09:30.949 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-07 19:09:30.953 +05:45 [INF] CORS policy execution successful.
+2025-04-07 19:09:30.959 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-07 19:09:35.026 +05:45 [INF] Executed DbCommand (103ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-07 19:09:37.397 +05:45 [INF] Setting HTTP status code 200.
+2025-04-07 19:09:37.403 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-04-07 19:09:37.411 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-07 19:09:37.415 +05:45 [INF] HTTP POST /auth/login responded 200 in 6462.0398 ms
+2025-04-07 19:09:37.430 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 200 null application/json; charset=utf-8 6481.3572ms
+2025-04-07 20:24:55.521 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-07 20:24:55.534 +05:45 [INF] CORS policy execution successful.
+2025-04-07 20:24:55.538 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 4.8196 ms
+2025-04-07 20:24:55.542 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 23.1079ms
+2025-04-07 20:24:55.549 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-07 20:24:55.555 +05:45 [INF] CORS policy execution successful.
+2025-04-07 20:24:55.558 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-07 20:24:56.132 +05:45 [INF] Executed DbCommand (90ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-07 20:24:56.551 +05:45 [INF] Setting HTTP status code 200.
+2025-04-07 20:24:56.554 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-04-07 20:24:56.556 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-07 20:24:56.558 +05:45 [INF] HTTP POST /auth/login responded 200 in 1003.6530 ms
+2025-04-07 20:24:56.563 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 200 null application/json; charset=utf-8 1013.6978ms
+2025-04-07 21:04:25.795 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-07 21:04:25.801 +05:45 [INF] CORS policy execution successful.
+2025-04-07 21:04:25.803 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 2.0165 ms
+2025-04-07 21:04:25.806 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 11.5652ms
+2025-04-07 21:04:25.812 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 65
+2025-04-07 21:04:25.816 +05:45 [INF] CORS policy execution successful.
+2025-04-07 21:04:25.817 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-07 21:04:26.137 +05:45 [INF] Executed DbCommand (80ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-07 21:04:28.391 +05:45 [ERR] Error occurred while registering user guragainsaroj38@gmail.com
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+2025-04-07 21:04:28.613 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-07 21:04:28.794 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-07 21:04:28.804 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-07 21:04:28.819 +05:45 [INF] HTTP POST /auth/login responded 401 in 3003.0815 ms
+2025-04-07 21:04:28.823 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 401 null application/json 3011.8963ms
+2025-04-07 21:04:28.874 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 65
+2025-04-07 21:04:28.879 +05:45 [INF] CORS policy execution successful.
+2025-04-07 21:04:28.881 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-07 21:04:28.894 +05:45 [INF] Executed DbCommand (5ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-07 21:04:29.496 +05:45 [ERR] Error occurred while registering user guragainsaroj38@gmail.com
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+2025-04-07 21:04:29.598 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-07 21:04:29.764 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-07 21:04:29.774 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-07 21:04:29.782 +05:45 [INF] HTTP POST /auth/login responded 401 in 903.5798 ms
+2025-04-07 21:04:29.785 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 401 null application/json 911.334ms
+2025-04-07 21:35:07.678 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-07 21:35:07.684 +05:45 [INF] CORS policy execution successful.
+2025-04-07 21:35:07.686 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 2.2368 ms
+2025-04-07 21:35:07.689 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 10.7024ms
+2025-04-07 21:35:07.694 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-07 21:35:07.698 +05:45 [INF] CORS policy execution successful.
+2025-04-07 21:35:07.700 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-07 21:35:07.890 +05:45 [INF] Executed DbCommand (73ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-07 21:35:08.323 +05:45 [INF] Setting HTTP status code 200.
+2025-04-07 21:35:08.326 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-04-07 21:35:08.327 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-07 21:35:08.329 +05:45 [INF] HTTP POST /auth/login responded 200 in 630.5642 ms
+2025-04-07 21:35:08.332 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 200 null application/json; charset=utf-8 637.6934ms
+2025-04-07 21:42:36.573 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-07 21:42:36.579 +05:45 [INF] CORS policy execution successful.
+2025-04-07 21:42:36.581 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 1.6045 ms
+2025-04-07 21:42:36.584 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 11.8938ms
+2025-04-07 21:42:36.590 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-07 21:42:36.597 +05:45 [INF] CORS policy execution successful.
+2025-04-07 21:42:36.599 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-07 21:42:36.830 +05:45 [INF] Executed DbCommand (7ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-07 21:42:37.437 +05:45 [INF] Setting HTTP status code 200.
+2025-04-07 21:42:37.481 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-04-07 21:42:37.483 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-07 21:42:37.498 +05:45 [INF] HTTP POST /auth/login responded 200 in 900.7827 ms
+2025-04-07 21:42:37.504 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 200 null application/json; charset=utf-8 914.2262ms
+2025-04-07 21:43:56.065 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-07 21:43:56.072 +05:45 [INF] CORS policy execution successful.
+2025-04-07 21:43:56.075 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 3.4391 ms
+2025-04-07 21:43:56.078 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 13.2262ms
+2025-04-07 21:43:56.083 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-07 21:43:56.086 +05:45 [INF] CORS policy execution successful.
+2025-04-07 21:43:56.087 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-07 21:43:56.100 +05:45 [INF] Executed DbCommand (6ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-07 21:43:56.686 +05:45 [INF] Setting HTTP status code 200.
+2025-04-07 21:43:56.689 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-04-07 21:43:56.691 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-07 21:43:56.694 +05:45 [INF] HTTP POST /auth/login responded 200 in 607.6054 ms
+2025-04-07 21:43:56.697 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 200 null application/json; charset=utf-8 613.9594ms
+2025-04-07 23:26:17.240 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-07 23:26:17.583 +05:45 [INF] CORS policy execution successful.
+2025-04-07 23:26:17.590 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 8.0291 ms
+2025-04-07 23:26:17.601 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 363.6907ms
+2025-04-07 23:26:17.622 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-07 23:26:17.628 +05:45 [INF] CORS policy execution successful.
+2025-04-07 23:26:17.631 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-07 23:26:17.905 +05:45 [INF] Executed DbCommand (97ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-07 23:26:18.811 +05:45 [ERR] Error occurred while registering user guragainsaroj38@gmail.com
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+2025-04-07 23:26:18.901 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-07 23:26:19.057 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-07 23:26:19.069 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-07 23:26:19.079 +05:45 [INF] HTTP POST /auth/login responded 401 in 1450.5486 ms
+2025-04-07 23:26:19.081 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 401 null application/json 1459.1344ms
+2025-04-07 23:27:04.859 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-07 23:27:04.868 +05:45 [INF] CORS policy execution successful.
+2025-04-07 23:27:04.869 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 1.6489 ms
+2025-04-07 23:27:04.874 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 14.0952ms
+2025-04-07 23:27:04.882 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-07 23:27:04.889 +05:45 [INF] CORS policy execution successful.
+2025-04-07 23:27:04.891 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-07 23:27:04.905 +05:45 [INF] Executed DbCommand (9ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-07 23:27:05.332 +05:45 [INF] Setting HTTP status code 200.
+2025-04-07 23:27:05.334 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-04-07 23:27:05.336 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-07 23:27:05.337 +05:45 [INF] HTTP POST /auth/login responded 200 in 448.0545 ms
+2025-04-07 23:27:05.342 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 200 null application/json; charset=utf-8 459.3141ms

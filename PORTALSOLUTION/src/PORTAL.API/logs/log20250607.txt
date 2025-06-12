@@ -1,0 +1,1117 @@
+2025-06-07 00:00:00.027 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/ - null null
+2025-06-07 00:00:00.167 +05:45 [INF] HTTP GET / responded 404 in 25.2804 ms
+2025-06-07 00:00:00.183 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/ - 404 0 null 159.0531ms
+2025-06-07 00:00:00.210 +05:45 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7010/, Response status code: 404
+2025-06-07 00:00:49.779 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.html - null null
+2025-06-07 00:00:49.934 +05:45 [INF] HTTP GET /swagger/index.html responded 200 in 147.1133 ms
+2025-06-07 00:00:49.934 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.html - 200 null text/html;charset=utf-8 155.0378ms
+2025-06-07 00:00:50.015 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.js - null null
+2025-06-07 00:00:50.029 +05:45 [INF] HTTP GET /swagger/index.js responded 200 in 8.0606 ms
+2025-06-07 00:00:50.030 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.js - 200 null application/javascript;charset=utf-8 15.0655ms
+2025-06-07 00:00:50.237 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/v1/swagger.json - null null
+2025-06-07 00:00:50.268 +05:45 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-06-07 00:00:50.519 +05:45 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 281.9906 ms
+2025-06-07 00:00:50.523 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 285.8424ms
+2025-06-07 00:00:57.783 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/roles - null null
+2025-06-07 00:00:57.796 +05:45 [INF] Executing endpoint 'HTTP: GET /roles => GetRoles'
+2025-06-07 00:01:03.167 +05:45 [ERR] Failed executing DbCommand (67ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT r."RoleId", r."CreatedAt", r."CreatedBy", r."Description", r."IsActive", r."IsDeleted", r."ModifiedAt", r."ModifiedBy", r."RoleName"
+FROM "Roles" AS r
+2025-06-07 00:01:03.270 +05:45 [ERR] An exception occurred while iterating over the results of a query for context type 'PORTAL.INFRASTRUCTURE.Persistence.ApplicationDbContext'.
+Npgsql.PostgresException (0x80004005): 42703: column r.IsDeleted does not exist
+
+POSITION: 81
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column r.IsDeleted does not exist
+    Position: 81
+    File: parse_relation.c
+    Line: 3721
+    Routine: errorMissingColumn
+Npgsql.PostgresException (0x80004005): 42703: column r.IsDeleted does not exist
+
+POSITION: 81
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column r.IsDeleted does not exist
+    Position: 81
+    File: parse_relation.c
+    Line: 3721
+    Routine: errorMissingColumn
+2025-06-07 00:01:04.970 +05:45 [ERR] Error while fetching all Roles
+Npgsql.PostgresException (0x80004005): 42703: column r.IsDeleted does not exist
+
+POSITION: 81
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at PORTAL.INFRASTRUCTURE.Repositories.GenericRepository`1.GetAllAsync() in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Repositories\GenericRepository.cs:line 49
+   at PORTAL.APPLICATION.Services.RoleServices.GetRole() in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\RoleServices.cs:line 80
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column r.IsDeleted does not exist
+    Position: 81
+    File: parse_relation.c
+    Line: 3721
+    Routine: errorMissingColumn
+2025-06-07 00:01:05.638 +05:45 [ERR] Error occurred while fetching roles 
+Npgsql.PostgresException (0x80004005): 42703: column r.IsDeleted does not exist
+
+POSITION: 81
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at PORTAL.INFRASTRUCTURE.Repositories.GenericRepository`1.GetAllAsync() in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Repositories\GenericRepository.cs:line 49
+   at PORTAL.APPLICATION.Services.RoleServices.GetRole() in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\RoleServices.cs:line 80
+   at PORTAL.API.Routes.RoleRoute.GetRoles(IGlobalLogger logger, IRoleService service) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\RoleRoute.cs:line 23
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column r.IsDeleted does not exist
+    Position: 81
+    File: parse_relation.c
+    Line: 3721
+    Routine: errorMissingColumn
+2025-06-07 00:01:05.947 +05:45 [INF] Executed endpoint 'HTTP: GET /roles => GetRoles'
+2025-06-07 00:01:06.306 +05:45 [ERR] An unhandled exception occurred.
+Npgsql.PostgresException (0x80004005): 42703: column r.IsDeleted does not exist
+
+POSITION: 81
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at PORTAL.INFRASTRUCTURE.Repositories.GenericRepository`1.GetAllAsync() in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Repositories\GenericRepository.cs:line 49
+   at PORTAL.APPLICATION.Services.RoleServices.GetRole() in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\RoleServices.cs:line 80
+   at PORTAL.API.Routes.RoleRoute.GetRoles(IGlobalLogger logger, IRoleService service) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\RoleRoute.cs:line 23
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column r.IsDeleted does not exist
+    Position: 81
+    File: parse_relation.c
+    Line: 3721
+    Routine: errorMissingColumn
+2025-06-07 00:01:06.355 +05:45 [ERR] HTTP GET /roles responded 500 in 8571.2713 ms
+2025-06-07 00:01:06.454 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/roles - 500 null application/json 8671.3945ms
+2025-06-07 00:01:43.137 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/roles - null null
+2025-06-07 00:01:43.147 +05:45 [INF] Executing endpoint 'HTTP: GET /roles => GetRoles'
+2025-06-07 00:01:57.426 +05:45 [ERR] Failed executing DbCommand (53ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT r."RoleId", r."CreatedAt", r."CreatedBy", r."Description", r."IsActive", r."IsDeleted", r."ModifiedAt", r."ModifiedBy", r."RoleName"
+FROM "Roles" AS r
+2025-06-07 00:01:57.429 +05:45 [ERR] An exception occurred while iterating over the results of a query for context type 'PORTAL.INFRASTRUCTURE.Persistence.ApplicationDbContext'.
+Npgsql.PostgresException (0x80004005): 42703: column r.IsDeleted does not exist
+
+POSITION: 81
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column r.IsDeleted does not exist
+    Position: 81
+    File: parse_relation.c
+    Line: 3721
+    Routine: errorMissingColumn
+Npgsql.PostgresException (0x80004005): 42703: column r.IsDeleted does not exist
+
+POSITION: 81
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column r.IsDeleted does not exist
+    Position: 81
+    File: parse_relation.c
+    Line: 3721
+    Routine: errorMissingColumn
+2025-06-07 00:01:58.123 +05:45 [ERR] Error while fetching all Roles
+Npgsql.PostgresException (0x80004005): 42703: column r.IsDeleted does not exist
+
+POSITION: 81
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at PORTAL.INFRASTRUCTURE.Repositories.GenericRepository`1.GetAllAsync() in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Repositories\GenericRepository.cs:line 49
+   at PORTAL.APPLICATION.Services.RoleServices.GetRole() in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\RoleServices.cs:line 80
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column r.IsDeleted does not exist
+    Position: 81
+    File: parse_relation.c
+    Line: 3721
+    Routine: errorMissingColumn
+2025-06-07 00:01:58.585 +05:45 [ERR] Error occurred while fetching roles 
+Npgsql.PostgresException (0x80004005): 42703: column r.IsDeleted does not exist
+
+POSITION: 81
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at PORTAL.INFRASTRUCTURE.Repositories.GenericRepository`1.GetAllAsync() in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Repositories\GenericRepository.cs:line 49
+   at PORTAL.APPLICATION.Services.RoleServices.GetRole() in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\RoleServices.cs:line 80
+   at PORTAL.API.Routes.RoleRoute.GetRoles(IGlobalLogger logger, IRoleService service) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\RoleRoute.cs:line 23
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column r.IsDeleted does not exist
+    Position: 81
+    File: parse_relation.c
+    Line: 3721
+    Routine: errorMissingColumn
+2025-06-07 00:01:58.837 +05:45 [INF] Executed endpoint 'HTTP: GET /roles => GetRoles'
+2025-06-07 00:01:59.174 +05:45 [ERR] An unhandled exception occurred.
+Npgsql.PostgresException (0x80004005): 42703: column r.IsDeleted does not exist
+
+POSITION: 81
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at PORTAL.INFRASTRUCTURE.Repositories.GenericRepository`1.GetAllAsync() in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Repositories\GenericRepository.cs:line 49
+   at PORTAL.APPLICATION.Services.RoleServices.GetRole() in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\RoleServices.cs:line 80
+   at PORTAL.API.Routes.RoleRoute.GetRoles(IGlobalLogger logger, IRoleService service) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\RoleRoute.cs:line 23
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column r.IsDeleted does not exist
+    Position: 81
+    File: parse_relation.c
+    Line: 3721
+    Routine: errorMissingColumn
+2025-06-07 00:01:59.182 +05:45 [ERR] HTTP GET /roles responded 500 in 16035.2284 ms
+2025-06-07 00:01:59.183 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/roles - 500 null application/json 16045.9684ms
+2025-06-07 00:03:04.277 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/roles - null null
+2025-06-07 00:03:04.278 +05:45 [INF] Executing endpoint 'HTTP: GET /roles => GetRoles'
+2025-06-07 00:03:22.657 +05:45 [ERR] Failed executing DbCommand (77ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT r."RoleId", r."CreatedAt", r."CreatedBy", r."Description", r."IsActive", r."IsDeleted", r."ModifiedAt", r."ModifiedBy", r."RoleName"
+FROM "Roles" AS r
+2025-06-07 00:03:22.676 +05:45 [ERR] An exception occurred while iterating over the results of a query for context type 'PORTAL.INFRASTRUCTURE.Persistence.ApplicationDbContext'.
+Npgsql.PostgresException (0x80004005): 42703: column r.IsDeleted does not exist
+
+POSITION: 81
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column r.IsDeleted does not exist
+    Position: 81
+    File: parse_relation.c
+    Line: 3721
+    Routine: errorMissingColumn
+Npgsql.PostgresException (0x80004005): 42703: column r.IsDeleted does not exist
+
+POSITION: 81
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column r.IsDeleted does not exist
+    Position: 81
+    File: parse_relation.c
+    Line: 3721
+    Routine: errorMissingColumn
+2025-06-07 00:03:55.183 +05:45 [ERR] Error while fetching all Roles
+Npgsql.PostgresException (0x80004005): 42703: column r.IsDeleted does not exist
+
+POSITION: 81
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at PORTAL.INFRASTRUCTURE.Repositories.GenericRepository`1.GetAllAsync() in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Repositories\GenericRepository.cs:line 49
+   at PORTAL.APPLICATION.Services.RoleServices.GetRole() in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\RoleServices.cs:line 80
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column r.IsDeleted does not exist
+    Position: 81
+    File: parse_relation.c
+    Line: 3721
+    Routine: errorMissingColumn
+2025-06-07 00:03:58.927 +05:45 [ERR] Error occurred while fetching roles 
+Npgsql.PostgresException (0x80004005): 42703: column r.IsDeleted does not exist
+
+POSITION: 81
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at PORTAL.INFRASTRUCTURE.Repositories.GenericRepository`1.GetAllAsync() in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Repositories\GenericRepository.cs:line 49
+   at PORTAL.APPLICATION.Services.RoleServices.GetRole() in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\RoleServices.cs:line 80
+   at PORTAL.API.Routes.RoleRoute.GetRoles(IGlobalLogger logger, IRoleService service) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\RoleRoute.cs:line 23
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column r.IsDeleted does not exist
+    Position: 81
+    File: parse_relation.c
+    Line: 3721
+    Routine: errorMissingColumn
+2025-06-07 00:03:59.253 +05:45 [INF] Executed endpoint 'HTTP: GET /roles => GetRoles'
+2025-06-07 00:03:59.547 +05:45 [ERR] An unhandled exception occurred.
+Npgsql.PostgresException (0x80004005): 42703: column r.IsDeleted does not exist
+
+POSITION: 81
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at PORTAL.INFRASTRUCTURE.Repositories.GenericRepository`1.GetAllAsync() in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Repositories\GenericRepository.cs:line 49
+   at PORTAL.APPLICATION.Services.RoleServices.GetRole() in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\RoleServices.cs:line 80
+   at PORTAL.API.Routes.RoleRoute.GetRoles(IGlobalLogger logger, IRoleService service) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\RoleRoute.cs:line 23
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column r.IsDeleted does not exist
+    Position: 81
+    File: parse_relation.c
+    Line: 3721
+    Routine: errorMissingColumn
+2025-06-07 00:03:59.555 +05:45 [ERR] HTTP GET /roles responded 500 in 55277.7314 ms
+2025-06-07 00:03:59.556 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/roles - 500 null application/json 55278.4456ms
+2025-06-07 00:04:41.717 +05:45 [INF] Now listening on: https://localhost:7010
+2025-06-07 00:04:41.795 +05:45 [INF] Now listening on: http://localhost:5182
+2025-06-07 00:04:41.803 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-07 00:04:41.805 +05:45 [INF] Hosting environment: Development
+2025-06-07 00:04:41.805 +05:45 [INF] Content root path: E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API
+2025-06-07 01:05:24.142 +05:45 [INF] Now listening on: https://localhost:7010
+2025-06-07 01:05:24.270 +05:45 [INF] Now listening on: http://localhost:5182
+2025-06-07 01:05:24.276 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-07 01:05:24.277 +05:45 [INF] Hosting environment: Development
+2025-06-07 01:05:24.278 +05:45 [INF] Content root path: E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API
+2025-06-07 01:05:25.453 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/ - null null
+2025-06-07 01:05:25.637 +05:45 [INF] HTTP GET / responded 404 in 47.8147 ms
+2025-06-07 01:05:25.668 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/ - 404 0 null 211.8634ms
+2025-06-07 01:05:25.700 +05:45 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7010/, Response status code: 404
+2025-06-07 01:05:30.386 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.html - null null
+2025-06-07 01:05:30.557 +05:45 [INF] HTTP GET /swagger/index.html responded 200 in 167.8755 ms
+2025-06-07 01:05:30.557 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.html - 200 null text/html;charset=utf-8 171.1501ms
+2025-06-07 01:05:30.622 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.js - null null
+2025-06-07 01:05:30.684 +05:45 [INF] HTTP GET /swagger/index.js responded 200 in 9.9932 ms
+2025-06-07 01:05:30.684 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.js - 200 null application/javascript;charset=utf-8 62.0154ms
+2025-06-07 01:05:30.879 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/v1/swagger.json - null null
+2025-06-07 01:05:30.920 +05:45 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-06-07 01:05:31.218 +05:45 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 335.0671 ms
+2025-06-07 01:05:31.225 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 345.1716ms
+2025-06-07 01:05:37.259 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/roles - null null
+2025-06-07 01:05:37.264 +05:45 [INF] Executing endpoint 'HTTP: GET /roles => GetRoles'
+2025-06-07 01:05:47.065 +05:45 [ERR] Failed executing DbCommand (56ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT r."RoleId", r."CreatedAt", r."CreatedBy", r."Description", r."IsActive", r."IsDeleted", r."ModifiedAt", r."ModifiedBy", r."RoleName"
+FROM "Roles" AS r
+2025-06-07 01:05:47.144 +05:45 [ERR] An exception occurred while iterating over the results of a query for context type 'PORTAL.INFRASTRUCTURE.Persistence.ApplicationDbContext'.
+Npgsql.PostgresException (0x80004005): 42703: column r.IsDeleted does not exist
+
+POSITION: 81
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column r.IsDeleted does not exist
+    Position: 81
+    File: parse_relation.c
+    Line: 3721
+    Routine: errorMissingColumn
+Npgsql.PostgresException (0x80004005): 42703: column r.IsDeleted does not exist
+
+POSITION: 81
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column r.IsDeleted does not exist
+    Position: 81
+    File: parse_relation.c
+    Line: 3721
+    Routine: errorMissingColumn
+2025-06-07 11:36:43.670 +05:45 [INF] Now listening on: https://localhost:7010
+2025-06-07 11:36:43.840 +05:45 [INF] Now listening on: http://localhost:5182
+2025-06-07 11:36:43.846 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-07 11:36:43.848 +05:45 [INF] Hosting environment: Development
+2025-06-07 11:36:43.848 +05:45 [INF] Content root path: E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API
+2025-06-07 11:36:44.921 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/ - null null
+2025-06-07 11:36:45.070 +05:45 [INF] HTTP GET / responded 404 in 27.0711 ms
+2025-06-07 11:36:45.085 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/ - 404 0 null 165.896ms
+2025-06-07 11:36:45.117 +05:45 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7010/, Response status code: 404
+2025-06-07 11:37:01.141 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.html - null null
+2025-06-07 11:37:01.311 +05:45 [INF] HTTP GET /swagger/index.html responded 200 in 151.3100 ms
+2025-06-07 11:37:01.317 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.html - 200 null text/html;charset=utf-8 170.5136ms
+2025-06-07 11:37:01.373 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.js - null null
+2025-06-07 11:37:01.384 +05:45 [INF] HTTP GET /swagger/index.js responded 200 in 8.6601 ms
+2025-06-07 11:37:01.386 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.js - 200 null application/javascript;charset=utf-8 12.6035ms
+2025-06-07 11:37:01.618 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/v1/swagger.json - null null
+2025-06-07 11:37:01.665 +05:45 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-06-07 11:37:02.017 +05:45 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 398.4761 ms
+2025-06-07 11:37:02.024 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 405.7751ms
+2025-06-07 11:37:38.722 +05:45 [INF] Request starting HTTP/2 POST https://localhost:7010/Permission - application/json 95
+2025-06-07 11:37:38.725 +05:45 [INF] CORS policy execution successful.
+2025-06-07 11:37:38.728 +05:45 [INF] Executing endpoint 'HTTP: POST /Permission => Create'
+2025-06-07 11:37:56.843 +05:45 [INF] Executed DbCommand (86ms) [Parameters=[@__request_PermissionName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PermissionId", p."CreatedAt", p."CreatedBy", p."Description", p."IsActive", p."IsDeleted", p."ModifiedAt", p."ModifiedBy", p."PermissionName"
+FROM "Permissions" AS p
+WHERE p."PermissionName" = @__request_PermissionName_0
+2025-06-07 11:39:39.540 +05:45 [ERR] Error creating permission
+PORTAL.DOMAIN.Exceptions.DuplicateDataException: Permission with key Add already exists
+   at PORTAL.APPLICATION.Services.PermissionService.Create(PermissionCreateDto request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 26
+2025-06-07 11:39:39.806 +05:45 [ERR] Error occurred while registering user Permission To create data
+PORTAL.DOMAIN.Exceptions.DuplicateDataException: Permission with key Add already exists
+   at PORTAL.APPLICATION.Services.PermissionService.Create(PermissionCreateDto request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 26
+   at PORTAL.API.Routes.PermissionRoute.Create(PermissionCreateDto request, IGlobalLogger logger, IPermissionService services) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\PermissionRoutes.cs:line 22
+2025-06-07 11:39:39.938 +05:45 [INF] Executed endpoint 'HTTP: POST /Permission => Create'
+2025-06-07 11:39:40.182 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.DuplicateDataException: Permission with key Add already exists
+   at PORTAL.APPLICATION.Services.PermissionService.Create(PermissionCreateDto request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 26
+   at PORTAL.API.Routes.PermissionRoute.Create(PermissionCreateDto request, IGlobalLogger logger, IPermissionService services) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\PermissionRoutes.cs:line 22
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-06-07 11:39:40.199 +05:45 [INF] HTTP POST /Permission responded 409 in 121474.9308 ms
+2025-06-07 11:39:40.206 +05:45 [INF] Request finished HTTP/2 POST https://localhost:7010/Permission - 409 null application/json 121484.1703ms
+2025-06-07 11:40:47.493 +05:45 [INF] Request starting HTTP/2 POST https://localhost:7010/Permission - application/json 95
+2025-06-07 11:40:47.494 +05:45 [INF] CORS policy execution successful.
+2025-06-07 11:40:47.495 +05:45 [INF] Executing endpoint 'HTTP: POST /Permission => Create'
+2025-06-07 11:40:55.588 +05:45 [INF] Executed DbCommand (40ms) [Parameters=[@__request_PermissionName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PermissionId", p."CreatedAt", p."CreatedBy", p."Description", p."IsActive", p."IsDeleted", p."ModifiedAt", p."ModifiedBy", p."PermissionName"
+FROM "Permissions" AS p
+WHERE p."PermissionName" = @__request_PermissionName_0
+2025-06-07 11:41:30.129 +05:45 [ERR] Error creating permission
+PORTAL.DOMAIN.Exceptions.DuplicateDataException: Permission with key Add already exists
+   at PORTAL.APPLICATION.Services.PermissionService.Create(PermissionCreateDto request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 26
+2025-06-07 11:41:30.335 +05:45 [ERR] Error occurred while registering user Permission To create data
+PORTAL.DOMAIN.Exceptions.DuplicateDataException: Permission with key Add already exists
+   at PORTAL.APPLICATION.Services.PermissionService.Create(PermissionCreateDto request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 26
+   at PORTAL.API.Routes.PermissionRoute.Create(PermissionCreateDto request, IGlobalLogger logger, IPermissionService services) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\PermissionRoutes.cs:line 22
+2025-06-07 11:41:30.438 +05:45 [INF] Executed endpoint 'HTTP: POST /Permission => Create'
+2025-06-07 11:41:30.622 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.DuplicateDataException: Permission with key Add already exists
+   at PORTAL.APPLICATION.Services.PermissionService.Create(PermissionCreateDto request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 26
+   at PORTAL.API.Routes.PermissionRoute.Create(PermissionCreateDto request, IGlobalLogger logger, IPermissionService services) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\PermissionRoutes.cs:line 22
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-06-07 11:41:30.623 +05:45 [INF] HTTP POST /Permission responded 409 in 43129.4877 ms
+2025-06-07 11:41:30.624 +05:45 [INF] Request finished HTTP/2 POST https://localhost:7010/Permission - 409 null application/json 43130.9043ms
+2025-06-07 11:42:27.544 +05:45 [INF] Now listening on: https://localhost:7010
+2025-06-07 11:42:27.634 +05:45 [INF] Now listening on: http://localhost:5182
+2025-06-07 11:42:27.639 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-07 11:42:27.640 +05:45 [INF] Hosting environment: Development
+2025-06-07 11:42:27.640 +05:45 [INF] Content root path: E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API
+2025-06-07 11:42:28.762 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/ - null null
+2025-06-07 11:42:28.911 +05:45 [INF] HTTP GET / responded 404 in 34.9437 ms
+2025-06-07 11:42:28.927 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/ - 404 0 null 167.4973ms
+2025-06-07 11:42:28.950 +05:45 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7010/, Response status code: 404
+2025-06-07 11:42:50.767 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.html - null null
+2025-06-07 11:42:50.906 +05:45 [INF] HTTP GET /swagger/index.html responded 200 in 131.4641 ms
+2025-06-07 11:42:50.907 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.html - 200 null text/html;charset=utf-8 139.7271ms
+2025-06-07 11:42:50.985 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.js - null null
+2025-06-07 11:42:50.995 +05:45 [INF] HTTP GET /swagger/index.js responded 200 in 2.6187 ms
+2025-06-07 11:42:50.997 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.js - 200 null application/javascript;charset=utf-8 11.8153ms
+2025-06-07 11:42:51.156 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/v1/swagger.json - null null
+2025-06-07 11:42:51.190 +05:45 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-06-07 11:42:51.378 +05:45 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 221.7925 ms
+2025-06-07 11:42:51.389 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 233.0957ms
+2025-06-07 11:43:02.685 +05:45 [INF] Request starting HTTP/2 POST https://localhost:7010/Permission - application/json 95
+2025-06-07 11:43:02.688 +05:45 [INF] CORS policy execution successful.
+2025-06-07 11:43:02.692 +05:45 [INF] Executing endpoint 'HTTP: POST /Permission => Create'
+2025-06-07 11:43:14.288 +05:45 [INF] Executed DbCommand (78ms) [Parameters=[@__request_PermissionName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PermissionId", p."CreatedAt", p."CreatedBy", p."Description", p."IsActive", p."IsDeleted", p."ModifiedAt", p."ModifiedBy", p."PermissionName"
+FROM "Permissions" AS p
+WHERE p."PermissionName" = @__request_PermissionName_0
+2025-06-07 11:43:59.313 +05:45 [ERR] Error creating permission
+PORTAL.DOMAIN.Exceptions.DuplicateDataException: Permission with key Add already exists
+   at PORTAL.APPLICATION.Services.PermissionService.Create(PermissionCreateDto request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 26
+2025-06-07 11:43:59.587 +05:45 [ERR] Error occurred while registering user Permission To create data
+PORTAL.DOMAIN.Exceptions.DuplicateDataException: Permission with key Add already exists
+   at PORTAL.APPLICATION.Services.PermissionService.Create(PermissionCreateDto request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 26
+   at PORTAL.API.Routes.PermissionRoute.Create(PermissionCreateDto request, IGlobalLogger logger, IPermissionService services) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\PermissionRoutes.cs:line 22
+2025-06-07 11:43:59.708 +05:45 [INF] Executed endpoint 'HTTP: POST /Permission => Create'
+2025-06-07 11:43:59.927 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.DuplicateDataException: Permission with key Add already exists
+   at PORTAL.APPLICATION.Services.PermissionService.Create(PermissionCreateDto request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 26
+   at PORTAL.API.Routes.PermissionRoute.Create(PermissionCreateDto request, IGlobalLogger logger, IPermissionService services) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\PermissionRoutes.cs:line 22
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-06-07 11:43:59.944 +05:45 [INF] HTTP POST /Permission responded 409 in 57257.3625 ms
+2025-06-07 11:43:59.953 +05:45 [INF] Request finished HTTP/2 POST https://localhost:7010/Permission - 409 null application/json 57267.9983ms
+2025-06-07 11:44:03.622 +05:45 [INF] Request starting HTTP/2 POST https://localhost:7010/Permission - application/json 95
+2025-06-07 11:44:03.623 +05:45 [INF] CORS policy execution successful.
+2025-06-07 11:44:03.624 +05:45 [INF] Executing endpoint 'HTTP: POST /Permission => Create'
+2025-06-07 11:44:11.308 +05:45 [INF] Executed DbCommand (6ms) [Parameters=[@__request_PermissionName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PermissionId", p."CreatedAt", p."CreatedBy", p."Description", p."IsActive", p."IsDeleted", p."ModifiedAt", p."ModifiedBy", p."PermissionName"
+FROM "Permissions" AS p
+WHERE p."PermissionName" = @__request_PermissionName_0
+2025-06-07 11:44:56.654 +05:45 [ERR] Error creating permission
+PORTAL.DOMAIN.Exceptions.DuplicateDataException: Permission with key Add already exists
+   at PORTAL.APPLICATION.Services.PermissionService.Create(PermissionCreateDto request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 26
+2025-06-07 11:44:56.895 +05:45 [ERR] Error occurred while registering user Permission To create data
+PORTAL.DOMAIN.Exceptions.DuplicateDataException: Permission with key Add already exists
+   at PORTAL.APPLICATION.Services.PermissionService.Create(PermissionCreateDto request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 26
+   at PORTAL.API.Routes.PermissionRoute.Create(PermissionCreateDto request, IGlobalLogger logger, IPermissionService services) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\PermissionRoutes.cs:line 22
+2025-06-07 11:44:56.976 +05:45 [INF] Executed endpoint 'HTTP: POST /Permission => Create'
+2025-06-07 11:44:57.122 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.DuplicateDataException: Permission with key Add already exists
+   at PORTAL.APPLICATION.Services.PermissionService.Create(PermissionCreateDto request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 26
+   at PORTAL.API.Routes.PermissionRoute.Create(PermissionCreateDto request, IGlobalLogger logger, IPermissionService services) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\PermissionRoutes.cs:line 22
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-06-07 11:44:57.125 +05:45 [INF] HTTP POST /Permission responded 409 in 53501.9532 ms
+2025-06-07 11:44:57.126 +05:45 [INF] Request finished HTTP/2 POST https://localhost:7010/Permission - 409 null application/json 53503.8631ms
+2025-06-07 11:45:01.420 +05:45 [INF] Request starting HTTP/2 POST https://localhost:7010/Permission - application/json 95
+2025-06-07 11:45:01.421 +05:45 [INF] CORS policy execution successful.
+2025-06-07 11:45:01.421 +05:45 [INF] Executing endpoint 'HTTP: POST /Permission => Create'
+2025-06-07 11:45:08.743 +05:45 [INF] Executed DbCommand (1ms) [Parameters=[@__request_PermissionName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PermissionId", p."CreatedAt", p."CreatedBy", p."Description", p."IsActive", p."IsDeleted", p."ModifiedAt", p."ModifiedBy", p."PermissionName"
+FROM "Permissions" AS p
+WHERE p."PermissionName" = @__request_PermissionName_0
+2025-06-07 11:45:19.580 +05:45 [ERR] Error creating permission
+PORTAL.DOMAIN.Exceptions.DuplicateDataException: Permission with key Add already exists
+   at PORTAL.APPLICATION.Services.PermissionService.Create(PermissionCreateDto request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 26
+2025-06-07 11:45:19.718 +05:45 [ERR] Error occurred while registering user Permission To create data
+PORTAL.DOMAIN.Exceptions.DuplicateDataException: Permission with key Add already exists
+   at PORTAL.APPLICATION.Services.PermissionService.Create(PermissionCreateDto request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 26
+   at PORTAL.API.Routes.PermissionRoute.Create(PermissionCreateDto request, IGlobalLogger logger, IPermissionService services) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\PermissionRoutes.cs:line 22
+2025-06-07 11:45:19.761 +05:45 [INF] Executed endpoint 'HTTP: POST /Permission => Create'
+2025-06-07 11:45:19.801 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.DuplicateDataException: Permission with key Add already exists
+   at PORTAL.APPLICATION.Services.PermissionService.Create(PermissionCreateDto request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 26
+   at PORTAL.API.Routes.PermissionRoute.Create(PermissionCreateDto request, IGlobalLogger logger, IPermissionService services) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\PermissionRoutes.cs:line 22
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-06-07 11:45:19.802 +05:45 [INF] HTTP POST /Permission responded 409 in 18381.0080 ms
+2025-06-07 11:45:19.802 +05:45 [INF] Request finished HTTP/2 POST https://localhost:7010/Permission - 409 null application/json 18382.187ms
+2025-06-07 11:47:51.521 +05:45 [INF] Now listening on: https://localhost:7010
+2025-06-07 11:47:51.637 +05:45 [INF] Now listening on: http://localhost:5182
+2025-06-07 11:47:51.644 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-07 11:47:51.646 +05:45 [INF] Hosting environment: Development
+2025-06-07 11:47:51.646 +05:45 [INF] Content root path: E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API
+2025-06-07 11:47:52.166 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/ - null null
+2025-06-07 11:47:52.360 +05:45 [INF] HTTP GET / responded 404 in 45.9946 ms
+2025-06-07 11:47:52.393 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/ - 404 0 null 230.4746ms
+2025-06-07 11:47:52.425 +05:45 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7010/, Response status code: 404
+2025-06-07 11:49:04.507 +05:45 [INF] Request starting HTTP/2 POST https://localhost:7010/Permission - application/json 95
+2025-06-07 11:49:04.564 +05:45 [INF] CORS policy execution successful.
+2025-06-07 11:49:04.568 +05:45 [INF] Executing endpoint 'HTTP: POST /Permission => Create'
+2025-06-07 11:49:16.260 +05:45 [INF] Executed DbCommand (80ms) [Parameters=[@__request_PermissionName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PermissionId", p."CreatedAt", p."CreatedBy", p."Description", p."IsActive", p."IsDeleted", p."ModifiedAt", p."ModifiedBy", p."PermissionName"
+FROM "Permissions" AS p
+WHERE p."PermissionName" = @__request_PermissionName_0
+2025-06-07 11:49:21.443 +05:45 [ERR] Failed executing DbCommand (50ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Permissions" ("CreatedAt", "CreatedBy", "Description", "IsActive", "IsDeleted", "ModifiedAt", "ModifiedBy", "PermissionName")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7)
+RETURNING "PermissionId";
+2025-06-07 11:49:21.505 +05:45 [ERR] An exception occurred in the database while saving changes for context type 'PORTAL.INFRASTRUCTURE.Persistence.ApplicationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23502: null value in column "CreatedBy" of relation "Permissions" violates not-null constraint
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23502
+    MessageText: null value in column "CreatedBy" of relation "Permissions" violates not-null constraint
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Permissions
+    ColumnName: CreatedBy
+    File: execMain.c
+    Line: 1988
+    Routine: ExecConstraints
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23502: null value in column "CreatedBy" of relation "Permissions" violates not-null constraint
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23502
+    MessageText: null value in column "CreatedBy" of relation "Permissions" violates not-null constraint
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Permissions
+    ColumnName: CreatedBy
+    File: execMain.c
+    Line: 1988
+    Routine: ExecConstraints
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-06-07 11:49:22.153 +05:45 [ERR] Error creating permission
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23502: null value in column "CreatedBy" of relation "Permissions" violates not-null constraint
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23502
+    MessageText: null value in column "CreatedBy" of relation "Permissions" violates not-null constraint
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Permissions
+    ColumnName: CreatedBy
+    File: execMain.c
+    Line: 1988
+    Routine: ExecConstraints
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PORTAL.INFRASTRUCTURE.Repositories.UnitOfWork.CompleteAsync() in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Repositories\UnitOfWork.cs:line 29
+   at PORTAL.APPLICATION.Services.PermissionService.Create(PermissionCreateDto request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 30
+2025-06-07 11:49:22.755 +05:45 [ERR] Error occurred while registering user Permission To create data
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23502: null value in column "CreatedBy" of relation "Permissions" violates not-null constraint
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23502
+    MessageText: null value in column "CreatedBy" of relation "Permissions" violates not-null constraint
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Permissions
+    ColumnName: CreatedBy
+    File: execMain.c
+    Line: 1988
+    Routine: ExecConstraints
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PORTAL.INFRASTRUCTURE.Repositories.UnitOfWork.CompleteAsync() in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Repositories\UnitOfWork.cs:line 29
+   at PORTAL.APPLICATION.Services.PermissionService.Create(PermissionCreateDto request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 30
+   at PORTAL.API.Routes.PermissionRoute.Create(PermissionCreateDto request, IGlobalLogger logger, IPermissionService services) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\PermissionRoutes.cs:line 22
+2025-06-07 11:49:23.094 +05:45 [INF] Executed endpoint 'HTTP: POST /Permission => Create'
+2025-06-07 11:49:23.674 +05:45 [ERR] An unhandled exception occurred.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23502: null value in column "CreatedBy" of relation "Permissions" violates not-null constraint
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23502
+    MessageText: null value in column "CreatedBy" of relation "Permissions" violates not-null constraint
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Permissions
+    ColumnName: CreatedBy
+    File: execMain.c
+    Line: 1988
+    Routine: ExecConstraints
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PORTAL.INFRASTRUCTURE.Repositories.UnitOfWork.CompleteAsync() in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Repositories\UnitOfWork.cs:line 29
+   at PORTAL.APPLICATION.Services.PermissionService.Create(PermissionCreateDto request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 30
+   at PORTAL.API.Routes.PermissionRoute.Create(PermissionCreateDto request, IGlobalLogger logger, IPermissionService services) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\PermissionRoutes.cs:line 22
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-06-07 11:49:23.715 +05:45 [ERR] HTTP POST /Permission responded 500 in 19171.4513 ms
+2025-06-07 11:49:23.729 +05:45 [INF] Request finished HTTP/2 POST https://localhost:7010/Permission - 500 null application/json 19221.4602ms
+2025-06-07 11:51:17.317 +05:45 [INF] Request starting HTTP/2 POST https://localhost:7010/Permission - application/json 95
+2025-06-07 11:51:17.333 +05:45 [INF] CORS policy execution successful.
+2025-06-07 11:51:17.335 +05:45 [INF] Executing endpoint 'HTTP: POST /Permission => Create'
+2025-06-07 11:51:26.925 +05:45 [INF] Executed DbCommand (1ms) [Parameters=[@__request_PermissionName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PermissionId", p."CreatedAt", p."CreatedBy", p."Description", p."IsActive", p."IsDeleted", p."ModifiedAt", p."ModifiedBy", p."PermissionName"
+FROM "Permissions" AS p
+WHERE p."PermissionName" = @__request_PermissionName_0
+2025-06-07 11:51:35.336 +05:45 [ERR] Failed executing DbCommand (38ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Permissions" ("CreatedAt", "CreatedBy", "Description", "IsActive", "IsDeleted", "ModifiedAt", "ModifiedBy", "PermissionName")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7)
+RETURNING "PermissionId";
+2025-06-07 11:51:35.362 +05:45 [ERR] An exception occurred in the database while saving changes for context type 'PORTAL.INFRASTRUCTURE.Persistence.ApplicationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23502: null value in column "CreatedBy" of relation "Permissions" violates not-null constraint
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23502
+    MessageText: null value in column "CreatedBy" of relation "Permissions" violates not-null constraint
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Permissions
+    ColumnName: CreatedBy
+    File: execMain.c
+    Line: 1988
+    Routine: ExecConstraints
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23502: null value in column "CreatedBy" of relation "Permissions" violates not-null constraint
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23502
+    MessageText: null value in column "CreatedBy" of relation "Permissions" violates not-null constraint
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Permissions
+    ColumnName: CreatedBy
+    File: execMain.c
+    Line: 1988
+    Routine: ExecConstraints
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-06-07 11:51:36.709 +05:45 [ERR] Error creating permission
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23502: null value in column "CreatedBy" of relation "Permissions" violates not-null constraint
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23502
+    MessageText: null value in column "CreatedBy" of relation "Permissions" violates not-null constraint
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Permissions
+    ColumnName: CreatedBy
+    File: execMain.c
+    Line: 1988
+    Routine: ExecConstraints
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PORTAL.INFRASTRUCTURE.Repositories.UnitOfWork.CompleteAsync() in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Repositories\UnitOfWork.cs:line 29
+   at PORTAL.APPLICATION.Services.PermissionService.Create(PermissionCreateDto request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 30
+2025-06-07 11:51:37.491 +05:45 [ERR] Error occurred while registering user Permission To create data
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23502: null value in column "CreatedBy" of relation "Permissions" violates not-null constraint
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23502
+    MessageText: null value in column "CreatedBy" of relation "Permissions" violates not-null constraint
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Permissions
+    ColumnName: CreatedBy
+    File: execMain.c
+    Line: 1988
+    Routine: ExecConstraints
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PORTAL.INFRASTRUCTURE.Repositories.UnitOfWork.CompleteAsync() in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Repositories\UnitOfWork.cs:line 29
+   at PORTAL.APPLICATION.Services.PermissionService.Create(PermissionCreateDto request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 30
+   at PORTAL.API.Routes.PermissionRoute.Create(PermissionCreateDto request, IGlobalLogger logger, IPermissionService services) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\PermissionRoutes.cs:line 22
+2025-06-07 11:51:37.904 +05:45 [INF] Executed endpoint 'HTTP: POST /Permission => Create'
+2025-06-07 11:51:38.432 +05:45 [ERR] An unhandled exception occurred.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23502: null value in column "CreatedBy" of relation "Permissions" violates not-null constraint
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23502
+    MessageText: null value in column "CreatedBy" of relation "Permissions" violates not-null constraint
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Permissions
+    ColumnName: CreatedBy
+    File: execMain.c
+    Line: 1988
+    Routine: ExecConstraints
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PORTAL.INFRASTRUCTURE.Repositories.UnitOfWork.CompleteAsync() in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Repositories\UnitOfWork.cs:line 29
+   at PORTAL.APPLICATION.Services.PermissionService.Create(PermissionCreateDto request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 30
+   at PORTAL.API.Routes.PermissionRoute.Create(PermissionCreateDto request, IGlobalLogger logger, IPermissionService services) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\PermissionRoutes.cs:line 22
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-06-07 11:51:38.443 +05:45 [ERR] HTTP POST /Permission responded 500 in 21111.3367 ms
+2025-06-07 11:51:38.444 +05:45 [INF] Request finished HTTP/2 POST https://localhost:7010/Permission - 500 null application/json 21126.884ms

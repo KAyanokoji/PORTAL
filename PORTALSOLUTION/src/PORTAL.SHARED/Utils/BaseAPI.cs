@@ -1,70 +1,127 @@
-﻿namespace PORTAL.SHARED.Utils
+﻿using Microsoft.AspNetCore.Http;
+
+namespace PORTAL.SHARED.Utils
 {
-    public static class BaseAPI
+    public static class ApiResponse
     {
-        public static JsonResponse Go<T>(T? data, string message = "Success")
+        public static JsonResponse Success<T>(T? data, string message = "Success", int statusCode = 200)
         {
-            return new JsonResponse() { IsSuccess = true, ResponseData = data, Message = message, StatusCode = 200 };
+            return new JsonResponse 
+            { 
+                IsSuccess = true, 
+                ResponseData = data, 
+                Message = message, 
+                StatusCode = statusCode 
+            };
         }
 
-        public static JsonResponse Token<T>(string data, string message = "Login Successful")
+        public static JsonResponse AuthenticationSuccess<T>(T token, string message = "Authentication successful")
         {
-            return new JsonResponse() { IsSuccess = true, Token = data, Message = message, StatusCode = 200, IsToken=true };
+            if (token == null)
+                throw new ArgumentNullException(nameof(token));
+
+            return new JsonResponse 
+            { 
+                IsSuccess = true, 
+                Token = token.ToString(), 
+                Message = message, 
+                StatusCode = 200, 
+                IsToken = true 
+            };
         }
 
-        public static JsonResponse Create<T>(T? data, string message = "Created successfully")
+        public static JsonResponse Created<T>(T? data, string message = "Resource created successfully")
         {
-            return new JsonResponse() { IsSuccess = true, ResponseData = data, Message = message, StatusCode = 201 };
+            return new JsonResponse 
+            { 
+                IsSuccess = true, 
+                ResponseData = data, 
+                Message = message, 
+                StatusCode = StatusCodes.Status201Created 
+            };
         }
 
-        public static JsonResponse Update<T>(T? data, string message = "Updated successfully")
+        public static JsonResponse Updated<T>(T? data, string message = "Resource updated successfully")
         {
-            return new JsonResponse() { IsSuccess = true, ResponseData = data, Message = message, StatusCode = 200 };
+            return new JsonResponse 
+            { 
+                IsSuccess = true, 
+                ResponseData = data, 
+                Message = message, 
+                StatusCode = StatusCodes.Status200OK 
+            };
         }
 
-        public static JsonResponse Error(string message, int statusCode = 400)
+        public static JsonResponse Error(string message, int statusCode = StatusCodes.Status400BadRequest)
         {
-            return new JsonResponse() { IsSuccess = false, ResponseData = null, Message = message, StatusCode = statusCode };
+            return new JsonResponse 
+            { 
+                IsSuccess = false, 
+                Message = message, 
+                StatusCode = statusCode 
+            };
         }
 
-        public static JsonResponse NotFound(string message = "Resource not found")
+        public static JsonResponse NotFound(string message = "Requested resource not found")
         {
-            return new JsonResponse() { IsSuccess = false, ResponseData = null, Message = message, StatusCode = 404 };
+            return Error(message, StatusCodes.Status404NotFound);
         }
 
         public static JsonResponse Unauthorized(string message = "Unauthorized access")
         {
-            return new JsonResponse() { IsSuccess = false, ResponseData = null, Message = message, StatusCode = 401 };
+            return Error(message, StatusCodes.Status401Unauthorized);
         }
 
-        public static JsonResponse Forbidden(string message = "Forbidden access")
+        public static JsonResponse Forbidden(string message = "Access to this resource is forbidden")
         {
-            return new JsonResponse() { IsSuccess = false, ResponseData = null, Message = message, StatusCode = 403 };
+            return Error(message, StatusCodes.Status403Forbidden);
         }
 
-        public static JsonResponse ValidationError(IDictionary<string, string[]> errors)
+        public static JsonResponse ValidationError(IDictionary<string, string[]> errors, string message = "Validation errors occurred")
         {
-            return new JsonResponse() { IsSuccess = false, ResponseData = errors, Message = "One or more validation errors occurred.", StatusCode = 422 };
+            return new JsonResponse 
+            { 
+                IsSuccess = false, 
+                ResponseData = errors, 
+                Message = message, 
+                StatusCode = StatusCodes.Status422UnprocessableEntity 
+            };
         }
 
-        public static JsonResponse InternalServerError(string message = "An unexpected error occurred.")
+        public static JsonResponse InternalServerError(string message = "An unexpected error occurred")
         {
-            return new JsonResponse() { IsSuccess = false, ResponseData = null, Message = message, StatusCode = 500 };
+            return Error(message, StatusCodes.Status500InternalServerError);
         }
 
-        public static JsonResponse Accepted(string message = "Request is accepted and processing.")
+        public static JsonResponse Accepted(string message = "Request accepted for processing")
         {
-            return new JsonResponse() { IsSuccess = true, ResponseData = null, Message = message, StatusCode = 202 };
+            return new JsonResponse 
+            { 
+                IsSuccess = true, 
+                Message = message, 
+                StatusCode = StatusCodes.Status202Accepted 
+            };
         }
 
-        public static JsonResponse NoContent(string message = "No content")
+        public static JsonResponse NoContent(string message = "No content available")
         {
-            return new JsonResponse() { IsSuccess = true, ResponseData = null, Message = message, StatusCode = 204 };
+            return new JsonResponse 
+            { 
+                IsSuccess = true, 
+                Message = message, 
+                StatusCode = StatusCodes.Status204NoContent 
+            };
         }
 
-        public static JsonResponse Redirect(string location)
+        public static JsonResponse Redirect(string location, string message = "Redirecting to requested resource")
         {
-            return new JsonResponse() { IsSuccess = true, ResponseData = null, Message = "Redirecting to another location.", StatusCode = 302, RedirectLocation = location };
+            return new JsonResponse 
+            { 
+                IsSuccess = true, 
+                Message = message, 
+                StatusCode = StatusCodes.Status302Found, 
+                RedirectLocation = location 
+            };
         }
     }
 }

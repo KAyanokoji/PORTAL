@@ -1,0 +1,43 @@
+2025-06-06 23:58:11.596 +05:45 [INF] Now listening on: https://localhost:7010
+2025-06-06 23:58:11.724 +05:45 [INF] Now listening on: http://localhost:5182
+2025-06-06 23:58:11.729 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-06 23:58:11.730 +05:45 [INF] Hosting environment: Development
+2025-06-06 23:58:11.730 +05:45 [INF] Content root path: E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API
+2025-06-06 23:58:19.288 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/ - null null
+2025-06-06 23:58:19.894 +05:45 [INF] HTTP GET / responded 404 in 169.7754 ms
+2025-06-06 23:58:19.961 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/ - 404 0 null 677.4511ms
+2025-06-06 23:58:20.009 +05:45 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7010/, Response status code: 404
+2025-06-06 23:58:26.378 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/ - null null
+2025-06-06 23:58:26.429 +05:45 [INF] HTTP GET /swagger/ responded 301 in 42.3383 ms
+2025-06-06 23:58:26.430 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/ - 499 null null 51.5107ms
+2025-06-06 23:58:26.432 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.html - null null
+2025-06-06 23:58:26.588 +05:45 [INF] HTTP GET /swagger/index.html responded 200 in 155.1292 ms
+2025-06-06 23:58:26.588 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.html - 200 null text/html;charset=utf-8 156.6778ms
+2025-06-06 23:58:26.659 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.css - null null
+2025-06-06 23:58:26.659 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/swagger-ui.css - null null
+2025-06-06 23:58:26.670 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/swagger-ui-bundle.js - null null
+2025-06-06 23:58:26.695 +05:45 [INF] The file /index.css was not modified
+2025-06-06 23:58:26.696 +05:45 [INF] The file /swagger-ui-bundle.js was not modified
+2025-06-06 23:58:26.699 +05:45 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 28.1637 ms
+2025-06-06 23:58:26.699 +05:45 [INF] HTTP GET /swagger/index.css responded 304 in 37.0092 ms
+2025-06-06 23:58:26.699 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.css - 304 null text/css 40.1831ms
+2025-06-06 23:58:26.695 +05:45 [INF] The file /swagger-ui.css was not modified
+2025-06-06 23:58:26.705 +05:45 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 43.1083 ms
+2025-06-06 23:58:26.706 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/swagger-ui.css - 304 null text/css 46.4521ms
+2025-06-06 23:58:26.699 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/swagger-ui-bundle.js - 304 null text/javascript 28.998ms
+2025-06-06 23:58:26.716 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/swagger-ui-standalone-preset.js - null null
+2025-06-06 23:58:26.716 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.js - null null
+2025-06-06 23:58:26.720 +05:45 [INF] HTTP GET /swagger/index.js responded 200 in 3.4412 ms
+2025-06-06 23:58:26.720 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.js - 200 null application/javascript;charset=utf-8 4.5108ms
+2025-06-06 23:58:26.725 +05:45 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2025-06-06 23:58:26.725 +05:45 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 9.2794 ms
+2025-06-06 23:58:26.726 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/swagger-ui-standalone-preset.js - 304 null text/javascript 10.4326ms
+2025-06-06 23:58:27.019 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/v1/swagger.json - null null
+2025-06-06 23:58:27.071 +05:45 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-06-06 23:58:27.440 +05:45 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 420.4582 ms
+2025-06-06 23:58:27.446 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 426.6614ms
+2025-06-06 23:59:59.132 +05:45 [INF] Now listening on: https://localhost:7010
+2025-06-06 23:59:59.214 +05:45 [INF] Now listening on: http://localhost:5182
+2025-06-06 23:59:59.225 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-06 23:59:59.227 +05:45 [INF] Hosting environment: Development
+2025-06-06 23:59:59.227 +05:45 [INF] Content root path: E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API

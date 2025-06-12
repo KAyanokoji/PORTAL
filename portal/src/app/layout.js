@@ -1,16 +1,8 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import NotificationProvider from "@/components/common/control/SetupSnackbar.";
 import "./globals.css";
 import { Providers } from "@/redux/provider";
+import AppWrapper from "@/utils/AppWrapper";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata = {
   title: "Create Next App",
@@ -21,9 +13,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className=''
       >
-        <Providers>{children}</Providers>
+        <Providers>
+        <NotificationProvider>
+          <AppWrapper>
+            {children}
+          </AppWrapper>
+          </NotificationProvider>
+        </Providers>
       </body>
     </html>
   );

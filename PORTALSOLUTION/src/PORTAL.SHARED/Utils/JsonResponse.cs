@@ -1,6 +1,6 @@
 ﻿namespace PORTAL.SHARED.Utils
 {
-    public class JsonResponse
+    public sealed class JsonResponse
     {
         public bool IsSuccess { get; set; }
         public object? ResponseData { get; set; }  // Changed `dynamic` to `object`

@@ -1,10 +1,12 @@
 'use client';
-import { useState } from 'react';
+import { useState, useMemo, useCallback } from 'react';
+
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Moved outside component to avoid recreation
 
 const EmailInput = ({
   id = 'email',
   name = 'email',
-  label = '',
+  label = 'Email',
   placeholder = 'your@email.com',
   required = false,
   value = '',
@@ -12,79 +14,62 @@ const EmailInput = ({
   onBlur,
   errorMessage = 'Please enter a valid email address',
   successMessage = 'Email address is valid',
-  className = '',
-  inputClassName = '',
-  labelClassName = '',
-  errorClassName = '',
-  successClassName = '',
+  className = 'mb-4',
+  inputClassName = 'w-full px-3 py-2 bg-white border rounded-md shadow-sm focus:outline-none focus:ring-blue-500',
+  labelClassName = 'text-sm font-medium text-gray-700',
+  errorClassName = 'mt-1 text-sm text-red-600',
+  successClassName = 'mt-1 text-sm text-green-600',
   layout = 'block',
   labelPosition = 'top',
-  gap = 2
+  gap = '2'
 }) => {
   const [email, setEmail] = useState(value);
   const [touched, setTouched] = useState(false);
-  const [isValid, setIsValid] = useState(false);
+  
+  // Memoized validation
+  const isValid = useMemo(() => emailRegex.test(email), [email]);
 
-  const validateEmail = (email) => {
-    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(email);
-  };
-
-  const handleChange = (e) => {
-    console.log("EMail", e.target.value)
+  // Event handlers
+  const handleChange = useCallback((e) => {
     const newEmail = e.target.value;
     setEmail(newEmail);
-    const valid = validateEmail(newEmail);
-    setIsValid(valid);
-    if (onChange) onChange(newEmail, valid);
+    onChange?.(newEmail, emailRegex.test(newEmail));
+  }, [onChange]);
 
-  };
-  console.log("vALIDATE", email)
-
-  const handleBlur = () => {
+  const handleBlur = useCallback(() => {
     setTouched(true);
-    if (onBlur) onBlur(email, isValid);
-  };
+    onBlur?.(email, isValid);
+  }, [email, isValid, onBlur]);
 
+  // Derived states
   const showError = touched && !isValid && email.length > 0;
   const showSuccess = touched && isValid;
 
-  // Simplified layout classes
-  const getContainerClasses = () => {
-    let classes = 'mb-4';
-    
-    if (layout === 'inline') {
-      classes += ' flex items-center';
-    } else if (layout === 'block') {
-      classes += ' flex flex-col';
-    }
-    
-    if (gap) {
-      classes += ` gap-${gap}`;
-    }
-    
-    return `${classes} ${className}`;
-  };
+  // Class generators
+  const containerClasses = useMemo(() => {
+    const layoutClasses = layout === 'inline' ? 'flex items-center' : 'flex flex-col';
+    return `${className} ${layoutClasses} gap-${gap}`.trim();
+  }, [layout, gap, className]);
 
-  const getLabelClasses = () => {
-    let classes = 'text-sm font-medium text-gray-700';
-    
-    if (labelPosition === 'left') {
-      classes += ' mr-2';
-    } else if (labelPosition === 'right') {
-      classes += ' ml-2 order-1';
-    }
-    
-    return `${classes} ${labelClassName}`;
-  };
+  const labelClasses = useMemo(() => {
+    const positionClasses = 
+      labelPosition === 'left' ? 'mr-2' : 
+      labelPosition === 'right' ? 'ml-2 order-1' : '';
+    return `${labelClassName} ${positionClasses}`.trim();
+  }, [labelPosition, labelClassName]);
+
+  const inputClasses = useMemo(() => {
+    const stateClasses = 
+      showError ? 'border-red-500 focus:ring-red-500' :
+      showSuccess ? 'border-green-500 focus:ring-green-500' :
+      'border-gray-300';
+    return `${inputClassName} ${stateClasses}`.trim();
+  }, [showError, showSuccess, inputClassName]);
 
   return (
-    <div className={getContainerClasses()}>
+    <div className={containerClasses}>
       {labelPosition !== 'hidden' && (
-        <label
-          htmlFor={id}
-          className={getLabelClasses()}
-        >
+        <label htmlFor={id} className={labelClasses}>
           {label}
           {required && <span className="text-red-500">*</span>}
         </label>
@@ -99,27 +84,13 @@ const EmailInput = ({
           onChange={handleChange}
           onBlur={handleBlur}
           placeholder={placeholder}
-          className={`w-full px-3 py-2 bg-white border rounded-md shadow-sm focus:outline-none focus:ring-blue-500 ${
-            showError
-              ? 'border-red-500 focus:ring-red-500'
-              : showSuccess
-              ? 'border-green-500 focus:ring-green-500'
-              : 'border-gray-300'
-          } ${inputClassName}`}
+          className={inputClasses}
           required={required}
         />
       </div>
 
-      {showError && (
-        <p className={`mt-1 text-sm text-red-600 ${errorClassName}`}>
-          {errorMessage}
-        </p>
-      )}
-      {showSuccess && (
-        <p className={`mt-1 text-sm text-green-600 ${successClassName}`}>
-          {successMessage}
-        </p>
-      )}
+      {showError && <p className={errorClassName}>{errorMessage}</p>}
+      {/* {showSuccess && <p className={successClassName}>{successMessage}</p>} */}
     </div>
   );
 };

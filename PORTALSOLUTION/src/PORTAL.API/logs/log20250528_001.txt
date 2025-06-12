@@ -1,0 +1,137 @@
+2025-05-28 23:42:26.604 +05:45 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5182: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ ---> System.Net.Sockets.SocketException (10048): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-05-28 23:45:56.333 +05:45 [INF] Now listening on: http://localhost:5182
+2025-05-28 23:45:56.413 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-28 23:45:56.416 +05:45 [INF] Hosting environment: Development
+2025-05-28 23:45:56.418 +05:45 [INF] Content root path: E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API
+2025-05-28 23:46:12.877 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/ - null null
+2025-05-28 23:46:13.066 +05:45 [INF] HTTP GET / responded 404 in 55.5047 ms
+2025-05-28 23:46:13.180 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/ - 404 0 null 287.9075ms
+2025-05-28 23:46:13.574 +05:45 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5182/, Response status code: 404
+2025-05-28 23:46:22.949 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/index.html - null null
+2025-05-28 23:46:23.062 +05:45 [INF] HTTP GET /swagger/index.html responded 200 in 94.6336 ms
+2025-05-28 23:46:23.081 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/index.html - 200 null text/html;charset=utf-8 132.8652ms
+2025-05-28 23:46:23.166 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/swagger-ui.css - null null
+2025-05-28 23:46:23.211 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/index.js - null null
+2025-05-28 23:46:23.255 +05:45 [INF] HTTP GET /swagger/index.js responded 200 in 3.7358 ms
+2025-05-28 23:46:23.271 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/index.js - 200 null application/javascript;charset=utf-8 57.7331ms
+2025-05-28 23:46:23.283 +05:45 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-05-28 23:46:23.293 +05:45 [INF] HTTP GET /swagger/swagger-ui.css responded 200 in 50.9516 ms
+2025-05-28 23:46:23.296 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/swagger-ui.css - 499 154948 text/css 130.5918ms
+2025-05-28 23:46:23.401 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/favicon-16x16.png - null null
+2025-05-28 23:46:23.412 +05:45 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2025-05-28 23:46:23.415 +05:45 [INF] HTTP GET /swagger/favicon-16x16.png responded 200 in 4.1961 ms
+2025-05-28 23:46:23.427 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/favicon-16x16.png - 499 665 image/png 25.7962ms
+2025-05-28 23:46:23.545 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/v1/swagger.json - null null
+2025-05-28 23:46:23.580 +05:45 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-05-28 23:46:23.758 +05:45 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 207.9489 ms
+2025-05-28 23:46:23.763 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 217.6924ms
+2025-05-28 23:46:30.760 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/Permission - null null
+2025-05-28 23:46:30.767 +05:45 [INF] Executing endpoint 'HTTP: GET /Permission => GetAllPermissions'
+2025-05-28 23:46:34.697 +05:45 [INF] Executed DbCommand (54ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PermissionId", p."CreatedAt", p."CreatedBy", p."Description", p."IsActive", p."ModifiedAt", p."ModifiedBy", p."PermissionName"
+FROM "Permissions" AS p
+2025-05-28 23:46:34.809 +05:45 [INF] Setting HTTP status code 200.
+2025-05-28 23:46:34.817 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-05-28 23:46:34.833 +05:45 [INF] Executed endpoint 'HTTP: GET /Permission => GetAllPermissions'
+2025-05-28 23:46:34.843 +05:45 [INF] HTTP GET /Permission responded 200 in 4077.9424 ms
+2025-05-28 23:46:34.883 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/Permission - 200 null application/json; charset=utf-8 4123.0045ms
+2025-05-28 23:46:57.960 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/Permission - application/json 238
+2025-05-28 23:46:57.970 +05:45 [INF] CORS policy execution successful.
+2025-05-28 23:46:57.976 +05:45 [INF] Executing endpoint 'HTTP: POST /Permission => Create'
+2025-05-28 23:46:58.549 +05:45 [INF] Executed DbCommand (94ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = DateTime), @p5='?', @p6='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Permissions" ("CreatedAt", "CreatedBy", "Description", "IsActive", "ModifiedAt", "ModifiedBy", "PermissionName")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
+RETURNING "PermissionId";
+2025-05-28 23:46:58.616 +05:45 [INF] Setting HTTP status code 201.
+2025-05-28 23:46:58.621 +05:45 [INF] Executed endpoint 'HTTP: POST /Permission => Create'
+2025-05-28 23:46:58.625 +05:45 [INF] HTTP POST /Permission responded 201 in 656.7449 ms
+2025-05-28 23:46:58.631 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/Permission - 201 0 null 670.2498ms
+2025-05-28 23:47:08.419 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/Permission - null null
+2025-05-28 23:47:08.425 +05:45 [INF] Executing endpoint 'HTTP: GET /Permission => GetAllPermissions'
+2025-05-28 23:47:08.580 +05:45 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PermissionId", p."CreatedAt", p."CreatedBy", p."Description", p."IsActive", p."ModifiedAt", p."ModifiedBy", p."PermissionName"
+FROM "Permissions" AS p
+2025-05-28 23:47:08.609 +05:45 [INF] Setting HTTP status code 200.
+2025-05-28 23:47:08.612 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-05-28 23:47:08.630 +05:45 [INF] Executed endpoint 'HTTP: GET /Permission => GetAllPermissions'
+2025-05-28 23:47:08.632 +05:45 [INF] HTTP GET /Permission responded 200 in 206.9950 ms
+2025-05-28 23:47:08.645 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/Permission - 200 null application/json; charset=utf-8 226.3103ms
+2025-05-28 23:51:14.269 +05:45 [INF] Application is shutting down...
+2025-05-28 23:51:31.521 +05:45 [INF] Now listening on: https://localhost:7010
+2025-05-28 23:51:31.646 +05:45 [INF] Now listening on: http://localhost:5182
+2025-05-28 23:51:31.659 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-28 23:51:31.661 +05:45 [INF] Hosting environment: Development
+2025-05-28 23:51:31.662 +05:45 [INF] Content root path: E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API
+2025-05-28 23:51:32.328 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/ - null null
+2025-05-28 23:51:32.471 +05:45 [INF] HTTP GET / responded 404 in 34.3243 ms
+2025-05-28 23:51:32.512 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/ - 404 0 null 175.3967ms
+2025-05-28 23:51:32.533 +05:45 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7010/, Response status code: 404
+2025-05-28 23:51:38.122 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.html - null null
+2025-05-28 23:51:38.122 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/ - null null
+2025-05-28 23:51:38.129 +05:45 [INF] HTTP GET /swagger/ responded 301 in 2.3795 ms
+2025-05-28 23:51:38.130 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/ - 499 null null 8.2561ms
+2025-05-28 23:51:38.214 +05:45 [INF] HTTP GET /swagger/index.html responded 200 in 87.6545 ms
+2025-05-28 23:51:38.215 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.html - 200 null text/html;charset=utf-8 92.291ms
+2025-05-28 23:51:38.269 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/swagger-ui.css - null null
+2025-05-28 23:51:38.270 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.css - null null
+2025-05-28 23:51:38.270 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.js - null null
+2025-05-28 23:51:38.311 +05:45 [INF] HTTP GET /swagger/index.js responded 200 in 28.9875 ms
+2025-05-28 23:51:38.311 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.js - 200 null application/javascript;charset=utf-8 41.0129ms
+2025-05-28 23:51:38.360 +05:45 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-05-28 23:51:38.361 +05:45 [INF] HTTP GET /swagger/index.css responded 200 in 78.2647 ms
+2025-05-28 23:51:38.361 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.css - 499 202 text/css 90.6494ms
+2025-05-28 23:51:38.362 +05:45 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-05-28 23:51:38.362 +05:45 [INF] HTTP GET /swagger/swagger-ui.css responded 200 in 79.4356 ms
+2025-05-28 23:51:38.362 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/swagger-ui.css - 499 154948 text/css 92.8243ms
+2025-05-28 23:51:38.519 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/favicon-16x16.png - null null
+2025-05-28 23:51:38.543 +05:45 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2025-05-28 23:51:38.544 +05:45 [INF] HTTP GET /swagger/favicon-16x16.png responded 200 in 24.4117 ms
+2025-05-28 23:51:38.544 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/favicon-16x16.png - 200 665 image/png 24.9528ms
+2025-05-28 23:51:38.581 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/v1/swagger.json - null null
+2025-05-28 23:51:38.620 +05:45 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-05-28 23:51:39.033 +05:45 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 450.6390 ms
+2025-05-28 23:51:39.037 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 455.2567ms
+2025-05-28 23:52:32.252 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/Permission - null null
+2025-05-28 23:52:32.256 +05:45 [INF] Executing endpoint 'HTTP: GET /Permission => GetAllPermissions'
+2025-05-28 23:53:01.857 +05:45 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PermissionId", p."CreatedAt", p."CreatedBy", p."Description", p."IsActive", p."ModifiedAt", p."ModifiedBy", p."PermissionName"
+FROM "Permissions" AS p
+2025-05-28 23:54:18.697 +05:45 [INF] Setting HTTP status code 200.
+2025-05-28 23:54:18.707 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-05-28 23:54:18.734 +05:45 [INF] Executed endpoint 'HTTP: GET /Permission => GetAllPermissions'
+2025-05-28 23:54:18.736 +05:45 [INF] HTTP GET /Permission responded 200 in 106482.6950 ms
+2025-05-28 23:54:18.752 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/Permission - 499 null application/json; charset=utf-8 106499.9438ms
+2025-05-28 23:54:33.736 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/Permission - null null
+2025-05-28 23:54:33.771 +05:45 [INF] Executing endpoint 'HTTP: GET /Permission => GetAllPermissions'
+2025-05-28 23:54:36.375 +05:45 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PermissionId", p."CreatedAt", p."CreatedBy", p."Description", p."IsActive", p."ModifiedAt", p."ModifiedBy", p."PermissionName"
+FROM "Permissions" AS p
+2025-05-28 23:54:36.378 +05:45 [INF] Setting HTTP status code 200.
+2025-05-28 23:54:36.378 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-05-28 23:54:36.379 +05:45 [INF] Executed endpoint 'HTTP: GET /Permission => GetAllPermissions'
+2025-05-28 23:54:36.384 +05:45 [INF] HTTP GET /Permission responded 200 in 2613.2150 ms
+2025-05-28 23:54:36.385 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/Permission - 200 null application/json; charset=utf-8 2672.5519ms

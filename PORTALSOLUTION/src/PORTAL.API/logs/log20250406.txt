@@ -1,0 +1,307 @@
+2025-04-06 19:14:02.905 +05:45 [INF] Now listening on: http://localhost:5182
+2025-04-06 19:14:03.054 +05:45 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-04-06 19:14:03.161 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-06 19:14:03.162 +05:45 [INF] Hosting environment: Development
+2025-04-06 19:14:03.164 +05:45 [INF] Content root path: E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API
+2025-04-06 19:14:04.595 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/ - null null
+2025-04-06 19:14:05.160 +05:45 [INF] HTTP GET / responded 404 in 15.6690 ms
+2025-04-06 19:14:05.225 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/ - 404 0 null 648.5227ms
+2025-04-06 19:14:05.514 +05:45 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5182/, Response status code: 404
+2025-04-06 19:14:17.175 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/index.html - null null
+2025-04-06 19:14:17.337 +05:45 [INF] HTTP GET /swagger/index.html responded 200 in 149.4277 ms
+2025-04-06 19:14:17.347 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/index.html - 200 null text/html;charset=utf-8 173.1489ms
+2025-04-06 19:14:17.393 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/swagger-ui.css - null null
+2025-04-06 19:14:17.413 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/swagger-ui-standalone-preset.js - null null
+2025-04-06 19:14:17.413 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/index.css - null null
+2025-04-06 19:14:17.487 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/swagger-ui-bundle.js - null null
+2025-04-06 19:14:17.519 +05:45 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-04-06 19:14:17.521 +05:45 [INF] HTTP GET /swagger/index.css responded 200 in 21.0519 ms
+2025-04-06 19:14:17.524 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/index.css - 200 202 text/css 111.2048ms
+2025-04-06 19:14:17.536 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/index.js - null null
+2025-04-06 19:14:17.537 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/_vs/browserLink - null null
+2025-04-06 19:14:17.537 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-06 19:14:17.543 +05:45 [INF] HTTP GET /swagger/index.js responded 200 in 1.7153 ms
+2025-04-06 19:14:17.554 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 17.3022ms
+2025-04-06 19:14:17.554 +05:45 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-04-06 19:14:17.560 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/index.js - 200 null application/javascript;charset=utf-8 23.8919ms
+2025-04-06 19:14:17.571 +05:45 [INF] HTTP GET /swagger/swagger-ui.css responded 200 in 76.7186 ms
+2025-04-06 19:14:17.573 +05:45 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-04-06 19:14:17.605 +05:45 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 109.0096 ms
+2025-04-06 19:14:17.607 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/swagger-ui.css - 200 154948 text/css 207.8114ms
+2025-04-06 19:14:17.608 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/swagger-ui-standalone-preset.js - 200 229223 text/javascript 194.6292ms
+2025-04-06 19:14:17.651 +05:45 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-04-06 19:14:17.669 +05:45 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 165.2047 ms
+2025-04-06 19:14:17.672 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/swagger-ui-bundle.js - 200 1466324 text/javascript 258.7524ms
+2025-04-06 19:14:17.685 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/_vs/browserLink - 200 null text/javascript; charset=UTF-8 144.044ms
+2025-04-06 19:14:17.908 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/favicon-16x16.png - null null
+2025-04-06 19:14:17.913 +05:45 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2025-04-06 19:14:17.921 +05:45 [INF] HTTP GET /swagger/favicon-16x16.png responded 200 in 8.5994 ms
+2025-04-06 19:14:17.927 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/favicon-16x16.png - 200 665 image/png 18.3812ms
+2025-04-06 19:14:18.004 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/v1/swagger.json - null null
+2025-04-06 19:14:18.029 +05:45 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 18.1928 ms
+2025-04-06 19:14:18.038 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 33.8895ms
+2025-04-06 19:16:25.788 +05:45 [INF] Now listening on: http://localhost:5182
+2025-04-06 19:16:26.002 +05:45 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-04-06 19:16:26.107 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-06 19:16:26.186 +05:45 [INF] Hosting environment: Development
+2025-04-06 19:16:26.190 +05:45 [INF] Content root path: E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API
+2025-04-06 19:16:27.573 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/ - null null
+2025-04-06 19:16:28.124 +05:45 [INF] HTTP GET / responded 404 in 17.9326 ms
+2025-04-06 19:16:28.835 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/ - 404 0 null 1283.658ms
+2025-04-06 19:16:28.845 +05:45 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5182/, Response status code: 404
+2025-04-06 19:16:30.089 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/index.html - null null
+2025-04-06 19:16:30.279 +05:45 [INF] HTTP GET /swagger/index.html responded 200 in 163.9109 ms
+2025-04-06 19:16:30.284 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/index.html - 200 null text/html;charset=utf-8 195.7501ms
+2025-04-06 19:16:30.475 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/swagger-ui.css - null null
+2025-04-06 19:16:30.482 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/index.css - null null
+2025-04-06 19:16:30.488 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/swagger-ui-bundle.js - null null
+2025-04-06 19:16:30.529 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/swagger-ui-standalone-preset.js - null null
+2025-04-06 19:16:30.536 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/index.js - null null
+2025-04-06 19:16:30.537 +05:45 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-04-06 19:16:30.561 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/_vs/browserLink - null null
+2025-04-06 19:16:30.822 +05:45 [INF] HTTP GET /swagger/index.js responded 200 in 1.0594 ms
+2025-04-06 19:16:30.823 +05:45 [INF] HTTP GET /swagger/index.css responded 200 in 334.0179 ms
+2025-04-06 19:16:30.831 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/index.js - 200 null application/javascript;charset=utf-8 294.7791ms
+2025-04-06 19:16:30.832 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/index.css - 200 202 text/css 350.1026ms
+2025-04-06 19:16:30.833 +05:45 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-04-06 19:16:30.838 +05:45 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-04-06 19:16:30.846 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-06 19:16:30.849 +05:45 [INF] HTTP GET /swagger/swagger-ui.css responded 200 in 365.9731 ms
+2025-04-06 19:16:30.849 +05:45 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 31.0207 ms
+2025-04-06 19:16:30.855 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 9.0099ms
+2025-04-06 19:16:30.857 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/swagger-ui.css - 200 154948 text/css 382.2547ms
+2025-04-06 19:16:30.858 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/swagger-ui-standalone-preset.js - 200 229223 text/javascript 328.9364ms
+2025-04-06 19:16:30.878 +05:45 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-04-06 19:16:30.886 +05:45 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 394.9701 ms
+2025-04-06 19:16:30.889 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/swagger-ui-bundle.js - 200 1466324 text/javascript 401.3831ms
+2025-04-06 19:16:30.905 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/_vs/browserLink - 200 null text/javascript; charset=UTF-8 343.2768ms
+2025-04-06 19:16:33.263 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/v1/swagger.json - null null
+2025-04-06 19:16:33.300 +05:45 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 22.8577 ms
+2025-04-06 19:16:33.307 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 44.2438ms
+2025-04-06 19:18:22.778 +05:45 [INF] Now listening on: http://localhost:5182
+2025-04-06 19:18:23.178 +05:45 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-04-06 19:18:23.453 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-06 19:18:23.505 +05:45 [INF] Hosting environment: Development
+2025-04-06 19:18:23.507 +05:45 [INF] Content root path: E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API
+2025-04-06 19:18:24.384 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/ - null null
+2025-04-06 19:18:25.442 +05:45 [INF] HTTP GET / responded 404 in 20.8585 ms
+2025-04-06 19:18:25.522 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/ - 404 0 null 1151.7661ms
+2025-04-06 19:18:25.714 +05:45 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5182/, Response status code: 404
+2025-04-06 19:18:35.941 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/index.html - null null
+2025-04-06 19:18:36.094 +05:45 [INF] HTTP GET /swagger/index.html responded 200 in 141.3223 ms
+2025-04-06 19:18:36.101 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/index.html - 200 null text/html;charset=utf-8 162.1568ms
+2025-04-06 19:18:36.144 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-06 19:18:36.148 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/index.js - null null
+2025-04-06 19:18:36.164 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/_vs/browserLink - null null
+2025-04-06 19:18:36.222 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 77.4053ms
+2025-04-06 19:18:36.239 +05:45 [INF] HTTP GET /swagger/index.js responded 200 in 15.8553 ms
+2025-04-06 19:18:36.255 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/index.js - 200 null application/javascript;charset=utf-8 105.9881ms
+2025-04-06 19:18:36.328 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/_vs/browserLink - 200 null text/javascript; charset=UTF-8 164.5795ms
+2025-04-06 19:18:36.565 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/favicon-16x16.png - null null
+2025-04-06 19:18:36.697 +05:45 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2025-04-06 19:18:36.699 +05:45 [INF] HTTP GET /swagger/favicon-16x16.png responded 200 in 35.8526 ms
+2025-04-06 19:18:36.702 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/favicon-16x16.png - 499 665 image/png 136.9426ms
+2025-04-06 19:18:36.715 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/v1/swagger.json - null null
+2025-04-06 19:18:36.743 +05:45 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 18.0512 ms
+2025-04-06 19:18:36.747 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 32.4265ms
+2025-04-06 20:32:05.624 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 73
+2025-04-06 20:32:06.052 +05:45 [INF] CORS policy execution successful.
+2025-04-06 20:32:06.115 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-06 20:32:20.586 +05:45 [INF] Executed DbCommand (139ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-06 20:32:35.433 +05:45 [INF] Setting HTTP status code 200.
+2025-04-06 20:32:35.459 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-04-06 20:32:35.512 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-06 20:32:35.566 +05:45 [INF] HTTP POST /auth/login responded 200 in 29528.7743 ms
+2025-04-06 20:32:35.622 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 200 null application/json; charset=utf-8 30010.538ms
+2025-04-06 20:36:12.513 +05:45 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-04-06 20:36:21.200 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 73
+2025-04-06 20:36:21.213 +05:45 [INF] CORS policy execution successful.
+2025-04-06 20:36:21.217 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-06 20:36:24.621 +05:45 [INF] Executed DbCommand (9ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-06 20:36:31.901 +05:45 [INF] Setting HTTP status code 200.
+2025-04-06 20:36:31.910 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-04-06 20:36:31.918 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-06 20:36:31.922 +05:45 [INF] HTTP POST /auth/login responded 200 in 10709.9517 ms
+2025-04-06 20:36:31.926 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 200 null application/json; charset=utf-8 10726.6368ms
+2025-04-06 20:41:40.727 +05:45 [INF] Now listening on: http://localhost:5182
+2025-04-06 20:41:40.838 +05:45 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-04-06 20:41:40.959 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-06 20:41:40.960 +05:45 [INF] Hosting environment: Development
+2025-04-06 20:41:40.965 +05:45 [INF] Content root path: E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API
+2025-04-06 20:41:42.392 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/ - null null
+2025-04-06 20:41:42.712 +05:45 [INF] HTTP GET / responded 404 in 12.2367 ms
+2025-04-06 20:41:42.735 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/ - 404 0 null 365.5057ms
+2025-04-06 20:41:42.750 +05:45 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5182/, Response status code: 404
+2025-04-06 20:41:49.104 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/index.html - null null
+2025-04-06 20:41:49.200 +05:45 [INF] HTTP GET /swagger/index.html responded 200 in 85.6297 ms
+2025-04-06 20:41:49.214 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/index.html - 200 null text/html;charset=utf-8 112.086ms
+2025-04-06 20:41:49.245 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-06 20:41:49.258 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 13.0569ms
+2025-04-06 20:41:49.277 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/index.js - null null
+2025-04-06 20:41:49.277 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/_vs/browserLink - null null
+2025-04-06 20:41:49.297 +05:45 [INF] HTTP GET /swagger/index.js responded 200 in 1.5518 ms
+2025-04-06 20:41:49.299 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/index.js - 200 null application/javascript;charset=utf-8 22.0101ms
+2025-04-06 20:41:49.380 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/_vs/browserLink - 200 null text/javascript; charset=UTF-8 102.559ms
+2025-04-06 20:41:49.584 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/favicon-16x16.png - null null
+2025-04-06 20:41:49.615 +05:45 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2025-04-06 20:41:49.617 +05:45 [INF] HTTP GET /swagger/favicon-16x16.png responded 200 in 21.1771 ms
+2025-04-06 20:41:49.620 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/favicon-16x16.png - 499 665 image/png 36.0451ms
+2025-04-06 20:41:49.664 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/v1/swagger.json - null null
+2025-04-06 20:41:49.694 +05:45 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 18.4560 ms
+2025-04-06 20:41:49.697 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 33.7424ms
+2025-04-06 20:42:10.991 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 73
+2025-04-06 20:42:11.001 +05:45 [INF] CORS policy execution successful.
+2025-04-06 20:42:11.007 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-06 20:42:18.855 +05:45 [INF] Executed DbCommand (95ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-06 20:42:22.048 +05:45 [ERR] Error occurred while registering user guragainsaroj38@gmail.com
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+2025-04-06 20:42:22.260 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-06 20:42:22.451 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-06 20:42:22.465 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.AuthenticationFailedException: Invalid username or password
+   at PORTAL.INFRASTRUCTURE.Services.AuthServices.Authenticate(Login request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Services\AuthServices.cs:line 31
+   at PORTAL.API.Routes.AuthRoutes.Login(Login request, IAuthService authService, IGlobalLogger logger) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\AuthRoutes.cs:line 41
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-04-06 20:42:22.487 +05:45 [INF] HTTP POST /auth/login responded 401 in 11487.1356 ms
+2025-04-06 20:42:22.504 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 401 null application/json 11513.6194ms
+2025-04-06 20:42:33.803 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 73
+2025-04-06 20:42:33.809 +05:45 [INF] CORS policy execution successful.
+2025-04-06 20:42:33.811 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-06 20:42:35.216 +05:45 [INF] Executed DbCommand (15ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-06 20:42:35.933 +05:45 [INF] Setting HTTP status code 200.
+2025-04-06 20:42:35.941 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-04-06 20:42:35.951 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-06 20:42:35.954 +05:45 [INF] HTTP POST /auth/login responded 200 in 2145.0133 ms
+2025-04-06 20:42:35.958 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 200 null application/json; charset=utf-8 2155.1674ms
+2025-04-06 20:49:09.182 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-06 20:49:09.186 +05:45 [INF] CORS policy execution successful.
+2025-04-06 20:49:09.189 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 2.6140 ms
+2025-04-06 20:49:09.192 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 10.8199ms
+2025-04-06 20:49:09.197 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-06 20:49:09.201 +05:45 [INF] CORS policy execution successful.
+2025-04-06 20:49:09.202 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-06 20:49:11.840 +05:45 [INF] Executed DbCommand (4ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-06 20:49:12.309 +05:45 [INF] Setting HTTP status code 200.
+2025-04-06 20:49:12.312 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-04-06 20:49:12.315 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-06 20:49:12.317 +05:45 [INF] HTTP POST /auth/login responded 200 in 3115.7741 ms
+2025-04-06 20:49:12.321 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 200 null application/json; charset=utf-8 3123.6412ms
+2025-04-06 20:50:39.797 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-06 20:50:39.804 +05:45 [INF] CORS policy execution successful.
+2025-04-06 20:50:39.805 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 1.4510 ms
+2025-04-06 20:50:39.808 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 84.8467ms
+2025-04-06 20:50:39.813 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-06 20:50:39.816 +05:45 [INF] CORS policy execution successful.
+2025-04-06 20:50:39.817 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-06 20:50:41.864 +05:45 [INF] Executed DbCommand (2ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-06 20:50:42.298 +05:45 [INF] Setting HTTP status code 200.
+2025-04-06 20:50:42.301 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-04-06 20:50:42.303 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-06 20:50:42.305 +05:45 [INF] HTTP POST /auth/login responded 200 in 2489.1085 ms
+2025-04-06 20:50:42.309 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 200 null application/json; charset=utf-8 2496.4653ms
+2025-04-06 20:51:44.311 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-06 20:51:44.322 +05:45 [INF] CORS policy execution successful.
+2025-04-06 20:51:44.324 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 2.1360 ms
+2025-04-06 20:51:44.331 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 25.2513ms
+2025-04-06 20:51:44.337 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-06 20:51:44.342 +05:45 [INF] CORS policy execution successful.
+2025-04-06 20:51:44.344 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-06 20:51:46.466 +05:45 [INF] Executed DbCommand (4ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-06 20:51:46.904 +05:45 [INF] Setting HTTP status code 200.
+2025-04-06 20:51:46.906 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-04-06 20:51:46.908 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-06 20:51:46.911 +05:45 [INF] HTTP POST /auth/login responded 200 in 2568.8174 ms
+2025-04-06 20:51:46.914 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 200 null application/json; charset=utf-8 2576.7487ms
+2025-04-06 20:52:07.642 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-06 20:52:07.646 +05:45 [INF] CORS policy execution successful.
+2025-04-06 20:52:07.648 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 1.6184 ms
+2025-04-06 20:52:07.651 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 61.7642ms
+2025-04-06 20:52:07.655 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-06 20:52:07.659 +05:45 [INF] CORS policy execution successful.
+2025-04-06 20:52:07.663 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-06 20:52:07.668 +05:45 [INF] Executed DbCommand (1ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-06 20:52:08.089 +05:45 [INF] Setting HTTP status code 200.
+2025-04-06 20:52:08.092 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-04-06 20:52:08.094 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-06 20:52:08.096 +05:45 [INF] HTTP POST /auth/login responded 200 in 437.2008 ms
+2025-04-06 20:52:08.099 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 200 null application/json; charset=utf-8 443.8275ms
+2025-04-06 20:52:29.990 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-06 20:52:29.998 +05:45 [INF] CORS policy execution successful.
+2025-04-06 20:52:30.000 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 1.7161 ms
+2025-04-06 20:52:30.004 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 14.4172ms
+2025-04-06 20:52:30.013 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-06 20:52:30.019 +05:45 [INF] CORS policy execution successful.
+2025-04-06 20:52:30.023 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-06 20:52:30.028 +05:45 [INF] Executed DbCommand (1ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-06 20:52:30.444 +05:45 [INF] Setting HTTP status code 200.
+2025-04-06 20:52:30.446 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-04-06 20:52:30.448 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-06 20:52:30.450 +05:45 [INF] HTTP POST /auth/login responded 200 in 430.5974 ms
+2025-04-06 20:52:30.453 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 200 null application/json; charset=utf-8 440.3552ms
+2025-04-06 20:55:55.165 +05:45 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5182/auth/login - null null
+2025-04-06 20:55:55.169 +05:45 [INF] CORS policy execution successful.
+2025-04-06 20:55:55.170 +05:45 [INF] HTTP OPTIONS /auth/login responded 204 in 1.2788 ms
+2025-04-06 20:55:55.173 +05:45 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5182/auth/login - 204 null null 7.7051ms
+2025-04-06 20:55:55.179 +05:45 [INF] Request starting HTTP/1.1 POST http://localhost:5182/auth/login - application/json 64
+2025-04-06 20:55:55.183 +05:45 [INF] CORS policy execution successful.
+2025-04-06 20:55:55.184 +05:45 [INF] Executing endpoint 'HTTP: POST /auth/login => Login'
+2025-04-06 20:55:55.271 +05:45 [INF] Executed DbCommand (3ms) [Parameters=[@__username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."UserId", u."AvatarUrl", u."CreatedAt", u."CreatedBy", u."Culture", u."Email", u."FailedLoginAttempts", u."FirstName", u."IsActive", u."IsLockedOut", u."LastLoginDate", u."LastName", u."LockoutEndDate", u."ModifiedAt", u."ModifiedBy", u."Password", u."PasswordExpirationDate", u."PhoneNumber", u."SecurityStamp", u."TimeZone", u."TwoFactorEnabled", u."TwoFactorSecret", u."Username"
+FROM "Users" AS u
+WHERE u."Email" = @__username_0
+LIMIT 1
+2025-04-06 20:55:55.693 +05:45 [INF] Setting HTTP status code 200.
+2025-04-06 20:55:55.694 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-04-06 20:55:55.696 +05:45 [INF] Executed endpoint 'HTTP: POST /auth/login => Login'
+2025-04-06 20:55:55.699 +05:45 [INF] HTTP POST /auth/login responded 200 in 516.0650 ms
+2025-04-06 20:55:55.702 +05:45 [INF] Request finished HTTP/1.1 POST http://localhost:5182/auth/login - 200 null application/json; charset=utf-8 523.1821ms

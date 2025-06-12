@@ -1,0 +1,273 @@
+2025-06-01 09:23:05.450 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/Permission/2 - null null
+2025-06-01 09:23:05.853 +05:45 [INF] Executing endpoint 'HTTP: GET /Permission/{PermissionId} => GetPermissionById'
+2025-06-01 09:23:26.830 +05:45 [INF] Executed DbCommand (89ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PermissionId", p."CreatedAt", p."CreatedBy", p."Description", p."IsActive", p."ModifiedAt", p."ModifiedBy", p."PermissionName"
+FROM "Permissions" AS p
+WHERE p."PermissionId" = @__p_0
+LIMIT 1
+2025-06-01 09:23:29.863 +05:45 [ERR] Error while fetching permission with ID 2
+System.Collections.Generic.KeyNotFoundException: Entity with id 2 not found
+   at PORTAL.INFRASTRUCTURE.Repositories.GenericRepository`1.GetByIdAsync(Int32 id) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Repositories\GenericRepository.cs:line 61
+   at PORTAL.APPLICATION.Services.PermissionService.GetById(Int32 id) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 64
+2025-06-01 09:23:29.869 +05:45 [INF] Setting HTTP status code 200.
+2025-06-01 09:23:29.869 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-06-01 09:23:29.871 +05:45 [INF] Executed endpoint 'HTTP: GET /Permission/{PermissionId} => GetPermissionById'
+2025-06-01 09:23:29.871 +05:45 [INF] HTTP GET /Permission/2 responded 200 in 24020.9971 ms
+2025-06-01 09:23:29.873 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/Permission/2 - 200 null application/json; charset=utf-8 24423.8354ms
+2025-06-01 09:24:25.357 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/Permission/2 - null null
+2025-06-01 09:24:25.358 +05:45 [INF] Executing endpoint 'HTTP: GET /Permission/{PermissionId} => GetPermissionById'
+2025-06-01 09:24:33.938 +05:45 [INF] Executed DbCommand (42ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PermissionId", p."CreatedAt", p."CreatedBy", p."Description", p."IsActive", p."ModifiedAt", p."ModifiedBy", p."PermissionName"
+FROM "Permissions" AS p
+WHERE p."PermissionId" = @__p_0
+LIMIT 1
+2025-06-01 09:25:01.905 +05:45 [ERR] Error while fetching permission with ID 2
+System.Collections.Generic.KeyNotFoundException: Entity with id 2 not found
+   at PORTAL.INFRASTRUCTURE.Repositories.GenericRepository`1.GetByIdAsync(Int32 id) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Repositories\GenericRepository.cs:line 61
+   at PORTAL.APPLICATION.Services.PermissionService.GetById(Int32 id) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 64
+2025-06-01 09:25:15.427 +05:45 [INF] Setting HTTP status code 200.
+2025-06-01 09:25:15.428 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-06-01 09:25:15.428 +05:45 [INF] Executed endpoint 'HTTP: GET /Permission/{PermissionId} => GetPermissionById'
+2025-06-01 09:25:15.428 +05:45 [INF] HTTP GET /Permission/2 responded 200 in 50070.5956 ms
+2025-06-01 09:25:15.429 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/Permission/2 - 200 null application/json; charset=utf-8 50071.4328ms
+2025-06-01 09:25:20.916 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/Permission/2 - null null
+2025-06-01 09:25:20.916 +05:45 [INF] Executing endpoint 'HTTP: GET /Permission/{PermissionId} => GetPermissionById'
+2025-06-01 09:26:16.344 +05:45 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PermissionId", p."CreatedAt", p."CreatedBy", p."Description", p."IsActive", p."ModifiedAt", p."ModifiedBy", p."PermissionName"
+FROM "Permissions" AS p
+WHERE p."PermissionId" = @__p_0
+LIMIT 1
+2025-06-01 09:27:27.696 +05:45 [ERR] Error while fetching permission with ID 2
+System.Collections.Generic.KeyNotFoundException: Entity with id 2 not found
+   at PORTAL.INFRASTRUCTURE.Repositories.GenericRepository`1.GetByIdAsync(Int32 id) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Repositories\GenericRepository.cs:line 61
+   at PORTAL.APPLICATION.Services.PermissionService.GetById(Int32 id) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 64
+2025-06-01 09:27:27.699 +05:45 [INF] Setting HTTP status code 200.
+2025-06-01 09:27:27.699 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-06-01 09:27:27.700 +05:45 [INF] Executed endpoint 'HTTP: GET /Permission/{PermissionId} => GetPermissionById'
+2025-06-01 09:27:27.700 +05:45 [INF] HTTP GET /Permission/2 responded 200 in 126783.9579 ms
+2025-06-01 09:27:27.700 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/Permission/2 - 200 null application/json; charset=utf-8 126784.767ms
+2025-06-01 18:12:41.895 +05:45 [INF] Now listening on: https://localhost:7010
+2025-06-01 18:12:42.011 +05:45 [INF] Now listening on: http://localhost:5182
+2025-06-01 18:12:42.019 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-01 18:12:42.020 +05:45 [INF] Hosting environment: Development
+2025-06-01 18:12:42.021 +05:45 [INF] Content root path: E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API
+2025-06-01 18:12:42.454 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/ - null null
+2025-06-01 18:12:42.608 +05:45 [INF] HTTP GET / responded 404 in 43.0041 ms
+2025-06-01 18:12:42.641 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/ - 404 0 null 178.3307ms
+2025-06-01 18:12:42.661 +05:45 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7010/, Response status code: 404
+2025-06-01 18:13:03.291 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.html - null null
+2025-06-01 18:13:03.424 +05:45 [INF] HTTP GET /swagger/index.html responded 200 in 123.8369 ms
+2025-06-01 18:13:03.425 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.html - 200 null text/html;charset=utf-8 133.7318ms
+2025-06-01 18:13:03.511 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.js - null null
+2025-06-01 18:13:03.523 +05:45 [INF] HTTP GET /swagger/index.js responded 200 in 8.8696 ms
+2025-06-01 18:13:03.523 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.js - 200 null application/javascript;charset=utf-8 12.7048ms
+2025-06-01 18:13:03.762 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/v1/swagger.json - null null
+2025-06-01 18:13:03.806 +05:45 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-06-01 18:13:04.050 +05:45 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 287.4238 ms
+2025-06-01 18:13:04.053 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 291.1834ms
+2025-06-01 18:13:13.087 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/Permission/1 - null null
+2025-06-01 18:13:13.091 +05:45 [INF] Executing endpoint 'HTTP: GET /Permission/{PermissionId} => GetPermissionById'
+2025-06-01 18:13:28.080 +05:45 [INF] Executed DbCommand (83ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PermissionId", p."CreatedAt", p."CreatedBy", p."Description", p."IsActive", p."ModifiedAt", p."ModifiedBy", p."PermissionName"
+FROM "Permissions" AS p
+WHERE p."PermissionId" = @__p_0
+LIMIT 1
+2025-06-01 18:13:45.871 +05:45 [INF] Setting HTTP status code 200.
+2025-06-01 18:13:45.881 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-06-01 18:13:45.927 +05:45 [INF] Executed endpoint 'HTTP: GET /Permission/{PermissionId} => GetPermissionById'
+2025-06-01 18:13:45.931 +05:45 [INF] HTTP GET /Permission/1 responded 200 in 32841.2622 ms
+2025-06-01 18:13:45.944 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/Permission/1 - 200 null application/json; charset=utf-8 32857.0102ms
+2025-06-01 18:14:26.202 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/Permission/2 - null null
+2025-06-01 18:14:26.203 +05:45 [INF] Executing endpoint 'HTTP: GET /Permission/{PermissionId} => GetPermissionById'
+2025-06-01 18:14:38.522 +05:45 [INF] Executed DbCommand (40ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PermissionId", p."CreatedAt", p."CreatedBy", p."Description", p."IsActive", p."ModifiedAt", p."ModifiedBy", p."PermissionName"
+FROM "Permissions" AS p
+WHERE p."PermissionId" = @__p_0
+LIMIT 1
+2025-06-01 18:14:59.602 +05:45 [ERR] Error while fetching permission with ID 2
+System.Collections.Generic.KeyNotFoundException: Entity with id 2 not found
+   at PORTAL.INFRASTRUCTURE.Repositories.GenericRepository`1.GetByIdAsync(Int32 id) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Repositories\GenericRepository.cs:line 61
+   at PORTAL.APPLICATION.Services.PermissionService.GetById(Int32 id) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 64
+2025-06-01 18:15:01.621 +05:45 [ERR] Error while fetching permission with ID {PermissionId}
+System.Collections.Generic.KeyNotFoundException: Entity with id 2 not found
+   at PORTAL.INFRASTRUCTURE.Repositories.GenericRepository`1.GetByIdAsync(Int32 id) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Repositories\GenericRepository.cs:line 61
+   at PORTAL.APPLICATION.Services.PermissionService.GetById(Int32 id) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 64
+   at PORTAL.API.Routes.PermissionRoute.GetPermissionById(IGlobalLogger logger, IPermissionService service, Int32 PermissionId) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\PermissionRoutes.cs:line 49
+2025-06-01 18:15:01.739 +05:45 [INF] Executed endpoint 'HTTP: GET /Permission/{PermissionId} => GetPermissionById'
+2025-06-01 18:15:01.934 +05:45 [ERR] An unhandled exception occurred.
+System.Collections.Generic.KeyNotFoundException: Entity with id 2 not found
+   at PORTAL.INFRASTRUCTURE.Repositories.GenericRepository`1.GetByIdAsync(Int32 id) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Repositories\GenericRepository.cs:line 61
+   at PORTAL.APPLICATION.Services.PermissionService.GetById(Int32 id) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 64
+   at PORTAL.API.Routes.PermissionRoute.GetPermissionById(IGlobalLogger logger, IPermissionService service, Int32 PermissionId) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\PermissionRoutes.cs:line 49
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-06-01 18:15:01.936 +05:45 [ERR] An unhandled exception occurred.
+System.Collections.Generic.KeyNotFoundException: Entity with id 2 not found
+   at PORTAL.INFRASTRUCTURE.Repositories.GenericRepository`1.GetByIdAsync(Int32 id) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Repositories\GenericRepository.cs:line 61
+   at PORTAL.APPLICATION.Services.PermissionService.GetById(Int32 id) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 64
+   at PORTAL.API.Routes.PermissionRoute.GetPermissionById(IGlobalLogger logger, IPermissionService service, Int32 PermissionId) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\PermissionRoutes.cs:line 49
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-06-01 18:15:01.948 +05:45 [ERR] HTTP GET /Permission/2 responded 500 in 35745.7561 ms
+2025-06-01 18:15:01.949 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/Permission/2 - 500 null application/json 35747.249ms
+2025-06-01 18:41:14.641 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/Permission/2 - null null
+2025-06-01 18:41:14.642 +05:45 [INF] Executing endpoint 'HTTP: GET /Permission/{PermissionId} => GetPermissionById'
+2025-06-01 18:41:27.557 +05:45 [INF] Executed DbCommand (10ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PermissionId", p."CreatedAt", p."CreatedBy", p."Description", p."IsActive", p."ModifiedAt", p."ModifiedBy", p."PermissionName"
+FROM "Permissions" AS p
+WHERE p."PermissionId" = @__p_0
+LIMIT 1
+2025-06-01 18:41:36.703 +05:45 [ERR] Error while fetching permission with ID 2
+System.Collections.Generic.KeyNotFoundException: Entity with id 2 not found
+   at PORTAL.INFRASTRUCTURE.Repositories.GenericRepository`1.GetByIdAsync(Int32 id) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Repositories\GenericRepository.cs:line 61
+   at PORTAL.APPLICATION.Services.PermissionService.GetById(Int32 id) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 64
+2025-06-01 18:41:38.605 +05:45 [ERR] Error while fetching permission with ID {PermissionId}
+System.Collections.Generic.KeyNotFoundException: Entity with id 2 not found
+   at PORTAL.INFRASTRUCTURE.Repositories.GenericRepository`1.GetByIdAsync(Int32 id) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Repositories\GenericRepository.cs:line 61
+   at PORTAL.APPLICATION.Services.PermissionService.GetById(Int32 id) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 64
+   at PORTAL.API.Routes.PermissionRoute.GetPermissionById(IGlobalLogger logger, IPermissionService service, Int32 PermissionId) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\PermissionRoutes.cs:line 49
+2025-06-01 18:41:38.700 +05:45 [INF] Executed endpoint 'HTTP: GET /Permission/{PermissionId} => GetPermissionById'
+2025-06-01 18:41:38.858 +05:45 [ERR] An unhandled exception occurred.
+System.Collections.Generic.KeyNotFoundException: Entity with id 2 not found
+   at PORTAL.INFRASTRUCTURE.Repositories.GenericRepository`1.GetByIdAsync(Int32 id) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Repositories\GenericRepository.cs:line 61
+   at PORTAL.APPLICATION.Services.PermissionService.GetById(Int32 id) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 64
+   at PORTAL.API.Routes.PermissionRoute.GetPermissionById(IGlobalLogger logger, IPermissionService service, Int32 PermissionId) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\PermissionRoutes.cs:line 49
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-06-01 18:41:38.860 +05:45 [ERR] An unhandled exception occurred.
+System.Collections.Generic.KeyNotFoundException: Entity with id 2 not found
+   at PORTAL.INFRASTRUCTURE.Repositories.GenericRepository`1.GetByIdAsync(Int32 id) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Repositories\GenericRepository.cs:line 61
+   at PORTAL.APPLICATION.Services.PermissionService.GetById(Int32 id) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 64
+   at PORTAL.API.Routes.PermissionRoute.GetPermissionById(IGlobalLogger logger, IPermissionService service, Int32 PermissionId) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\PermissionRoutes.cs:line 49
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-06-01 18:41:38.863 +05:45 [ERR] HTTP GET /Permission/2 responded 500 in 24221.1901 ms
+2025-06-01 18:41:38.863 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/Permission/2 - 500 null application/json 24222.4029ms
+2025-06-01 21:33:57.776 +05:45 [INF] Now listening on: https://localhost:7010
+2025-06-01 21:33:57.856 +05:45 [INF] Now listening on: http://localhost:5182
+2025-06-01 21:33:57.865 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-01 21:33:57.866 +05:45 [INF] Hosting environment: Development
+2025-06-01 21:33:57.867 +05:45 [INF] Content root path: E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API
+2025-06-01 21:33:58.286 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/ - null null
+2025-06-01 21:33:58.505 +05:45 [INF] HTTP GET / responded 404 in 52.4023 ms
+2025-06-01 21:33:58.567 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/ - 404 0 null 282.4418ms
+2025-06-01 21:33:58.584 +05:45 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7010/, Response status code: 404
+2025-06-01 21:34:29.783 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/Permission/2 - null null
+2025-06-01 21:34:29.834 +05:45 [INF] Executing endpoint 'HTTP: GET /Permission/{PermissionId} => GetPermissionById'
+2025-06-01 21:34:42.090 +05:45 [INF] Executed DbCommand (67ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PermissionId", p."CreatedAt", p."CreatedBy", p."Description", p."IsActive", p."ModifiedAt", p."ModifiedBy", p."PermissionName"
+FROM "Permissions" AS p
+WHERE p."PermissionId" = @__p_0
+LIMIT 1
+2025-06-01 21:34:53.682 +05:45 [ERR] Error while fetching permission with ID 2
+PORTAL.DOMAIN.Exceptions.EntityNotFoundException: Permission with ID 2 not found
+   at PORTAL.APPLICATION.Services.PermissionService.GetById(Int32 id) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 64
+2025-06-01 21:35:25.626 +05:45 [ERR] Error while fetching permission with ID {PermissionId}
+PORTAL.DOMAIN.Exceptions.EntityNotFoundException: Permission with ID 2 not found
+   at PORTAL.APPLICATION.Services.PermissionService.GetById(Int32 id) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 64
+   at PORTAL.API.Routes.PermissionRoute.GetPermissionById(IGlobalLogger logger, IPermissionService service, Int32 PermissionId) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\PermissionRoutes.cs:line 49
+2025-06-01 21:35:26.558 +05:45 [INF] Executed endpoint 'HTTP: GET /Permission/{PermissionId} => GetPermissionById'
+2025-06-01 21:35:46.149 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.EntityNotFoundException: Permission with ID 2 not found
+   at PORTAL.APPLICATION.Services.PermissionService.GetById(Int32 id) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 64
+   at PORTAL.API.Routes.PermissionRoute.GetPermissionById(IGlobalLogger logger, IPermissionService service, Int32 PermissionId) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\PermissionRoutes.cs:line 49
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-06-01 21:36:40.462 +05:45 [INF] HTTP GET /Permission/2 responded 404 in 130665.6775 ms
+2025-06-01 21:36:45.167 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/Permission/2 - 404 null application/json 135383.8074ms
+2025-06-01 21:36:54.736 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/Permission/2 - null null
+2025-06-01 21:36:54.740 +05:45 [INF] Executing endpoint 'HTTP: GET /Permission/{PermissionId} => GetPermissionById'
+2025-06-01 21:36:58.793 +05:45 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PermissionId", p."CreatedAt", p."CreatedBy", p."Description", p."IsActive", p."ModifiedAt", p."ModifiedBy", p."PermissionName"
+FROM "Permissions" AS p
+WHERE p."PermissionId" = @__p_0
+LIMIT 1
+2025-06-01 21:37:00.858 +05:45 [ERR] Error while fetching permission with ID 2
+PORTAL.DOMAIN.Exceptions.EntityNotFoundException: Permission with ID 2 not found
+   at PORTAL.APPLICATION.Services.PermissionService.GetById(Int32 id) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 64
+2025-06-01 21:37:01.030 +05:45 [ERR] Error while fetching permission with ID {PermissionId}
+PORTAL.DOMAIN.Exceptions.EntityNotFoundException: Permission with ID 2 not found
+   at PORTAL.APPLICATION.Services.PermissionService.GetById(Int32 id) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 64
+   at PORTAL.API.Routes.PermissionRoute.GetPermissionById(IGlobalLogger logger, IPermissionService service, Int32 PermissionId) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\PermissionRoutes.cs:line 49
+2025-06-01 21:37:01.111 +05:45 [INF] Executed endpoint 'HTTP: GET /Permission/{PermissionId} => GetPermissionById'
+2025-06-01 21:37:01.237 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.EntityNotFoundException: Permission with ID 2 not found
+   at PORTAL.APPLICATION.Services.PermissionService.GetById(Int32 id) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 64
+   at PORTAL.API.Routes.PermissionRoute.GetPermissionById(IGlobalLogger logger, IPermissionService service, Int32 PermissionId) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\PermissionRoutes.cs:line 49
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-06-01 21:37:06.771 +05:45 [INF] HTTP GET /Permission/2 responded 404 in 12032.0425 ms
+2025-06-01 21:37:06.773 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/Permission/2 - 404 null application/json 12036.824ms
+2025-06-01 22:59:19.895 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/Permission/1 - null null
+2025-06-01 22:59:19.928 +05:45 [INF] Executing endpoint 'HTTP: GET /Permission/{PermissionId} => GetPermissionById'
+2025-06-01 22:59:36.399 +05:45 [INF] Executed DbCommand (6ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PermissionId", p."CreatedAt", p."CreatedBy", p."Description", p."IsActive", p."ModifiedAt", p."ModifiedBy", p."PermissionName"
+FROM "Permissions" AS p
+WHERE p."PermissionId" = @__p_0
+LIMIT 1
+2025-06-01 22:59:41.774 +05:45 [INF] Setting HTTP status code 200.
+2025-06-01 22:59:41.780 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-06-01 22:59:41.834 +05:45 [INF] Executed endpoint 'HTTP: GET /Permission/{PermissionId} => GetPermissionById'
+2025-06-01 22:59:41.838 +05:45 [INF] HTTP GET /Permission/1 responded 200 in 21911.5180 ms
+2025-06-01 22:59:41.839 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/Permission/1 - 200 null application/json; charset=utf-8 21944.8197ms
+2025-06-01 23:00:50.953 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/Permission/1 - null null
+2025-06-01 23:00:50.953 +05:45 [INF] Executing endpoint 'HTTP: GET /Permission/{PermissionId} => GetPermissionById'
+2025-06-01 23:00:59.424 +05:45 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PermissionId", p."CreatedAt", p."CreatedBy", p."Description", p."IsActive", p."ModifiedAt", p."ModifiedBy", p."PermissionName"
+FROM "Permissions" AS p
+WHERE p."PermissionId" = @__p_0
+LIMIT 1
+2025-06-01 23:01:10.557 +05:45 [INF] Setting HTTP status code 200.
+2025-06-01 23:01:10.557 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-06-01 23:01:10.558 +05:45 [INF] Executed endpoint 'HTTP: GET /Permission/{PermissionId} => GetPermissionById'
+2025-06-01 23:01:10.559 +05:45 [INF] HTTP GET /Permission/1 responded 200 in 19605.3107 ms
+2025-06-01 23:01:10.559 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/Permission/1 - 200 null application/json; charset=utf-8 19606.2057ms
+2025-06-01 23:01:57.685 +05:45 [INF] Now listening on: https://localhost:7010
+2025-06-01 23:01:57.757 +05:45 [INF] Now listening on: http://localhost:5182
+2025-06-01 23:01:57.769 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-01 23:01:57.770 +05:45 [INF] Hosting environment: Development
+2025-06-01 23:01:57.770 +05:45 [INF] Content root path: E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API
+2025-06-01 23:02:12.044 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/ - null null
+2025-06-01 23:02:12.350 +05:45 [INF] HTTP GET / responded 404 in 50.8365 ms
+2025-06-01 23:02:12.421 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/ - 404 0 null 344.9491ms
+2025-06-01 23:02:12.435 +05:45 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7010/, Response status code: 404
+2025-06-01 23:08:04.803 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.html - null null
+2025-06-01 23:08:05.270 +05:45 [INF] HTTP GET /swagger/index.html responded 200 in 455.9577 ms
+2025-06-01 23:08:05.270 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.html - 200 null text/html;charset=utf-8 467.5441ms
+2025-06-01 23:08:05.347 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/swagger-ui.css - null null
+2025-06-01 23:08:05.348 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.css - null null
+2025-06-01 23:08:05.350 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.js - null null
+2025-06-01 23:08:05.384 +05:45 [INF] HTTP GET /swagger/index.js responded 200 in 30.2185 ms
+2025-06-01 23:08:05.384 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.js - 200 null application/javascript;charset=utf-8 34.2358ms
+2025-06-01 23:08:05.419 +05:45 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-06-01 23:08:05.419 +05:45 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-06-01 23:08:05.419 +05:45 [INF] HTTP GET /swagger/index.css responded 200 in 65.2492 ms
+2025-06-01 23:08:05.420 +05:45 [INF] HTTP GET /swagger/swagger-ui.css responded 200 in 63.7370 ms
+2025-06-01 23:08:05.420 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/swagger-ui.css - 499 154948 text/css 72.4122ms
+2025-06-01 23:08:05.420 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.css - 499 202 text/css 71.7271ms
+2025-06-01 23:08:05.740 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/favicon-16x16.png - null null
+2025-06-01 23:08:05.743 +05:45 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2025-06-01 23:08:05.744 +05:45 [INF] HTTP GET /swagger/favicon-16x16.png responded 200 in 3.0729 ms
+2025-06-01 23:08:05.744 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/favicon-16x16.png - 499 665 image/png 4.0646ms
+2025-06-01 23:08:05.869 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/v1/swagger.json - null null
+2025-06-01 23:08:05.969 +05:45 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-06-01 23:08:06.254 +05:45 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 384.2423 ms
+2025-06-01 23:08:06.259 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 390.0156ms
+2025-06-01 23:08:16.090 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/Permission/1 - null null
+2025-06-01 23:08:16.096 +05:45 [INF] Executing endpoint 'HTTP: GET /Permission/{PermissionId} => GetPermissionById'
+2025-06-01 23:08:31.570 +05:45 [INF] Executed DbCommand (83ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PermissionId", p."CreatedAt", p."CreatedBy", p."Description", p."IsActive", p."ModifiedAt", p."ModifiedBy", p."PermissionName"
+FROM "Permissions" AS p
+WHERE p."PermissionId" = @__p_0
+LIMIT 1
+2025-06-01 23:08:37.790 +05:45 [INF] Setting HTTP status code 200.
+2025-06-01 23:08:37.802 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-06-01 23:08:37.809 +05:45 [INF] Executed endpoint 'HTTP: GET /Permission/{PermissionId} => GetPermissionById'
+2025-06-01 23:08:37.810 +05:45 [INF] HTTP GET /Permission/1 responded 200 in 21718.5031 ms
+2025-06-01 23:08:37.822 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/Permission/1 - 200 null application/json; charset=utf-8 21732.6263ms

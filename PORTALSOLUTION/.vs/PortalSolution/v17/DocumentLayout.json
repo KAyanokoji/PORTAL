@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{93BE0BB6-2862-4760-AE3E-3F2C3159B872}|src\\PORTAL.SHARED\\PORTAL.SHARED.csproj|e:\\tsaroj38\\portal\\portalsolution\\src\\portal.shared\\utils\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93BE0BB6-2862-4760-AE3E-3F2C3159B872}|src\\PORTAL.SHARED\\PORTAL.SHARED.csproj|solutionrelative:src\\portal.shared\\utils\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{76A99B8A-ED35-4BC3-ADEA-8BC8A7B51E69}|src\\PORTAL.API\\PORTAL.API.csproj|e:\\tsaroj38\\portal\\portalsolution\\src\\portal.api\\routes\\authroutes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{76A99B8A-ED35-4BC3-ADEA-8BC8A7B51E69}|src\\PORTAL.API\\PORTAL.API.csproj|solutionrelative:src\\portal.api\\routes\\authroutes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{93BE0BB6-2862-4760-AE3E-3F2C3159B872}|src\\PORTAL.SHARED\\PORTAL.SHARED.csproj|e:\\tsaroj38\\portal\\portalsolution\\src\\portal.shared\\utils\\baseapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93BE0BB6-2862-4760-AE3E-3F2C3159B872}|src\\PORTAL.SHARED\\PORTAL.SHARED.csproj|solutionrelative:src\\portal.shared\\utils\\baseapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59E6079E-1FDC-4238-B029-DAAFADCD95A2}|src\\PORTAL.INFRASTRUCTURE\\PORTAL.INFRASTRUCTURE.csproj|e:\\tsaroj38\\portal\\portalsolution\\src\\portal.infrastructure\\services\\authservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59E6079E-1FDC-4238-B029-DAAFADCD95A2}|src\\PORTAL.INFRASTRUCTURE\\PORTAL.INFRASTRUCTURE.csproj|solutionrelative:src\\portal.infrastructure\\services\\authservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59E6079E-1FDC-4238-B029-DAAFADCD95A2}|src\\PORTAL.INFRASTRUCTURE\\PORTAL.INFRASTRUCTURE.csproj|e:\\tsaroj38\\portal\\portalsolution\\src\\portal.infrastructure\\repositories\\authrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59E6079E-1FDC-4238-B029-DAAFADCD95A2}|src\\PORTAL.INFRASTRUCTURE\\PORTAL.INFRASTRUCTURE.csproj|solutionrelative:src\\portal.infrastructure\\repositories\\authrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{93BE0BB6-2862-4760-AE3E-3F2C3159B872}|src\\PORTAL.SHARED\\PORTAL.SHARED.csproj|e:\\tsaroj38\\portal\\portalsolution\\src\\portal.shared\\utils\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93BE0BB6-2862-4760-AE3E-3F2C3159B872}|src\\PORTAL.SHARED\\PORTAL.SHARED.csproj|solutionrelative:src\\portal.shared\\utils\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{76A99B8A-ED35-4BC3-ADEA-8BC8A7B51E69}|src\\PORTAL.API\\PORTAL.API.csproj|e:\\tsaroj38\\portal\\portalsolution\\src\\portal.api\\portal.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{76A99B8A-ED35-4BC3-ADEA-8BC8A7B51E69}|src\\PORTAL.API\\PORTAL.API.csproj|solutionrelative:src\\portal.api\\portal.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{76A99B8A-ED35-4BC3-ADEA-8BC8A7B51E69}|src\\PORTAL.API\\PORTAL.API.csproj|e:\\tsaroj38\\portal\\portalsolution\\src\\portal.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,12 +23,28 @@
       "RelativeMoniker": "D:0:0:{76A99B8A-ED35-4BC3-ADEA-8BC8A7B51E69}|src\\PORTAL.API\\PORTAL.API.csproj|solutionrelative:src\\portal.api\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59E6079E-1FDC-4238-B029-DAAFADCD95A2}|src\\PORTAL.INFRASTRUCTURE\\PORTAL.INFRASTRUCTURE.csproj|e:\\tsaroj38\\portal\\portalsolution\\src\\portal.infrastructure\\services\\jwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59E6079E-1FDC-4238-B029-DAAFADCD95A2}|src\\PORTAL.INFRASTRUCTURE\\PORTAL.INFRASTRUCTURE.csproj|solutionrelative:src\\portal.infrastructure\\services\\jwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{93BE0BB6-2862-4760-AE3E-3F2C3159B872}|src\\PORTAL.SHARED\\PORTAL.SHARED.csproj|e:\\tsaroj38\\portal\\portalsolution\\src\\portal.shared\\utils\\baseapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93BE0BB6-2862-4760-AE3E-3F2C3159B872}|src\\PORTAL.SHARED\\PORTAL.SHARED.csproj|solutionrelative:src\\portal.shared\\utils\\baseapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93BE0BB6-2862-4760-AE3E-3F2C3159B872}|src\\PORTAL.SHARED\\PORTAL.SHARED.csproj|e:\\tsaroj38\\portal\\portalsolution\\src\\portal.shared\\utils\\jsonresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93BE0BB6-2862-4760-AE3E-3F2C3159B872}|src\\PORTAL.SHARED\\PORTAL.SHARED.csproj|solutionrelative:src\\portal.shared\\utils\\jsonresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{76A99B8A-ED35-4BC3-ADEA-8BC8A7B51E69}|src\\PORTAL.API\\PORTAL.API.csproj|e:\\tsaroj38\\portal\\portalsolution\\src\\portal.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{76A99B8A-ED35-4BC3-ADEA-8BC8A7B51E69}|src\\PORTAL.API\\PORTAL.API.csproj|solutionrelative:src\\portal.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59E6079E-1FDC-4238-B029-DAAFADCD95A2}|src\\PORTAL.INFRASTRUCTURE\\PORTAL.INFRASTRUCTURE.csproj|e:\\tsaroj38\\portal\\portalsolution\\src\\portal.infrastructure\\services\\authservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59E6079E-1FDC-4238-B029-DAAFADCD95A2}|src\\PORTAL.INFRASTRUCTURE\\PORTAL.INFRASTRUCTURE.csproj|solutionrelative:src\\portal.infrastructure\\services\\authservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59E6079E-1FDC-4238-B029-DAAFADCD95A2}|src\\PORTAL.INFRASTRUCTURE\\PORTAL.INFRASTRUCTURE.csproj|e:\\tsaroj38\\portal\\portalsolution\\src\\portal.infrastructure\\repositories\\authrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59E6079E-1FDC-4238-B029-DAAFADCD95A2}|src\\PORTAL.INFRASTRUCTURE\\PORTAL.INFRASTRUCTURE.csproj|solutionrelative:src\\portal.infrastructure\\repositories\\authrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59E6079E-1FDC-4238-B029-DAAFADCD95A2}|src\\PORTAL.INFRASTRUCTURE\\PORTAL.INFRASTRUCTURE.csproj|e:\\tsaroj38\\portal\\portalsolution\\src\\portal.infrastructure\\services\\jwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59E6079E-1FDC-4238-B029-DAAFADCD95A2}|src\\PORTAL.INFRASTRUCTURE\\PORTAL.INFRASTRUCTURE.csproj|solutionrelative:src\\portal.infrastructure\\services\\jwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E5D413A4-498C-4050-85EE-0D035956A704}|src\\PORTAL.APPLICATION\\PORTAL.APPLICATION.csproj|e:\\tsaroj38\\portal\\portalsolution\\src\\portal.application\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -53,10 +61,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{34521B5B-73B6-47EE-93C2-5F1306BD5151}|src\\PORTAL.DOMAIN\\PORTAL.DOMAIN.csproj|e:\\tsaroj38\\portal\\portalsolution\\src\\portal.domain\\exceptions\\authexceptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{34521B5B-73B6-47EE-93C2-5F1306BD5151}|src\\PORTAL.DOMAIN\\PORTAL.DOMAIN.csproj|solutionrelative:src\\portal.domain\\exceptions\\authexceptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{93BE0BB6-2862-4760-AE3E-3F2C3159B872}|src\\PORTAL.SHARED\\PORTAL.SHARED.csproj|e:\\tsaroj38\\portal\\portalsolution\\src\\portal.shared\\utils\\jsonresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93BE0BB6-2862-4760-AE3E-3F2C3159B872}|src\\PORTAL.SHARED\\PORTAL.SHARED.csproj|solutionrelative:src\\portal.shared\\utils\\jsonresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,59 +70,99 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PORTAL.API",
+              "DocumentMoniker": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.API\\PORTAL.API.csproj",
+              "RelativeDocumentMoniker": "src\\PORTAL.API\\PORTAL.API.csproj",
+              "ToolTip": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.API\\PORTAL.API.csproj",
+              "RelativeToolTip": "src\\PORTAL.API\\PORTAL.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-25T16:25:31.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AuthExceptions.cs",
+              "DocumentMoniker": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.DOMAIN\\Exceptions\\AuthExceptions.cs",
+              "RelativeDocumentMoniker": "src\\PORTAL.DOMAIN\\Exceptions\\AuthExceptions.cs",
+              "ToolTip": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.DOMAIN\\Exceptions\\AuthExceptions.cs",
+              "RelativeToolTip": "src\\PORTAL.DOMAIN\\Exceptions\\AuthExceptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T16:43:43.215Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Login.cs",
-              "DocumentMoniker": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.SHARED\\Utils\\Login.cs",
-              "RelativeDocumentMoniker": "src\\PORTAL.SHARED\\Utils\\Login.cs",
-              "ToolTip": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.SHARED\\Utils\\Login.cs",
-              "RelativeToolTip": "src\\PORTAL.SHARED\\Utils\\Login.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T13:19:53.922Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.API\\Program.cs",
-              "RelativeDocumentMoniker": "src\\PORTAL.API\\Program.cs",
-              "ToolTip": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.API\\Program.cs",
-              "RelativeToolTip": "src\\PORTAL.API\\Program.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAiwBgAAABYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T10:24:07.451Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "ServiceCollectionExtensions.cs",
               "DocumentMoniker": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.API\\Extensions\\ServiceCollectionExtensions.cs",
               "RelativeDocumentMoniker": "src\\PORTAL.API\\Extensions\\ServiceCollectionExtensions.cs",
               "ToolTip": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.API\\Extensions\\ServiceCollectionExtensions.cs",
               "RelativeToolTip": "src\\PORTAL.API\\Extensions\\ServiceCollectionExtensions.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAUwCEAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T17:29:42.309Z"
+              "WhenOpened": "2025-04-01T17:29:42.309Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.API\\appsettings.json",
-              "RelativeDocumentMoniker": "src\\PORTAL.API\\appsettings.json",
-              "ToolTip": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.API\\appsettings.json",
-              "RelativeToolTip": "src\\PORTAL.API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-01T17:29:16.105Z"
+              "DocumentIndex": 5,
+              "Title": "BaseAPI.cs",
+              "DocumentMoniker": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.SHARED\\Utils\\BaseAPI.cs",
+              "RelativeDocumentMoniker": "src\\PORTAL.SHARED\\Utils\\BaseAPI.cs",
+              "ToolTip": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.SHARED\\Utils\\BaseAPI.cs",
+              "RelativeToolTip": "src\\PORTAL.SHARED\\Utils\\BaseAPI.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAmwAsAAABlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T17:55:05.258Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 1,
+              "Title": "AuthRoutes.cs",
+              "DocumentMoniker": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.API\\Routes\\AuthRoutes.cs",
+              "RelativeDocumentMoniker": "src\\PORTAL.API\\Routes\\AuthRoutes.cs",
+              "ToolTip": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.API\\Routes\\AuthRoutes.cs",
+              "RelativeToolTip": "src\\PORTAL.API\\Routes\\AuthRoutes.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAowB8AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T06:08:37.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IJwtTokenGenerator.cs",
+              "DocumentMoniker": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.APPLICATION\\Services\\IJwtTokenGenerator.cs",
+              "RelativeDocumentMoniker": "src\\PORTAL.APPLICATION\\Services\\IJwtTokenGenerator.cs",
+              "ToolTip": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.APPLICATION\\Services\\IJwtTokenGenerator.cs",
+              "RelativeToolTip": "src\\PORTAL.APPLICATION\\Services\\IJwtTokenGenerator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T16:46:36.434Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.cs",
+              "DocumentMoniker": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.SHARED\\Utils\\Login.cs",
+              "RelativeDocumentMoniker": "src\\PORTAL.SHARED\\Utils\\Login.cs",
+              "ToolTip": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.SHARED\\Utils\\Login.cs",
+              "RelativeToolTip": "src\\PORTAL.SHARED\\Utils\\Login.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T13:19:53.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "CustomClaimTypes.cs",
               "DocumentMoniker": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.APPLICATION\\DTOs\\CustomClaimTypes.cs",
               "RelativeDocumentMoniker": "src\\PORTAL.APPLICATION\\DTOs\\CustomClaimTypes.cs",
@@ -130,19 +174,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "JwtTokenGenerator.cs",
-              "DocumentMoniker": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.INFRASTRUCTURE\\Services\\JwtTokenGenerator.cs",
-              "RelativeDocumentMoniker": "src\\PORTAL.INFRASTRUCTURE\\Services\\JwtTokenGenerator.cs",
-              "ToolTip": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.INFRASTRUCTURE\\Services\\JwtTokenGenerator.cs",
-              "RelativeToolTip": "src\\PORTAL.INFRASTRUCTURE\\Services\\JwtTokenGenerator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAMAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.API\\Program.cs",
+              "RelativeDocumentMoniker": "src\\PORTAL.API\\Program.cs",
+              "ToolTip": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.API\\Program.cs",
+              "RelativeToolTip": "src\\PORTAL.API\\Program.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAAkAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T16:47:45.446Z"
+              "WhenOpened": "2025-04-05T10:24:07.451Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.API\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\PORTAL.API\\appsettings.json",
+              "ToolTip": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.API\\appsettings.json",
+              "RelativeToolTip": "src\\PORTAL.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-01T17:29:16.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "JsonResponse.cs",
+              "DocumentMoniker": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.SHARED\\Utils\\JsonResponse.cs",
+              "RelativeDocumentMoniker": "src\\PORTAL.SHARED\\Utils\\JsonResponse.cs",
+              "ToolTip": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.SHARED\\Utils\\JsonResponse.cs",
+              "RelativeToolTip": "src\\PORTAL.SHARED\\Utils\\JsonResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T16:35:45.451Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "IAuthService.cs",
               "DocumentMoniker": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.APPLICATION\\Services\\IAuthService.cs",
               "RelativeDocumentMoniker": "src\\PORTAL.APPLICATION\\Services\\IAuthService.cs",
@@ -155,54 +224,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "IJwtTokenGenerator.cs",
-              "DocumentMoniker": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.APPLICATION\\Services\\IJwtTokenGenerator.cs",
-              "RelativeDocumentMoniker": "src\\PORTAL.APPLICATION\\Services\\IJwtTokenGenerator.cs",
-              "ToolTip": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.APPLICATION\\Services\\IJwtTokenGenerator.cs",
-              "RelativeToolTip": "src\\PORTAL.APPLICATION\\Services\\IJwtTokenGenerator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAeAAAAAAAAAA==",
+              "Title": "JwtTokenGenerator.cs",
+              "DocumentMoniker": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.INFRASTRUCTURE\\Services\\JwtTokenGenerator.cs",
+              "RelativeDocumentMoniker": "src\\PORTAL.INFRASTRUCTURE\\Services\\JwtTokenGenerator.cs",
+              "ToolTip": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.INFRASTRUCTURE\\Services\\JwtTokenGenerator.cs",
+              "RelativeToolTip": "src\\PORTAL.INFRASTRUCTURE\\Services\\JwtTokenGenerator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T16:46:36.434Z"
+              "WhenOpened": "2025-04-01T16:47:45.446Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AuthExceptions.cs",
-              "DocumentMoniker": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.DOMAIN\\Exceptions\\AuthExceptions.cs",
-              "RelativeDocumentMoniker": "src\\PORTAL.DOMAIN\\Exceptions\\AuthExceptions.cs",
-              "ToolTip": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.DOMAIN\\Exceptions\\AuthExceptions.cs",
-              "RelativeToolTip": "src\\PORTAL.DOMAIN\\Exceptions\\AuthExceptions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T16:43:43.215Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "JsonResponse.cs",
-              "DocumentMoniker": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.SHARED\\Utils\\JsonResponse.cs",
-              "RelativeDocumentMoniker": "src\\PORTAL.SHARED\\Utils\\JsonResponse.cs",
-              "ToolTip": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.SHARED\\Utils\\JsonResponse.cs",
-              "RelativeToolTip": "src\\PORTAL.SHARED\\Utils\\JsonResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T16:35:45.451Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BaseAPI.cs",
-              "DocumentMoniker": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.SHARED\\Utils\\BaseAPI.cs",
-              "RelativeDocumentMoniker": "src\\PORTAL.SHARED\\Utils\\BaseAPI.cs",
-              "ToolTip": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.SHARED\\Utils\\BaseAPI.cs",
-              "RelativeToolTip": "src\\PORTAL.SHARED\\Utils\\BaseAPI.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAB5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T17:55:05.258Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "AuthServices.cs",
               "DocumentMoniker": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.INFRASTRUCTURE\\Services\\AuthServices.cs",
               "RelativeDocumentMoniker": "src\\PORTAL.INFRASTRUCTURE\\Services\\AuthServices.cs",
@@ -214,7 +247,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "AuthRepo.cs",
               "DocumentMoniker": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.INFRASTRUCTURE\\Repositories\\AuthRepo.cs",
               "RelativeDocumentMoniker": "src\\PORTAL.INFRASTRUCTURE\\Repositories\\AuthRepo.cs",
@@ -223,19 +256,6 @@
               "ViewState": "AgIAAAsAAAAAAAAAAAArwCkAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-29T06:21:26.441Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthRoutes.cs",
-              "DocumentMoniker": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.API\\Routes\\AuthRoutes.cs",
-              "RelativeDocumentMoniker": "src\\PORTAL.API\\Routes\\AuthRoutes.cs",
-              "ToolTip": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.API\\Routes\\AuthRoutes.cs",
-              "RelativeToolTip": "src\\PORTAL.API\\Routes\\AuthRoutes.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAIA6wDEAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T06:08:37.962Z",
-              "EditorCaption": ""
             }
           ]
         }

@@ -1,0 +1,236 @@
+2025-05-28 23:26:10.443 +05:45 [INF] Now listening on: https://localhost:7010
+2025-05-28 23:26:10.508 +05:45 [INF] Now listening on: http://localhost:5182
+2025-05-28 23:26:10.516 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-28 23:26:10.517 +05:45 [INF] Hosting environment: Development
+2025-05-28 23:26:10.517 +05:45 [INF] Content root path: E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API
+2025-05-28 23:26:21.919 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/ - null null
+2025-05-28 23:26:22.331 +05:45 [INF] HTTP GET / responded 404 in 123.2664 ms
+2025-05-28 23:26:22.385 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/ - 404 0 null 468.5392ms
+2025-05-28 23:26:22.423 +05:45 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7010/, Response status code: 404
+2025-05-28 23:26:31.120 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/ - null null
+2025-05-28 23:26:31.128 +05:45 [INF] HTTP GET /swagger/ responded 301 in 4.3011 ms
+2025-05-28 23:26:31.129 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/ - 499 null null 8.8711ms
+2025-05-28 23:26:31.163 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.html - null null
+2025-05-28 23:26:31.306 +05:45 [INF] HTTP GET /swagger/index.html responded 200 in 140.9905 ms
+2025-05-28 23:26:31.306 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.html - 200 null text/html;charset=utf-8 142.7351ms
+2025-05-28 23:26:31.405 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.js - null null
+2025-05-28 23:26:31.413 +05:45 [INF] HTTP GET /swagger/index.js responded 200 in 6.6392 ms
+2025-05-28 23:26:31.413 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.js - 200 null application/javascript;charset=utf-8 8.2096ms
+2025-05-28 23:26:31.696 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/favicon-16x16.png - null null
+2025-05-28 23:26:31.724 +05:45 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2025-05-28 23:26:31.724 +05:45 [INF] HTTP GET /swagger/favicon-16x16.png responded 200 in 27.7671 ms
+2025-05-28 23:26:31.724 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/favicon-16x16.png - 499 665 image/png 28.2236ms
+2025-05-28 23:26:31.761 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/v1/swagger.json - null null
+2025-05-28 23:26:31.852 +05:45 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-05-28 23:26:32.189 +05:45 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 427.1622 ms
+2025-05-28 23:26:32.189 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 428.1953ms
+2025-05-28 23:28:15.613 +05:45 [INF] Now listening on: https://localhost:7010
+2025-05-28 23:28:15.694 +05:45 [INF] Now listening on: http://localhost:5182
+2025-05-28 23:28:15.701 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-28 23:28:15.702 +05:45 [INF] Hosting environment: Development
+2025-05-28 23:28:15.703 +05:45 [INF] Content root path: E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API
+2025-05-28 23:28:16.268 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/ - null null
+2025-05-28 23:28:16.524 +05:45 [INF] HTTP GET / responded 404 in 106.3837 ms
+2025-05-28 23:28:16.581 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/ - 404 0 null 315.1739ms
+2025-05-28 23:28:16.630 +05:45 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7010/, Response status code: 404
+2025-05-28 23:29:17.028 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.html - null null
+2025-05-28 23:29:17.136 +05:45 [INF] HTTP GET /swagger/index.html responded 200 in 107.1344 ms
+2025-05-28 23:29:17.138 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.html - 200 null text/html;charset=utf-8 109.662ms
+2025-05-28 23:29:17.236 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.js - null null
+2025-05-28 23:29:17.241 +05:45 [INF] HTTP GET /swagger/index.js responded 200 in 2.3134 ms
+2025-05-28 23:29:17.246 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.js - 200 null application/javascript;charset=utf-8 9.874ms
+2025-05-28 23:29:17.440 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/v1/swagger.json - null null
+2025-05-28 23:29:17.470 +05:45 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-05-28 23:29:17.663 +05:45 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 221.8610 ms
+2025-05-28 23:29:17.663 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 222.6831ms
+2025-05-28 23:30:53.792 +05:45 [INF] Now listening on: http://localhost:5182
+2025-05-28 23:30:53.874 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-28 23:30:53.876 +05:45 [INF] Hosting environment: Development
+2025-05-28 23:30:53.878 +05:45 [INF] Content root path: E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API
+2025-05-28 23:31:07.047 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/ - null null
+2025-05-28 23:31:07.243 +05:45 [INF] HTTP GET / responded 404 in 66.7854 ms
+2025-05-28 23:31:07.753 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/ - 404 0 null 710.4272ms
+2025-05-28 23:31:07.937 +05:45 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5182/, Response status code: 404
+2025-05-28 23:31:10.889 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/ - null null
+2025-05-28 23:31:10.926 +05:45 [INF] HTTP GET /swagger/ responded 301 in 21.0650 ms
+2025-05-28 23:31:10.935 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/ - 301 0 null 46.7115ms
+2025-05-28 23:31:10.959 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/index.html - null null
+2025-05-28 23:31:11.102 +05:45 [INF] HTTP GET /swagger/index.html responded 200 in 130.1706 ms
+2025-05-28 23:31:11.115 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/index.html - 200 null text/html;charset=utf-8 154.2111ms
+2025-05-28 23:31:11.187 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/index.js - null null
+2025-05-28 23:31:11.206 +05:45 [INF] HTTP GET /swagger/index.js responded 200 in 13.1431 ms
+2025-05-28 23:31:11.221 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/index.js - 200 null application/javascript;charset=utf-8 34.0845ms
+2025-05-28 23:31:11.505 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/favicon-16x16.png - null null
+2025-05-28 23:31:11.537 +05:45 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2025-05-28 23:31:11.539 +05:45 [INF] HTTP GET /swagger/favicon-16x16.png responded 200 in 25.3668 ms
+2025-05-28 23:31:11.546 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/favicon-16x16.png - 499 665 image/png 38.7011ms
+2025-05-28 23:31:11.689 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/v1/swagger.json - null null
+2025-05-28 23:31:11.747 +05:45 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-05-28 23:31:11.948 +05:45 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 224.9853 ms
+2025-05-28 23:31:11.955 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 265.694ms
+2025-05-28 23:32:37.801 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/index.html - null null
+2025-05-28 23:32:37.815 +05:45 [INF] HTTP GET /swagger/index.html responded 200 in 8.7111 ms
+2025-05-28 23:32:37.922 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/index.js - null null
+2025-05-28 23:32:37.968 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/index.html - 200 null text/html;charset=utf-8 167.3291ms
+2025-05-28 23:32:37.989 +05:45 [INF] HTTP GET /swagger/index.js responded 200 in 0.3807 ms
+2025-05-28 23:32:38.014 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/index.js - 200 null application/javascript;charset=utf-8 92.0159ms
+2025-05-28 23:32:38.303 +05:45 [INF] Request starting HTTP/1.1 GET http://localhost:5182/swagger/v1/swagger.json - null null
+2025-05-28 23:32:38.452 +05:45 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 3.4815 ms
+2025-05-28 23:32:38.470 +05:45 [INF] Request finished HTTP/1.1 GET http://localhost:5182/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 167.5407ms
+2025-05-28 23:39:33.808 +05:45 [INF] Application is shutting down...
+2025-05-28 23:40:02.165 +05:45 [INF] Now listening on: https://localhost:7010
+2025-05-28 23:40:02.331 +05:45 [INF] Now listening on: http://localhost:5182
+2025-05-28 23:40:02.339 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-28 23:40:02.343 +05:45 [INF] Hosting environment: Development
+2025-05-28 23:40:02.343 +05:45 [INF] Content root path: E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API
+2025-05-28 23:40:02.762 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/ - null null
+2025-05-28 23:40:02.882 +05:45 [INF] HTTP GET / responded 404 in 29.3382 ms
+2025-05-28 23:40:02.904 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/ - 404 0 null 136.2683ms
+2025-05-28 23:40:02.922 +05:45 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7010/, Response status code: 404
+2025-05-28 23:40:13.721 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010// - null null
+2025-05-28 23:40:13.727 +05:45 [INF] HTTP GET // responded 404 in 2.0198 ms
+2025-05-28 23:40:13.728 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010// - 404 0 null 6.9652ms
+2025-05-28 23:40:13.728 +05:45 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7010//, Response status code: 404
+2025-05-28 23:40:20.733 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.html - null null
+2025-05-28 23:40:20.821 +05:45 [INF] HTTP GET /swagger/index.html responded 200 in 85.8670 ms
+2025-05-28 23:40:20.822 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.html - 200 null text/html;charset=utf-8 89.3195ms
+2025-05-28 23:40:20.935 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.js - null null
+2025-05-28 23:40:20.939 +05:45 [INF] HTTP GET /swagger/index.js responded 200 in 2.0410 ms
+2025-05-28 23:40:20.940 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.js - 200 null application/javascript;charset=utf-8 5.0238ms
+2025-05-28 23:40:21.129 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/v1/swagger.json - null null
+2025-05-28 23:40:21.162 +05:45 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-05-28 23:40:21.418 +05:45 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 288.6350 ms
+2025-05-28 23:40:21.425 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 295.4485ms
+2025-05-28 23:40:44.061 +05:45 [INF] Request starting HTTP/2 POST https://localhost:7010/Permission - application/json 220
+2025-05-28 23:40:44.063 +05:45 [INF] CORS policy execution successful.
+2025-05-28 23:40:44.065 +05:45 [INF] Executing endpoint 'HTTP: POST /Permission => Create'
+2025-05-28 23:40:44.111 +05:45 [INF] Executed endpoint 'HTTP: POST /Permission => Create'
+2025-05-28 23:40:44.581 +05:45 [ERR] An unhandled exception occurred.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to read parameter "Permission request" from the request body as JSON.
+ ---> System.Text.Json.JsonException: The JSON object contains a trailing comma at the end which is not supported in this mode. Change the reader options. Path: $ | LineNumber: 9 | BytePositionInLine: 0.
+ ---> System.Text.Json.JsonReaderException: The JSON object contains a trailing comma at the end which is not supported in this mode. Change the reader options. LineNumber: 9 | BytePositionInLine: 0.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeNextToken(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ConsumeNextTokenOrRollback(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Utf8JsonReader.Read()
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, T& value)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsObjectAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|101_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.InvalidJsonRequestBody(HttpContext httpContext, String parameterTypeName, String parameterName, Exception exception, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|101_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-05-28 23:40:44.657 +05:45 [ERR] An unhandled exception occurred.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to read parameter "Permission request" from the request body as JSON.
+ ---> System.Text.Json.JsonException: The JSON object contains a trailing comma at the end which is not supported in this mode. Change the reader options. Path: $ | LineNumber: 9 | BytePositionInLine: 0.
+ ---> System.Text.Json.JsonReaderException: The JSON object contains a trailing comma at the end which is not supported in this mode. Change the reader options. LineNumber: 9 | BytePositionInLine: 0.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeNextToken(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ConsumeNextTokenOrRollback(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Utf8JsonReader.Read()
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, T& value)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsObjectAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|101_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.InvalidJsonRequestBody(HttpContext httpContext, String parameterTypeName, String parameterName, Exception exception, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|101_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-05-28 23:40:44.680 +05:45 [ERR] HTTP POST /Permission responded 500 in 618.2769 ms
+2025-05-28 23:40:44.681 +05:45 [INF] Request finished HTTP/2 POST https://localhost:7010/Permission - 500 null application/json 620.0717ms
+2025-05-28 23:41:14.795 +05:45 [INF] Request starting HTTP/2 POST https://localhost:7010/Permission - application/json 220
+2025-05-28 23:41:14.796 +05:45 [INF] CORS policy execution successful.
+2025-05-28 23:41:14.796 +05:45 [INF] Executing endpoint 'HTTP: POST /Permission => Create'
+2025-05-28 23:41:14.801 +05:45 [INF] Executed endpoint 'HTTP: POST /Permission => Create'
+2025-05-28 23:41:14.843 +05:45 [ERR] An unhandled exception occurred.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to read parameter "Permission request" from the request body as JSON.
+ ---> System.Text.Json.JsonException: The JSON object contains a trailing comma at the end which is not supported in this mode. Change the reader options. Path: $ | LineNumber: 9 | BytePositionInLine: 0.
+ ---> System.Text.Json.JsonReaderException: The JSON object contains a trailing comma at the end which is not supported in this mode. Change the reader options. LineNumber: 9 | BytePositionInLine: 0.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeNextToken(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ConsumeNextTokenOrRollback(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Utf8JsonReader.Read()
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, T& value)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsObjectAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|101_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.InvalidJsonRequestBody(HttpContext httpContext, String parameterTypeName, String parameterName, Exception exception, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|101_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-05-28 23:41:14.845 +05:45 [ERR] An unhandled exception occurred.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to read parameter "Permission request" from the request body as JSON.
+ ---> System.Text.Json.JsonException: The JSON object contains a trailing comma at the end which is not supported in this mode. Change the reader options. Path: $ | LineNumber: 9 | BytePositionInLine: 0.
+ ---> System.Text.Json.JsonReaderException: The JSON object contains a trailing comma at the end which is not supported in this mode. Change the reader options. LineNumber: 9 | BytePositionInLine: 0.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeNextToken(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ConsumeNextTokenOrRollback(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Utf8JsonReader.Read()
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, T& value)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsObjectAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|101_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.InvalidJsonRequestBody(HttpContext httpContext, String parameterTypeName, String parameterName, Exception exception, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|101_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-05-28 23:41:14.848 +05:45 [ERR] HTTP POST /Permission responded 500 in 52.9778 ms
+2025-05-28 23:41:14.849 +05:45 [INF] Request finished HTTP/2 POST https://localhost:7010/Permission - 500 null application/json 53.9927ms
+2025-05-28 23:42:38.024 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.html - null null
+2025-05-28 23:42:38.025 +05:45 [INF] HTTP GET /swagger/index.html responded 200 in 0.4627 ms
+2025-05-28 23:42:38.027 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.html - 200 null text/html;charset=utf-8 2.3044ms
+2025-05-28 23:42:38.109 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.js - null null
+2025-05-28 23:42:38.110 +05:45 [INF] HTTP GET /swagger/index.js responded 200 in 0.4380 ms
+2025-05-28 23:42:38.110 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.js - 200 null application/javascript;charset=utf-8 1.4529ms
+2025-05-28 23:42:38.310 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/v1/swagger.json - null null
+2025-05-28 23:42:38.323 +05:45 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 13.0342 ms
+2025-05-28 23:42:38.324 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 13.8145ms

@@ -10,14 +10,14 @@
         "projectUniqueName": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.APPLICATION\\PORTAL.APPLICATION.csproj",
         "projectName": "PORTAL.APPLICATION",
         "projectPath": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.APPLICATION\\PORTAL.APPLICATION.csproj",
-        "packagesPath": "C:\\Users\\gurag\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\sg_38\\.nuget\\packages\\",
         "outputPath": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.APPLICATION\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\gurag\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sg_38\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -61,6 +62,10 @@
             "FluentValidation": {
               "target": "Package",
               "version": "[11.11.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.5, )"
             }
           },
           "imports": [
@@ -79,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -89,14 +94,14 @@
         "projectUniqueName": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.DOMAIN\\PORTAL.DOMAIN.csproj",
         "projectName": "PORTAL.DOMAIN",
         "projectPath": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.DOMAIN\\PORTAL.DOMAIN.csproj",
-        "packagesPath": "C:\\Users\\gurag\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\sg_38\\.nuget\\packages\\",
         "outputPath": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.DOMAIN\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\gurag\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sg_38\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -105,6 +110,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -154,7 +160,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -164,14 +170,14 @@
         "projectUniqueName": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.INFRASTRUCTURE\\PORTAL.INFRASTRUCTURE.csproj",
         "projectName": "PORTAL.INFRASTRUCTURE",
         "projectPath": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.INFRASTRUCTURE\\PORTAL.INFRASTRUCTURE.csproj",
-        "packagesPath": "C:\\Users\\gurag\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\sg_38\\.nuget\\packages\\",
         "outputPath": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.INFRASTRUCTURE\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\gurag\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sg_38\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -180,6 +186,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -284,7 +291,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -294,14 +301,14 @@
         "projectUniqueName": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.SHARED\\PORTAL.SHARED.csproj",
         "projectName": "PORTAL.SHARED",
         "projectPath": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.SHARED\\PORTAL.SHARED.csproj",
-        "packagesPath": "C:\\Users\\gurag\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\sg_38\\.nuget\\packages\\",
         "outputPath": "E:\\Tsaroj38\\PORTAL\\PORTALSOLUTION\\src\\PORTAL.SHARED\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\gurag\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sg_38\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -310,6 +317,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -355,7 +363,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

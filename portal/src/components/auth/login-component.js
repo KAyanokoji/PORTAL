@@ -4,14 +4,18 @@ import EmailInput from '@/components/common/control/email-input'
 import PasswordInput from '@/components/common/control/password-input';
 import ImageLogo from '@/components/common/pickers/image'
 import { loginUser } from '@/redux/auth/authSlice';
-import React, { useState } from 'react'
-import { useDispatch } from 'react-redux';
-
+import React, { useEffect, useState } from 'react'
+import { shallowEqual, useDispatch, useSelector } from 'react-redux';
+import { useAuth } from '../hooks/useAuth';
+import { useRouter } from 'next/navigation';
 const LoginComponent = () => {
-    const dispatch = useDispatch()
+    const dispatch = useDispatch();
+    const router = useRouter();
     const[email, setEmail] = useState('');
     const[password, setPassword] = useState('');
-    console.log("PAGE EMAIL", email)
+
+    const IsLoggedIn = useSelector((state)=>state.auth.isLoggedIn, shallowEqual);
+    const Message = useSelector((state)=>state.auth.message, shallowEqual);
     const handleSubmit=()=>{
         let formData = {
             username:email,
@@ -20,6 +24,14 @@ const LoginComponent = () => {
         dispatch(loginUser(formData))
     }
 
+    // useEffect(()=>{
+    //     useAuth()
+    // },[IsLoggedIn])
+    useAuth({
+        onAuthenticated: () => router.push('/home'), 
+        redirectPath: '/login',
+        requireAuth: false, // allow unauthenticated users to stay here
+      })
     return (
         <>
             <div className='flex items-center justify-center h-screen bg-gray-100'>

@@ -1,0 +1,303 @@
+2025-06-08 21:38:01.830 +05:45 [INF] Now listening on: https://localhost:7010
+2025-06-08 21:38:01.966 +05:45 [INF] Now listening on: http://localhost:5182
+2025-06-08 21:38:01.976 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-08 21:38:01.977 +05:45 [INF] Hosting environment: Development
+2025-06-08 21:38:01.978 +05:45 [INF] Content root path: E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API
+2025-06-08 21:38:02.950 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/ - null null
+2025-06-08 21:38:03.201 +05:45 [INF] HTTP GET / responded 404 in 62.0842 ms
+2025-06-08 21:38:03.244 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/ - 404 0 null 296.4498ms
+2025-06-08 21:38:03.270 +05:45 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7010/, Response status code: 404
+2025-06-08 21:40:43.839 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.html - null null
+2025-06-08 21:40:44.328 +05:45 [INF] HTTP GET /swagger/index.html responded 200 in 478.0591 ms
+2025-06-08 21:40:44.328 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.html - 200 null text/html;charset=utf-8 489.3327ms
+2025-06-08 21:40:44.411 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/index.js - null null
+2025-06-08 21:40:44.437 +05:45 [INF] HTTP GET /swagger/index.js responded 200 in 18.0492 ms
+2025-06-08 21:40:44.437 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/index.js - 200 null application/javascript;charset=utf-8 26.0026ms
+2025-06-08 21:40:44.725 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/swagger/v1/swagger.json - null null
+2025-06-08 21:40:44.768 +05:45 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-06-08 21:40:44.996 +05:45 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 271.0050 ms
+2025-06-08 21:40:45.005 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 280.4285ms
+2025-06-08 21:40:56.059 +05:45 [INF] Request starting HTTP/2 POST https://localhost:7010/Permission - application/json 95
+2025-06-08 21:40:56.064 +05:45 [INF] CORS policy execution successful.
+2025-06-08 21:40:56.066 +05:45 [INF] Executing endpoint 'HTTP: POST /Permission => Create'
+2025-06-08 21:41:09.338 +05:45 [INF] Executed DbCommand (78ms) [Parameters=[@__request_PermissionName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PermissionId", p."CreatedAt", p."CreatedBy", p."Description", p."IsActive", p."IsDeleted", p."ModifiedAt", p."ModifiedBy", p."PermissionName"
+FROM "Permissions" AS p
+WHERE p."PermissionName" = @__request_PermissionName_0
+2025-06-08 21:41:14.411 +05:45 [ERR] Failed executing DbCommand (112ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Permissions" ("CreatedAt", "CreatedBy", "Description", "IsActive", "IsDeleted", "ModifiedAt", "ModifiedBy", "PermissionName")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7)
+RETURNING "PermissionId";
+2025-06-08 21:41:14.460 +05:45 [ERR] An exception occurred in the database while saving changes for context type 'PORTAL.INFRASTRUCTURE.Persistence.ApplicationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23502: null value in column "CreatedBy" of relation "Permissions" violates not-null constraint
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23502
+    MessageText: null value in column "CreatedBy" of relation "Permissions" violates not-null constraint
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Permissions
+    ColumnName: CreatedBy
+    File: execMain.c
+    Line: 1988
+    Routine: ExecConstraints
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23502: null value in column "CreatedBy" of relation "Permissions" violates not-null constraint
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23502
+    MessageText: null value in column "CreatedBy" of relation "Permissions" violates not-null constraint
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Permissions
+    ColumnName: CreatedBy
+    File: execMain.c
+    Line: 1988
+    Routine: ExecConstraints
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-06-08 21:42:13.521 +05:45 [ERR] Error creating permission
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23502: null value in column "CreatedBy" of relation "Permissions" violates not-null constraint
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23502
+    MessageText: null value in column "CreatedBy" of relation "Permissions" violates not-null constraint
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Permissions
+    ColumnName: CreatedBy
+    File: execMain.c
+    Line: 1988
+    Routine: ExecConstraints
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PORTAL.INFRASTRUCTURE.Repositories.UnitOfWork.CompleteAsync() in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Repositories\UnitOfWork.cs:line 29
+   at PORTAL.APPLICATION.Services.PermissionService.Create(PermissionCreateDto request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 30
+2025-06-08 21:42:14.196 +05:45 [ERR] Error occurred while registering user Permission To create data
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23502: null value in column "CreatedBy" of relation "Permissions" violates not-null constraint
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23502
+    MessageText: null value in column "CreatedBy" of relation "Permissions" violates not-null constraint
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Permissions
+    ColumnName: CreatedBy
+    File: execMain.c
+    Line: 1988
+    Routine: ExecConstraints
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PORTAL.INFRASTRUCTURE.Repositories.UnitOfWork.CompleteAsync() in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Repositories\UnitOfWork.cs:line 29
+   at PORTAL.APPLICATION.Services.PermissionService.Create(PermissionCreateDto request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 30
+   at PORTAL.API.Routes.PermissionRoute.Create(PermissionCreateDto request, IGlobalLogger logger, IPermissionService services) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\PermissionRoutes.cs:line 22
+2025-06-08 21:42:14.500 +05:45 [INF] Executed endpoint 'HTTP: POST /Permission => Create'
+2025-06-08 21:42:14.967 +05:45 [ERR] An unhandled exception occurred.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23502: null value in column "CreatedBy" of relation "Permissions" violates not-null constraint
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23502
+    MessageText: null value in column "CreatedBy" of relation "Permissions" violates not-null constraint
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Permissions
+    ColumnName: CreatedBy
+    File: execMain.c
+    Line: 1988
+    Routine: ExecConstraints
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PORTAL.INFRASTRUCTURE.Repositories.UnitOfWork.CompleteAsync() in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.INFRASTRUCTURE\Repositories\UnitOfWork.cs:line 29
+   at PORTAL.APPLICATION.Services.PermissionService.Create(PermissionCreateDto request) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 30
+   at PORTAL.API.Routes.PermissionRoute.Create(PermissionCreateDto request, IGlobalLogger logger, IPermissionService services) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\PermissionRoutes.cs:line 22
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass101_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-06-08 21:42:14.993 +05:45 [ERR] HTTP POST /Permission responded 500 in 78930.5652 ms
+2025-06-08 21:42:14.999 +05:45 [INF] Request finished HTTP/2 POST https://localhost:7010/Permission - 500 null application/json 78939.9811ms
+2025-06-08 21:44:24.027 +05:45 [INF] Now listening on: https://localhost:7010
+2025-06-08 21:44:24.101 +05:45 [INF] Now listening on: http://localhost:5182
+2025-06-08 21:44:24.111 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-08 21:44:24.112 +05:45 [INF] Hosting environment: Development
+2025-06-08 21:44:24.112 +05:45 [INF] Content root path: E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API
+2025-06-08 21:44:24.696 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/ - null null
+2025-06-08 21:44:24.831 +05:45 [INF] HTTP GET / responded 404 in 24.8294 ms
+2025-06-08 21:44:24.845 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/ - 404 0 null 150.5899ms
+2025-06-08 21:44:24.862 +05:45 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7010/, Response status code: 404
+2025-06-08 21:44:41.311 +05:45 [INF] Request starting HTTP/2 POST https://localhost:7010/Permission - application/json 95
+2025-06-08 21:44:41.321 +05:45 [INF] CORS policy execution successful.
+2025-06-08 21:44:41.324 +05:45 [INF] Executing endpoint 'HTTP: POST /Permission => Create'
+2025-06-08 21:44:50.517 +05:45 [INF] Executed DbCommand (74ms) [Parameters=[@__request_PermissionName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PermissionId", p."CreatedAt", p."CreatedBy", p."Description", p."IsActive", p."IsDeleted", p."ModifiedAt", p."ModifiedBy", p."PermissionName"
+FROM "Permissions" AS p
+WHERE p."PermissionName" = @__request_PermissionName_0
+2025-06-08 21:44:55.253 +05:45 [INF] Executed DbCommand (31ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Permissions" ("CreatedAt", "CreatedBy", "Description", "IsActive", "IsDeleted", "ModifiedAt", "ModifiedBy", "PermissionName")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7)
+RETURNING "PermissionId";
+2025-06-08 21:45:00.967 +05:45 [INF] Setting HTTP status code 201.
+2025-06-08 21:45:00.971 +05:45 [INF] Executed endpoint 'HTTP: POST /Permission => Create'
+2025-06-08 21:45:00.976 +05:45 [INF] HTTP POST /Permission responded 201 in 19660.0958 ms
+2025-06-08 21:45:01.015 +05:45 [INF] Request finished HTTP/2 POST https://localhost:7010/Permission - 201 0 null 19704.6647ms
+2025-06-08 21:47:23.130 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/Permission - null null
+2025-06-08 21:47:23.136 +05:45 [INF] Executing endpoint 'HTTP: GET /Permission => GetAllPermissions'
+2025-06-08 21:47:26.536 +05:45 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PermissionId", p."CreatedAt", p."CreatedBy", p."Description", p."IsActive", p."IsDeleted", p."ModifiedAt", p."ModifiedBy", p."PermissionName"
+FROM "Permissions" AS p
+2025-06-08 21:47:26.569 +05:45 [INF] Setting HTTP status code 200.
+2025-06-08 21:47:26.577 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-06-08 21:47:26.609 +05:45 [INF] Executed endpoint 'HTTP: GET /Permission => GetAllPermissions'
+2025-06-08 21:47:26.609 +05:45 [INF] HTTP GET /Permission responded 200 in 3475.7226 ms
+2025-06-08 21:47:26.610 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/Permission - 200 null application/json; charset=utf-8 3480.3035ms
+2025-06-08 21:47:40.196 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/Permission/1 - null null
+2025-06-08 21:47:40.198 +05:45 [INF] Executing endpoint 'HTTP: GET /Permission/{PermissionId} => GetPermissionById'
+2025-06-08 21:47:56.162 +05:45 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PermissionId", p."CreatedAt", p."CreatedBy", p."Description", p."IsActive", p."IsDeleted", p."ModifiedAt", p."ModifiedBy", p."PermissionName"
+FROM "Permissions" AS p
+WHERE p."PermissionId" = @__p_0
+LIMIT 1
+2025-06-08 21:48:09.510 +05:45 [ERR] Error while fetching permission with ID 1
+PORTAL.DOMAIN.Exceptions.EntityNotFoundException: Permission with ID 1 not found
+   at PORTAL.APPLICATION.Services.PermissionService.GetById(Int32 id) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 72
+2025-06-08 21:48:10.628 +05:45 [ERR] Error while fetching permission with ID {PermissionId}
+PORTAL.DOMAIN.Exceptions.EntityNotFoundException: Permission with ID 1 not found
+   at PORTAL.APPLICATION.Services.PermissionService.GetById(Int32 id) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 72
+   at PORTAL.API.Routes.PermissionRoute.GetPermissionById(IGlobalLogger logger, IPermissionService service, Int32 PermissionId) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\PermissionRoutes.cs:line 49
+2025-06-08 21:48:10.709 +05:45 [INF] Executed endpoint 'HTTP: GET /Permission/{PermissionId} => GetPermissionById'
+2025-06-08 21:48:10.920 +05:45 [ERR] An unhandled exception occurred.
+PORTAL.DOMAIN.Exceptions.EntityNotFoundException: Permission with ID 1 not found
+   at PORTAL.APPLICATION.Services.PermissionService.GetById(Int32 id) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.APPLICATION\Services\PermissonServices.cs:line 72
+   at PORTAL.API.Routes.PermissionRoute.GetPermissionById(IGlobalLogger logger, IPermissionService service, Int32 PermissionId) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Routes\PermissionRoutes.cs:line 49
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at PORTAL.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API\Middleware\ExceptionMiddleware.cs:line 21
+2025-06-08 21:48:10.937 +05:45 [INF] HTTP GET /Permission/1 responded 404 in 30738.9936 ms
+2025-06-08 21:48:10.937 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/Permission/1 - 404 null application/json 30741.7588ms
+2025-06-08 21:48:54.795 +05:45 [INF] Request starting HTTP/2 GET https://localhost:7010/Permission/4 - null null
+2025-06-08 21:49:01.496 +05:45 [INF] Executing endpoint 'HTTP: GET /Permission/{PermissionId} => GetPermissionById'
+2025-06-08 21:49:03.441 +05:45 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PermissionId", p."CreatedAt", p."CreatedBy", p."Description", p."IsActive", p."IsDeleted", p."ModifiedAt", p."ModifiedBy", p."PermissionName"
+FROM "Permissions" AS p
+WHERE p."PermissionId" = @__p_0
+LIMIT 1
+2025-06-08 21:49:03.445 +05:45 [INF] Setting HTTP status code 200.
+2025-06-08 21:49:03.445 +05:45 [INF] Writing value of type 'JsonResponse' as Json.
+2025-06-08 21:49:03.446 +05:45 [INF] Executed endpoint 'HTTP: GET /Permission/{PermissionId} => GetPermissionById'
+2025-06-08 21:49:03.446 +05:45 [INF] HTTP GET /Permission/4 responded 200 in 8649.8776 ms
+2025-06-08 21:49:03.447 +05:45 [INF] Request finished HTTP/2 GET https://localhost:7010/Permission/4 - 200 null application/json; charset=utf-8 8651.2126ms
+2025-06-08 22:24:07.152 +05:45 [INF] Now listening on: http://localhost:5182
+2025-06-08 22:24:07.283 +05:45 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-08 22:24:07.287 +05:45 [INF] Hosting environment: Development
+2025-06-08 22:24:07.289 +05:45 [INF] Content root path: E:\Tsaroj38\PORTAL\PORTALSOLUTION\src\PORTAL.API
+2025-06-08 22:24:54.219 +05:45 [INF] Application is shutting down...
